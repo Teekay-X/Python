@@ -1,0 +1,311 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <title>TeekaY-X | Python For Loops</title>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="icon" href="/css/icon.png" />
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+  <link rel="stylesheet" href="/css/index.css" />
+</head>
+<body class="d-flex flex-column min-vh-100">
+
+<!--<div class="jumbotron text-center" style="margin-bottom:0">
+  <h1>My First Bootstrap Page</h1>
+  <p>Resize this responsive page to see the effect!</p> 
+</div>-->
+
+<nav class="navbar navbar-inverse navbar-fixed-top">
+  <div class="container-fluid">
+    <div class="navbar-header">
+      <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#myNavbar">
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>                        
+      </button>
+      <a class="navbar-brand" href="#">TeekaY-X | Python For Loops</a>
+    </div>
+    <div class="collapse navbar-collapse" id="myNavbar">
+      <ul class="nav navbar-nav">
+        <li><a href="https://TeekaY-X.github.io">Home</a></li>
+          <li class="dropdown">
+        <a class="dropdown-toggle" data-toggle="dropdown" href="#">Python Course 
+        <span class="caret"></span></a>
+        <ul class="dropdown-menu">
+          <li><a href="pyintro.html">Python Introduction</a></li>
+          <li><a href="gtstt.html">Python Getting Started</a></li>
+          <li><a href="syntax.html">Python Syntax</a></li>
+          <li><a href="pycomments.html">Python Comments</a></li>
+          <li><a href="pyvariables.html">Python Variables</a></li>
+          <li><a href="pydatatypes.html">Python Data Types</a></li>
+          <li><a href="pynumbers.html">Python Numbers</a></li>
+          <li><a href="/python/pycasting.html">Python Casting</a></li>
+          <li><a href="/python/pystrings.html">Python Strings</a></li>
+          <li><a href="/python/pybooleans.html">Python Booleans</a></li>
+          <li><a href="/python/pyoperators.html">Python Operators</a></li>
+          <li><a href="/python/pylists.html">Python Lists</a></li>
+          <li><a href="/python/pytuples.html">Python Tuples</a></li>
+          <li><a href="/python/pysets.html">Python Sets</a></li>
+          <li><a href="/python/pydictionaries.html">Python Dictionaries</a></li>
+          <li><a href="/python/pyifelse.html">Python If...Else</a></li>
+          <li><a href="/python/pywhileloops.html">Python While Loops</a></li>
+          <li class="active"><a href="/python/pyforloops.html">Python For Loops</a></li>
+          <li><a href="/python/pyfunctions.html">Python Functions</a></li>
+          <li><a href="/python/pylambda.html">Python Lambda</a></li>
+          <li><a href="/python/pyarrays.html">Python Arrays</a></li>
+          <li><a href="/python/pyclasses.html">Python Classes/Objects</a></li>
+          <li><a href="/python/pyinheritance.html">Python Inheritance</a></li>
+          <li><a href="/python/pyiterators.html">Python Iterators</a></li>
+          <li><a href="/python/pyscope.html">Python Scope</a></li>
+          <li><a href="/python/pymodules.html">Python Modules</a></li>
+          <li><a href="/python/pydates.html">Python Dates</a></li>
+          <li><a href="/python/pymaths.html">Python Math</a></li>
+          <li><a href="/python/pyJSON.html">Python JSON</a></li>
+          <li><a href="/python/pyRegEx.html">Python RegEx</a></li>
+          <li><a href="/python/pypip.html">Python PIP</a></li>
+          <li><a href="/python/pytryexcept.html">Python Try...Except</a></li>
+          <li><a href="/python/pyusrinput.html">Python User Input</a></li>
+          <li><a href="/python/pyStringFormat.html">Python String Formatting</a></li>
+        </ul>
+      </li>
+      
+        <li class="dropdown">
+        <a class="dropdown-toggle" data-toggle="dropdown" href="#">Flask Course
+        <span class="caret"></span></a>
+        <ul class="dropdown-menu">
+          <li><a href="#">Coming Soon</a></li>
+          <li><a href="#">Coming Soon</a></li>
+          <li><a href="#">Coming Soon</a></li>
+        </ul>
+      </li>
+      <li><a href="https://TeekaY-X.github.io/about.html">About us</a></li>
+       <!-- <li><a href="#">Python</a></li>
+        <li><a href="#">Python-Flask</a></li>-->
+      </ul>
+    </div>
+  </div>
+</nav>
+<br>
+<br>
+<div class="container-fluid">
+  <div class="row">
+    <div class="col-sm-8">
+      <div class="jumbotron">
+        
+<h2>Python For Loops</h2>
+
+<p>A <span class="w3-codespan">for</span> loop is used for iterating over a sequence (that is either a list, a tuple, 
+a dictionary, a set, or a string).</p>
+<p>This is less like the <span class="w3-codespan">for</span> keyword in other programming languages, and works more like an iterator method as found in other object-orientated programming languages.</p>
+
+<p>With the <span class="w3-codespan">for</span> loop we can execute a set of statements, once for each item in a list, tuple, set etc.</p>
+<div class="w3-example">
+  <h3>Example</h3>
+<p>Print each fruit in a fruit list:</p>
+<div class="w3-code notranslate pythonHigh">
+  fruits = [&quot;apple&quot;, &quot;banana&quot;, &quot;cherry&quot;]<br>for 
+  x in fruits:<br>
+	&nbsp;
+	print(x)
+</div>
+<a target="_blank" class="w3-btn w3-margin-bottom" href="trypython.asp?filename=demo_for">Try it Yourself &raquo;</a>
+</div>
+
+<p>The <span class="w3-codespan">for</span> loop does not require an indexing variable to set beforehand.</p>
+
+<hr>
+<h2>Looping Through a String</h2>
+
+<p>Even strings are iterable objects, they contain a sequence of characters:</p>
+
+<div class="w3-example">
+<h3>Example</h3>
+<p>Loop through the letters in the word &quot;banana&quot;:</p>
+<div class="w3-code notranslate pythonHigh">
+  for x in &quot;banana&quot;:<br>&nbsp; print(x)
+</div>
+<a target="_blank" class="w3-btn w3-margin-bottom" href="trypython.asp?filename=demo_for_string">Try it Yourself &raquo;</a>
+</div>
+
+<hr>
+<h2>The break Statement</h2>
+
+<p>With the <span class="w3-codespan">break</span> statement we can stop the 
+loop before it has looped through all the items:</p>
+
+<div class="w3-example">
+<h3>Example</h3>
+<p>Exit the loop when <code class="w3-codespan">x</code> is &quot;banana&quot;:</p>
+<div class="w3-code notranslate pythonHigh">
+  fruits = [&quot;apple&quot;, &quot;banana&quot;, &quot;cherry&quot;]<br>for x in fruits:<br>&nbsp; print(x)
+  <br>&nbsp; if x == 
+  &quot;banana&quot;:<br>&nbsp;&nbsp;&nbsp; break<br>
+</div>
+<a target="_blank" class="w3-btn w3-margin-bottom" href="trypython.asp?filename=demo_for_break">Try it Yourself &raquo;</a>
+</div>
+
+<div class="w3-example">
+<h3>Example</h3>
+<p>Exit the loop when <code class="w3-codespan">x</code> is &quot;banana&quot;, 
+but this time the break comes before the print:</p>
+<div class="w3-code notranslate pythonHigh">
+  fruits = [&quot;apple&quot;, &quot;banana&quot;, &quot;cherry&quot;]<br>for x in fruits:<br>&nbsp; if x == 
+  &quot;banana&quot;:<br>&nbsp;&nbsp;&nbsp; break<br>&nbsp; print(x)
+</div>
+<a target="_blank" class="w3-btn w3-margin-bottom" href="trypython.asp?filename=demo_for_break2">Try it Yourself &raquo;</a>
+</div>
+
+<hr>
+<div id="midcontentadcontainer" style="overflow:auto;text-align:center">
+<!-- MidContent -->
+<!-- <p class="adtext">Advertisement</p> -->
+        
+  <div id='div-gpt-ad-1493883843099-0' style="display: inline-block">
+    <script>
+    uic_r_g();
+    </script>
+  </div>
+  
+</div>
+<hr>
+<h2>The continue Statement</h2>
+
+<p>With the <span class="w3-codespan">continue</span> statement we can stop the 
+current iteration of the loop, and continue with the next:</p>
+
+<div class="w3-example">
+<h3>Example</h3>
+<p>Do not print banana:</p>
+<div class="w3-code notranslate pythonHigh">
+  fruits = [&quot;apple&quot;, &quot;banana&quot;, &quot;cherry&quot;]<br>for x in fruits:<br>&nbsp; if x == 
+  &quot;banana&quot;:<br>&nbsp;&nbsp;&nbsp; continue<br>&nbsp; print(x)
+</div>
+<a target="_blank" class="w3-btn w3-margin-bottom" href="trypython.asp?filename=demo_for_continue">Try it Yourself &raquo;</a>
+</div>
+
+<hr>
+<h2>The range() Function</h2>
+To loop through a set of code a specified number of times, we can use the <span class="w3-codespan">range()</span> function,</p>
+<p>The <span class="w3-codespan">range()</span> function returns a sequence of numbers, starting from 0 by default, and increments by 1 (by default), and ends at a specified number.</p>
+<div class="w3-example">
+  <h3>Example</h3>
+<p>Using the range() function:</p>
+<div class="w3-code notranslate pythonHigh">
+  for x in range(6):<br>
+	&nbsp;
+	print(x)
+</div>
+<a target="_blank" class="w3-btn w3-margin-bottom" href="trypython.asp?filename=demo_for_range">Try it Yourself &raquo;</a>
+</div>
+
+<div class="w3-panel w3-note">
+  <p>Note that <span class="w3-codespan">range(6)</span> is not the values of 0 to 6, but the values 0 to 5.</p>
+</div>
+
+<p>The <span class="w3-codespan">range()</span> function defaults to 0 as a starting value, however it is possible to specify the starting value by adding a parameter: <span class="w3-codespan">range(2, 6)</span>, which 
+means values from 2 to 6 (but not including 6):</p>
+
+<div class="w3-example">
+  <h3>Example</h3>
+<p>Using the start parameter:</p>
+<div class="w3-code notranslate pythonHigh">
+  for x in range(2, 6):<br>
+	&nbsp;
+	print(x)
+</div>
+<a target="_blank" class="w3-btn w3-margin-bottom" href="trypython.asp?filename=demo_for_range2">Try it Yourself &raquo;</a>
+</div>
+
+<p>The <span class="w3-codespan">range()</span> function defaults to increment the sequence by 1,
+however it is possible to specify the increment value by adding a third parameter: <span class="w3-codespan">range(2, 30, <strong>3</strong>)</span>:</p>
+
+<div class="w3-example">
+  <h3>Example</h3>
+<p>Increment the sequence with 3 (default is 1):</p>
+<div class="w3-code notranslate pythonHigh">
+  for x in range(2, 30, 3):<br>
+	&nbsp;
+	print(x)
+</div>
+<a target="_blank" class="w3-btn w3-margin-bottom" href="trypython.asp?filename=demo_for_range3">Try it Yourself &raquo;</a>
+</div>
+
+<hr>
+<h2>Else in For Loop</h2>
+<p>The <code class="w3-codespan">else</code> keyword in a
+<code class="w3-codespan">for</code> loop specifies a block of code to be 
+executed when the loop is finished:</p>
+<div class="w3-example">
+  <h3>Example</h3>
+<p>Print all numbers from 0 to 5, and print a message when the loop has ended:</p>
+<div class="w3-code notranslate pythonHigh">
+  for x in range(6):<br>&nbsp;
+	print(x)<br>else:<br>&nbsp;
+	print(&quot;Finally finished!&quot;)</div>
+<a target="_blank" class="w3-btn w3-margin-bottom" href="trypython.asp?filename=demo_for_else">Try it Yourself &raquo;</a>
+</div>
+
+<div class="w3-panel w3-note">
+  <p><strong>Note:</strong> The <code class="w3-codespan">else</code> block will NOT be executed if the loop is stopped by a <code class="w3-codespan">break</code> statement.</p>
+</div>
+
+<div class="w3-example">
+  <h3>Example</h3>
+<p>Break the loop when <code class="w3-codespan">x</code> is 3, and see what happens with the 
+<code class="w3-codespan">else</code> block:</p>
+<div class="w3-code notranslate pythonHigh">
+  for x in range(6):<br>&nbsp; if x == 3: break<br>&nbsp;
+	print(x)<br>else:<br>&nbsp;
+	print(&quot;Finally finished!&quot;)</div>
+<a target="_blank" class="w3-btn w3-margin-bottom" href="trypython.asp?filename=demo_for_else_break">Try it Yourself &raquo;</a>
+</div>
+
+<hr>
+<h2>Nested Loops</h2>
+<p>A nested loop is a loop inside a loop.</p>
+<p>The &quot;inner loop&quot; will be executed one time for each iteration of the &quot;outer 
+loop&quot;:</p>
+<div class="w3-example">
+  <h3>Example</h3>
+<p>Print each adjective for every fruit:</p>
+<div class="w3-code notranslate pythonHigh">
+  adj = [&quot;red&quot;, &quot;big&quot;, &quot;tasty&quot;]<br>fruits = [&quot;apple&quot;, &quot;banana&quot;, &quot;cherry&quot;]<br>
+  <br>for x in adj:<br>&nbsp; for y in fruits:<br>&nbsp;&nbsp;&nbsp; print(x, y)</div>
+<a target="_blank" class="w3-btn w3-margin-bottom" href="trypython.asp?filename=demo_for_nested">Try it Yourself &raquo;</a>
+</div>
+<hr>
+
+<h2>The pass Statement</h2>
+<p><code class="w3-codespan">for</code> loops cannot be empty, but if you for 
+some reason have a <code class="w3-codespan">for</code> loop with no content, put in the <code class="w3-codespan">pass</code> statement to avoid getting an error.</p>
+
+<div class="w3-example">
+<h3>Example</h3>
+<div class="w3-code notranslate pythonHigh">
+  for x in [0, 1, 2]:<br>&nbsp; pass</div>
+<a target="_blank" class="w3-btn w3-margin-bottom" href="trypython.asp?filename=demo_for_pass">Try it Yourself &raquo;</a>
+</div>
+
+<!--end-->    
+</div>
+    </div>
+  </div>
+</div>
+
+<ul class="pager navbar-fixed-bottom">
+  <li class="previous"><a href="pywhileloops.html">&laquo;Previous</a></li>
+  <li class="next"><a href="pyfunctions.html">Next&raquo;</a></li>
+</ul>
+
+
+<footer class="mt-auto">
+<div class="jumbotron text-center" style="margin-bottom:0">
+copyright&copy; TeekaY-X maintained by <a href="https://TeekaY-X.github.io/AsahlumaTyika">Asahluma Tyika</a>
+</div>
+</footer>
+
+</body>
+</html>

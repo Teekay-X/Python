@@ -1,0 +1,367 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <title>TeekaY-X | Python Functions</title>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="icon" href="/css/icon.png" />
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+  <link rel="stylesheet" href="/css/index.css" />
+</head>
+<body class="d-flex flex-column min-vh-100">
+
+<!--<div class="jumbotron text-center" style="margin-bottom:0">
+  <h1>My First Bootstrap Page</h1>
+  <p>Resize this responsive page to see the effect!</p> 
+</div>-->
+
+<nav class="navbar navbar-inverse navbar-fixed-top">
+  <div class="container-fluid">
+    <div class="navbar-header">
+      <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#myNavbar">
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>                        
+      </button>
+      <a class="navbar-brand" href="#">TeekaY-X | Python Functions</a>
+    </div>
+    <div class="collapse navbar-collapse" id="myNavbar">
+      <ul class="nav navbar-nav">
+        <li><a href="https://TeekaY-X.github.io">Home</a></li>
+          <li class="dropdown">
+        <a class="dropdown-toggle" data-toggle="dropdown" href="#">Python Course 
+        <span class="caret"></span></a>
+        <ul class="dropdown-menu">
+          <li><a href="pyintro.html">Python Introduction</a></li>
+          <li><a href="gtstt.html">Python Getting Started</a></li>
+          <li><a href="syntax.html">Python Syntax</a></li>
+          <li><a href="pycomments.html">Python Comments</a></li>
+          <li><a href="pyvariables.html">Python Variables</a></li>
+          <li><a href="pydatatypes.html">Python Data Types</a></li>
+          <li><a href="pynumbers.html">Python Numbers</a></li>
+          <li><a href="/python/pycasting.html">Python Casting</a></li>
+          <li><a href="/python/pystrings.html">Python Strings</a></li>
+          <li><a href="/python/pybooleans.html">Python Booleans</a></li>
+          <li><a href="/python/pyoperators.html">Python Operators</a></li>
+          <li><a href="/python/pylists.html">Python Lists</a></li>
+          <li><a href="/python/pytuples.html">Python Tuples</a></li>
+          <li><a href="/python/pysets.html">Python Sets</a></li>
+          <li><a href="/python/pydictionaries.html">Python Dictionaries</a></li>
+          <li><a href="/python/pyifelse.html">Python If...Else</a></li>
+          <li><a href="/python/pywhileloops.html">Python While Loops</a></li>
+          <li><a href="/python/pyforloops.html">Python For Loops</a></li>
+          <li class="active"><a href="/python/pyfunctions.html">Python Functions</a></li>
+          <li><a href="/python/pylambda.html">Python Lambda</a></li>
+          <li><a href="/python/pyarrays.html">Python Arrays</a></li>
+          <li><a href="/python/pyclasses.html">Python Classes/Objects</a></li>
+          <li><a href="/python/pyinheritance.html">Python Inheritance</a></li>
+          <li><a href="/python/pyiterators.html">Python Iterators</a></li>
+          <li><a href="/python/pyscope.html">Python Scope</a></li>
+          <li><a href="/python/pymodules.html">Python Modules</a></li>
+          <li><a href="/python/pydates.html">Python Dates</a></li>
+          <li><a href="/python/pymaths.html">Python Math</a></li>
+          <li><a href="/python/pyJSON.html">Python JSON</a></li>
+          <li><a href="/python/pyRegEx.html">Python RegEx</a></li>
+          <li><a href="/python/pypip.html">Python PIP</a></li>
+          <li><a href="/python/pytryexcept.html">Python Try...Except</a></li>
+          <li><a href="/python/pyusrinput.html">Python User Input</a></li>
+          <li><a href="/python/pyStringFormat.html">Python String Formatting</a></li>
+        </ul>
+      </li>
+      
+        <li class="dropdown">
+        <a class="dropdown-toggle" data-toggle="dropdown" href="#">Flask Course
+        <span class="caret"></span></a>
+        <ul class="dropdown-menu">
+          <li><a href="#">Coming Soon</a></li>
+          <li><a href="#">Coming Soon</a></li>
+          <li><a href="#">Coming Soon</a></li>
+        </ul>
+      </li>
+      <li><a href="https://TeekaY-X.github.io/about.html">About us</a></li>
+       <!-- <li><a href="#">Python</a></li>
+        <li><a href="#">Python-Flask</a></li>-->
+      </ul>
+    </div>
+  </div>
+</nav>
+<br>
+<br>
+<div class="container-fluid">
+  <div class="row">
+    <div class="col-sm-8">
+      <div class="jumbotron">
+        <h1>Python Functions</h1>
+        <p class="intro">A function is a block of code which only runs when it is called.</p>
+<p class="intro">You can pass data, known as parameters, into a function.</p>
+<p class="intro">A function can return data as a result.</p>
+
+<hr>
+<h2>Creating a Function</h2>
+
+<p>In Python a function is defined using the <span class="w3-codespan">def</span> 
+keyword:</p>
+
+<div class="w3-example">
+<h3>Example</h3>
+<div class="w3-code notranslate pythonHigh">
+  def my_function():<br>&nbsp; print(&quot;Hello from a function&quot;)</div>
+</div>
+<hr>
+<h2>Calling a Function</h2>
+
+<p>To call a function, use the function name followed by parenthesis:</p>
+
+<div class="w3-example">
+<h3>Example</h3>
+<div class="w3-code notranslate pythonHigh">
+  def my_function():<br>&nbsp; print(&quot;Hello from a function&quot;)<br><br>
+  <strong>my_function()</strong></div>
+</div>
+
+<hr>
+<h2>Arguments</h2>
+
+<p>Information can be passed into functions as arguments.</p>
+<p>Arguments are specified after the function name, inside the parentheses.
+You can add as many arguments as you want, just separate them with a comma.</p>
+<p>
+The following example has a function with one argument (fname).
+When the function is called, we pass along a first name,
+which is used inside the function to print the full name:
+</p>
+
+<div class="w3-example">
+<h3>Example</h3>
+<div class="w3-code notranslate pythonHigh">
+  def my_function(<strong>fname</strong>):<br>&nbsp; print(fname + &quot; Refsnes&quot;)<br><br>
+  my_function(<strong>&quot;Emil&quot;</strong>)<br>my_function(<strong>&quot;Tobias&quot;</strong>)<br>my_function(<strong>&quot;Linus&quot;</strong>)</div>
+</div>
+
+<div class="w3-panel w3-note">
+  <p><em>Arguments</em> are often shortened to <em>args</em> in Python documentations.</p>
+</div>
+
+<hr>
+
+<hr>
+
+<h2>Parameters or Arguments?</h2>
+
+<p>The terms <em>parameter</em> and <em>argument</em> can be used for the same thing: information that are passed into a function.</p>
+
+<div class="w3-panel w3-note">
+  <p>From a function's perspective:</p>
+  <p>A parameter is the variable listed inside the parentheses in the function definition.</p>
+  <p>An argument is the value that is sent to the function when it is called.</p>
+</div>
+<hr>
+
+<h2>Number of Arguments</h2>
+
+<p>By default, a function must be called with the correct number of arguments. 
+Meaning that if your function expects 2 arguments, you have to call the function 
+with 2 arguments, not more, and not less. </p>
+
+<div class="w3-example">
+<h3>Example</h3>
+  <p>This function expects 2 arguments, and gets 2 arguments:</p>
+<div class="w3-code notranslate pythonHigh">
+  def my_function(fname, lname):<br>&nbsp; print(fname + &quot; &quot; + lname)<br><br>
+  my_function(&quot;Emil&quot;, &quot;Refsnes&quot;)</div>
+
+</div>
+
+If you try to call the function with 1 or 3 arguments, you will get an error:
+
+<div class="w3-example w3-pale-red">
+<h3>Example</h3>
+  <p>This function expects 2 arguments, but gets only 1:</p>
+<div class="w3-code notranslate pythonHigh w3-border-red">
+  def my_function(fname, lname):<br>&nbsp; print(fname + &quot; &quot; + lname)<br><br>
+  my_function(&quot;Emil&quot;)</div>
+</div>
+
+<hr>
+<h2>Arbitrary Arguments, *args</h2>
+
+<p>If you do not know how many arguments that will be passed into your function,
+add a <code class="w3-codespan">*</code> before the parameter name in the function definition.</p>
+
+
+
+<p>This way the function will receive a <em>tuple</em> of arguments, and can access the items accordingly:</p>
+
+<div class="w3-example">
+<h3>Example</h3>
+  <p>If the number of arguments is unknown, add a <code class="w3-codespan">*</code> before the parameter name:</p>
+<div class="w3-code notranslate pythonHigh">
+  def my_function(*kids):<br>&nbsp; print(&quot;The youngest child 
+  is &quot; + kids[2])<br><br>
+  my_function(&quot;Emil&quot;, &quot;Tobias&quot;, &quot;Linus&quot;)</div>
+
+</div>
+<div class="w3-panel w3-note">
+  <p><em>Arbitrary Arguments</em> are often shortened to <em>*args</em> in Python documentations.</p>
+</div>
+<hr>
+
+<h2>Keyword Arguments</h2>
+
+<p>You can also send arguments with the <em>key</em> = <em>value</em> syntax.</p>
+<p>This way the order of the arguments does not matter.</p>
+
+<div class="w3-example">
+<h3>Example</h3>
+<div class="w3-code notranslate pythonHigh">
+  def my_function(child3, child2, child1):<br>&nbsp; print(&quot;The youngest child 
+  is &quot; + child3)<br><br>
+  my_function(child1 = &quot;Emil&quot;, child2 = &quot;Tobias&quot;, child3 = &quot;Linus&quot;)</div>
+
+</div>
+
+<div class="w3-panel w3-note">
+  <p>The phrase <em>Keyword Arguments</em> are often shortened to <em>kwargs</em> in Python documentations.</p>
+</div>
+
+<hr>
+<h2>Arbitrary Keyword Arguments, **kwargs</h2>
+
+<p>If you do not know how many keyword arguments that will be passed into your function,
+add two asterisk: <code class="w3-codespan">**</code> before the parameter name in the function definition.</p>
+
+
+
+<p>This way the function will receive a <em>dictionary</em> of arguments, and can access the items accordingly:</p>
+
+<div class="w3-example">
+<h3>Example</h3>
+  <p>If the number of keyword arguments is unknown, add a double
+  <code class="w3-codespan">**</code> before the parameter name:</p>
+<div class="w3-code notranslate pythonHigh">
+  def my_function(**kid):<br>&nbsp; print(&quot;His last name is &quot; + kid[&quot;lname&quot;])<br>
+  <br>my_function(fname = &quot;Tobias&quot;, lname = &quot;Refsnes&quot;)</div>
+
+</div>
+<div class="w3-panel w3-note">
+  <p><em>Arbitrary Kword Arguments</em> are often shortened to <em>**kwargs</em> in Python documentations.</p>
+</div>
+<hr>
+
+<h2>Default Parameter Value</h2>
+
+<p>The following example shows how to use a default parameter value.</p>
+<p>If we call the function without argument, it uses the default value:</p>
+
+<div class="w3-example">
+<h3>Example</h3>
+<div class="w3-code notranslate pythonHigh">
+  def my_function(<strong>country = &quot;Norway&quot;</strong>):<br>&nbsp; print(&quot;I am from &quot; + 
+  country)<br><br>
+  my_function(&quot;Sweden&quot;)<br>my_function(&quot;India&quot;)<br>my_function()<br>my_function(&quot;Brazil&quot;)</div>
+</div>
+
+<hr>
+<h2>Passing a List as an Argument</h2>
+
+<p>You can send any data types of argument to a function (string, number, list, dictionary etc.), 
+and it will
+be treated as the same data type inside the function.</p>
+<p>E.g. if you send a List as an argument, it will still be a List when it 
+reaches the function:</p>
+
+<div class="w3-example">
+<h3>Example</h3>
+<div class="w3-code notranslate pythonHigh">
+  def my_function(food):<br>&nbsp; for x in food:<br>&nbsp;&nbsp;&nbsp; 
+  print(x)<br><br>fruits = [&quot;apple&quot;, &quot;banana&quot;, &quot;cherry&quot;]<br><br>
+  my_function(fruits)<br></div>
+
+</div>
+
+<hr>
+<h2>Return Values</h2>
+
+<p>To let a function return a value, use the <code class="w3-codespan">return</code> 
+statement:</p>
+
+<div class="w3-example">
+<h3>Example</h3>
+<div class="w3-code notranslate pythonHigh">
+  def my_function(x):<br>&nbsp; <strong>return 5 * x<br></strong><br>print(my_function(3))<br>print(my_function(5))<br>
+  print(my_function(9))</div>
+</div>
+
+<hr>
+
+
+
+<h2>The pass Statement</h2>
+<p><code class="w3-codespan">function</code> definitions cannot be empty, but if 
+you for some reason have a <code class="w3-codespan">function</code> definition with no content, put in the <code class="w3-codespan">pass</code> statement to avoid getting an error.</p>
+
+<div class="w3-example">
+<h3>Example</h3>
+<div class="w3-code notranslate pythonHigh">
+  def myfunction():<br>&nbsp; pass</div>
+
+</div>
+
+<hr>
+
+<h2>Recursion</h2>
+
+<p>Python also accepts function recursion, which means a defined function can call itself.</p>
+
+<p>Recursion is a common mathematical and programming concept. It means that a function calls itself. This has the benefit of meaning that you can loop through data to reach a result.</p>
+<p>The developer should be very careful with recursion as it can be quite easy to slip into writing a function which never terminates, or one that uses excess amounts of memory or processor power. However, when written correctly recursion can be a very efficient and mathematically-elegant approach to programming.</p>
+<p>In this example, <span class="w3-codespan">tri_recursion()</span> is a function that we have defined to call itself ("recurse"). We use the <span class="w3-codespan">k</span> variable as the data, which decrements (<span class="w3-codespan">-1</span>) every time we recurse. The recursion ends when the condition is not greater than 0 (i.e. when it is 0).</p>
+<p>To a new developer it can take some time to work out how exactly this works, best way to find out is by testing and modifying it.</p>
+<div class="w3-example">
+<h3>Example</h3>
+<p>Recursion Example</p>
+<div class="w3-code notranslate jsHigh">
+def tri_recursion(k):<br>
+	&nbsp;
+	if(k > 0):<br>
+		&nbsp;&nbsp;&nbsp;
+		result = k + tri_recursion(k - 1)<br>
+		&nbsp;&nbsp;&nbsp;
+		print(result)<br>
+	&nbsp;
+	else:<br>
+		&nbsp;&nbsp;&nbsp;
+		result = 0<br>
+	&nbsp;
+	return result<br>
+<br>
+print("\n\nRecursion Example Results")<br>
+tri_recursion(6)<br>
+</div>
+
+</div>
+        
+     <!-- -->   
+</div>
+    </div>
+  </div>
+</div>
+
+<ul class="pager navbar-fixed-bottom">
+  <li class="previous"><a href="pyforloops.html">&laquo;Previous</a></li>
+  <li class="next"><a href="pylambda.html">Next&raquo;</a></li>
+</ul>
+
+
+<footer class="mt-auto">
+<div class="jumbotron text-center" style="margin-bottom:0">
+copyright&copy; TeekaY-X maintained by <a href="https://TeekaY-X.github.io/AsahlumaTyika">Asahluma Tyika</a>
+</div>
+</footer>
+
+
+</body>
+</html>

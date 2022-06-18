@@ -1,0 +1,349 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <title>TeekaY-X | Python If...Else</title>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="icon" href="/css/icon.png" />
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+  <link rel="stylesheet" href="/css/index.css" />
+</head>
+<body class="d-flex flex-column min-vh-100">
+
+<!--<div class="jumbotron text-center" style="margin-bottom:0">
+  <h1>My First Bootstrap Page</h1>
+  <p>Resize this responsive page to see the effect!</p> 
+</div>-->
+
+<nav class="navbar navbar-inverse navbar-fixed-top">
+  <div class="container-fluid">
+    <div class="navbar-header">
+      <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#myNavbar">
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>                        
+      </button>
+      <a class="navbar-brand" href="#">TeekaY-X | Python If...Else</a>
+    </div>
+    <div class="collapse navbar-collapse" id="myNavbar">
+      <ul class="nav navbar-nav">
+        <li><a href="https://TeekaY-X.github.io">Home</a></li>
+          <li class="dropdown">
+        <a class="dropdown-toggle" data-toggle="dropdown" href="#">Python Course 
+        <span class="caret"></span></a>
+        <ul class="dropdown-menu">
+          <li><a href="pyintro.html">Python Introduction</a></li>
+          <li><a href="gtstt.html">Python Getting Started</a></li>
+          <li><a href="syntax.html">Python Syntax</a></li>
+          <li><a href="pycomments.html">Python Comments</a></li>
+          <li><a href="pyvariables.html">Python Variables</a></li>
+          <li><a href="pydatatypes.html">Python Data Types</a></li>
+          <li><a href="pynumbers.html">Python Numbers</a></li>
+          <li><a href="/python/pycasting.html">Python Casting</a></li>
+          <li><a href="/python/pystrings.html">Python Strings</a></li>
+          <li><a href="/python/pybooleans.html">Python Booleans</a></li>
+          <li><a href="/python/pyoperators.html">Python Operators</a></li>
+          <li><a href="/python/pylists.html">Python Lists</a></li>
+          <li><a href="/python/pytuples.html">Python Tuples</a></li>
+          <li><a href="/python/pysets.html">Python Sets</a></li>
+          <li><a href="/python/pydictionaries.html">Python Dictionaries</a></li>
+          <li class="active"><a href="/python/pyifelse.html">Python If...Else</a></li>
+          <li><a href="/python/pywhileloops.html">Python While Loops</a></li>
+          <li><a href="/python/pyforloops.html">Python For Loops</a></li>
+          <li><a href="/python/pyfunctions.html">Python Functions</a></li>
+          <li><a href="/python/pylambda.html">Python Lambda</a></li>
+          <li><a href="/python/pyarrays.html">Python Arrays</a></li>
+          <li><a href="/python/pyclasses.html">Python Classes/Objects</a></li>
+          <li><a href="/python/pyinheritance.html">Python Inheritance</a></li>
+          <li><a href="/python/pyiterators.html">Python Iterators</a></li>
+          <li><a href="/python/pyscope.html">Python Scope</a></li>
+          <li><a href="/python/pymodules.html">Python Modules</a></li>
+          <li><a href="/python/pydates.html">Python Dates</a></li>
+          <li><a href="/python/pymaths.html">Python Math</a></li>
+          <li><a href="/python/pyJSON.html">Python JSON</a></li>
+          <li><a href="/python/pyRegEx.html">Python RegEx</a></li>
+          <li><a href="/python/pypip.html">Python PIP</a></li>
+          <li><a href="/python/pytryexcept.html">Python Try...Except</a></li>
+          <li><a href="/python/pyusrinput.html">Python User Input</a></li>
+          <li><a href="/python/pyStringFormat.html">Python String Formatting</a></li>
+        </ul>
+      </li>
+      
+        <li class="dropdown">
+        <a class="dropdown-toggle" data-toggle="dropdown" href="#">Flask Course
+        <span class="caret"></span></a>
+        <ul class="dropdown-menu">
+          <li><a href="#">Coming Soon</a></li>
+          <li><a href="#">Coming Soon</a></li>
+          <li><a href="#">Coming Soon</a></li>
+        </ul>
+      </li>
+      <li><a href="https://TeekaY-X.github.io/about.html">About us</a></li>
+       <!-- <li><a href="#">Python</a></li>
+        <li><a href="#">Python-Flask</a></li>-->
+      </ul>
+    </div>
+  </div>
+</nav>
+<br>
+<br>
+<div class="container-fluid">
+  <div class="row">
+    <div class="col-sm-8">
+      <div class="jumbotron">
+
+<h2>Python Conditions and If statements</h2>
+<p>Python supports the usual logical conditions from mathematics:</p>
+<ul>
+<li>Equals: <span class="w3-codespan">a == b</span></li>
+<li>Not Equals: <span class="w3-codespan">a != b</span></li>
+<li>Less than: <span class="w3-codespan">a &lt; b</span></li>
+<li>Less than or equal to: <span class="w3-codespan">a &lt;= b</span></li>
+<li>Greater than: <span class="w3-codespan">a &gt; b</span></li>
+<li>Greater than or equal to: <span class="w3-codespan">a &gt;= b</span></li>
+</ul>
+<p>These conditions can be used in several ways, most commonly in "if statements" and loops.</p>
+
+<p>An "if statement" is written by using the <span class="w3-codespan">if</span> keyword.</p>
+
+<div class="w3-example">
+<h3>Example</h3>
+<p>If statement:</p>
+<div class="w3-code notranslate pythonHigh">
+a = 33<br>
+b = 200<br>
+if b &gt; a:<br>&nbsp; print("b is greater than a")
+</div>
+<a target="_blank" class="w3-btn w3-margin-bottom" href="trypython.asp?filename=demo_if2">Try it Yourself &raquo;</a>
+</div>
+<p>In this example we use two variables, <span class="w3-codespan">a</span> and <span class="w3-codespan">b</span>,
+which are used as part of the if statement to test whether <span class="w3-codespan">b</span> is greater than <span class="w3-codespan">a</span>.
+As <span class="w3-codespan">a</span> is <span class="w3-codespan">33</span>, and <span class="w3-codespan">b</span> is <span class="w3-codespan">200</span>,
+we know that 200 is greater than 33, and so we print to screen that "b is greater than a".</p>
+
+<h2>Indentation</h2>
+
+<p>Python relies on indentation (whitespace at the beginning of a line) to define scope in the code. Other programming languages often use curly-brackets for this purpose.
+
+<div class="w3-example w3-pale-red">
+<h3>Example</h3>
+<p>If statement, without indentation (will raise an error):</p>
+<div class="w3-code notranslate pythonHigh w3-border-red">
+a = 33<br>
+b = 200<br>
+if b > a:<br>
+print("b is greater than a")
+# you will get an error
+</div>
+<a target="_blank" class="w3-btn w3-margin-bottom" href="trypython.asp?filename=demo_if_error">Try it Yourself &raquo;</a>
+</div>
+
+<hr>
+
+<div id="midcontentadcontainer" style="overflow:auto;text-align:center">
+<!-- MidContent -->
+<!-- <p class="adtext">Advertisement</p> -->
+
+  <div id="adngin-mid_content-0"></div>
+  
+</div>
+<hr>
+<h2>Elif</h2>
+<p>The <span class="w3-codespan">elif</span> keyword is pythons way of saying "if the previous conditions were not true, then 
+try this condition".</p>
+
+<div class="w3-example">
+<h3>Example</h3>
+<div class="w3-code notranslate pythonHigh">
+a = 33<br>
+b = 33<br>
+if b > a:<br>
+	&nbsp;
+	print("b is greater than a")<br>
+elif a == b:<br>
+	&nbsp;
+	print("a and b are equal")<br>
+</div>
+<a target="_blank" class="w3-btn w3-margin-bottom" href="trypython.asp?filename=demo_if_elif">Try it Yourself &raquo;</a>
+</div>
+
+<p>In this example <span class="w3-codespan">a</span> is equal to <span class="w3-codespan">b</span>, so the first condition is not true, but the <span class="w3-codespan">elif</span> condition is true, so we print to screen that "a and b are equal".</p>
+<hr>
+<h2>Else</h2>
+<p>The <span class="w3-codespan">else</span> keyword catches anything which isn't caught by the preceding conditions.</p>
+
+<div class="w3-example">
+<h3>Example</h3>
+<div class="w3-code notranslate pythonHigh">
+a = 200<br>
+b = 33<br>
+if b > a:<br>
+	&nbsp;
+	print("b is greater than a")<br>
+elif a == b:<br>
+	&nbsp;
+	print("a and b are equal")<br>
+  else:<br>
+	&nbsp;
+	print("a is greater than b")<br>
+</div>
+<a target="_blank" class="w3-btn w3-margin-bottom" href="trypython.asp?filename=demo_if_else">Try it Yourself &raquo;</a>
+</div>
+
+<p>In this example <span class="w3-codespan">a</span> is greater than <span class="w3-codespan">b</span>,
+so the first condition is not true, also the <span class="w3-codespan">elif</span> condition is not true,
+so we go to the <span class="w3-codespan">else</span> condition and print to screen that "a is greater than b".</p>
+
+<p>You can also have an <code class="w3-codespan">else</code> without the
+<code class="w3-codespan">elif</code>:</p>
+
+<div class="w3-example">
+<h3>Example</h3>
+<div class="w3-code notranslate pythonHigh">
+a = 200<br>
+b = 33<br>
+if b > a:<br>
+	&nbsp;
+	print("b is greater than a")<br>
+  else:<br>
+	&nbsp;
+	print("b is not greater than a")<br>
+</div>
+<a target="_blank" class="w3-btn w3-margin-bottom" href="trypython.asp?filename=demo_if_else2">Try it Yourself &raquo;</a>
+</div>
+<hr>
+<h2>Short Hand If</h2>
+
+<p>If you have only one statement to execute, you can put it on the same line as the if statement.</p>
+
+<div class="w3-example">
+<h3>Example</h3>
+<p>One line if statement:</p>
+<div class="w3-code notranslate pythonHigh">
+  if a &gt; b: print(&quot;a is greater than b&quot;)
+</div>
+<a target="_blank" class="w3-btn w3-margin-bottom" href="trypython.asp?filename=demo_if_short">Try it Yourself &raquo;</a>
+</div>
+
+<hr>
+
+<h2>Short Hand If ... Else</h2>
+
+<p>If you have only one statement to execute, one for if, and one for else, you can put it 
+all on the same line:</p>
+
+<div class="w3-example">
+<h3>Example</h3>
+<p>One line if else statement:</p>
+<div class="w3-code notranslate pythonHigh">
+  a = 2<br>b = 330<br>print(&quot;A&quot;) if a &gt; b else print(&quot;B&quot;)</div>
+<a target="_blank" class="w3-btn w3-margin-bottom" href="trypython.asp?filename=demo_if_else_short">Try it Yourself &raquo;</a>
+</div>
+
+<div class="w3-panel w3-note">
+  <p>This technique is known as <strong>Ternary Operators</strong>, or <strong>Conditional 
+  Expressions</strong>.</p>
+</div>
+
+
+<p>You can also have multiple else statements on the same line:</p>
+
+<div class="w3-example">
+<h3>Example</h3>
+<p>One line if else statement, with 3 conditions:</p>
+<div class="w3-code notranslate pythonHigh">
+  a = 330<br>b = 330<br>print(&quot;A&quot;) if a &gt; b else print(&quot;=&quot;) if a == b else print(&quot;B&quot;)</div>
+<a target="_blank" class="w3-btn w3-margin-bottom" href="trypython.asp?filename=demo_if_else_short2">Try it Yourself &raquo;</a>
+</div>
+
+<hr>
+
+<h2>And</h2>
+<p>The <span class="w3-codespan">and</span> keyword is a logical operator, and 
+is used to combine conditional statements:</p>
+
+<div class="w3-example">
+<h3>Example</h3>
+  <p>Test if <code class="w3-codespan">a</code> is greater than
+  <code class="w3-codespan">b</code>, AND if <code class="w3-codespan">c</code> 
+  is greater than <code class="w3-codespan">a</code>:</p>
+<div class="w3-code notranslate pythonHigh">
+  a = 200<br>b = 33<br>c = 500<br>if a > b and c &gt; a:<br>
+	&nbsp;
+	print("Both conditions are True")<br>
+</div>
+<a target="_blank" class="w3-btn w3-margin-bottom" href="trypython.asp?filename=demo_if_and">Try it Yourself &raquo;</a>
+</div>
+
+<hr>
+
+<h2>Or</h2>
+<p>The <code class="w3-codespan">or</code> keyword is a logical operator, and 
+is used to combine conditional statements:</p>
+
+<div class="w3-example">
+<h3>Example</h3>
+  <p>Test if <code class="w3-codespan">a</code> is greater than
+  <code class="w3-codespan">b</code>, OR if <code class="w3-codespan">a</code> 
+  is greater than <code class="w3-codespan">c</code>:</p>
+<div class="w3-code notranslate pythonHigh">
+  a = 200<br>b = 33<br>c = 500<br>if a > b or a &gt; c:<br>
+	&nbsp;
+	print("At least one of the conditions is True")<br>
+</div>
+<a target="_blank" class="w3-btn w3-margin-bottom" href="trypython.asp?filename=demo_if_or">Try it Yourself &raquo;</a>
+</div>
+<hr>
+
+<h2>Nested If</h2>
+<p>You can have <code class="w3-codespan">if</code> statements inside 
+<code class="w3-codespan">if</code> statements, this is called <em>nested</em>
+<code class="w3-codespan">if</code> statements.</p>
+
+<div class="w3-example">
+<h3>Example</h3>
+<div class="w3-code notranslate pythonHigh">
+  x = 41<br><br>if x > 10:<br>
+	&nbsp;
+	print("Above ten,")<br>&nbsp; if x &gt; 20:<br>&nbsp;&nbsp;&nbsp; print(&quot;and 
+  also above 20!&quot;)<br>&nbsp; else:<br>&nbsp;&nbsp;&nbsp; print(&quot;but not 
+  above 20.&quot;)</div>
+<a target="_blank" class="w3-btn w3-margin-bottom" href="trypython.asp?filename=demo_if_nested">Try it Yourself &raquo;</a>
+</div>
+<hr>
+
+<h2>The pass Statement</h2>
+<p><code class="w3-codespan">if</code> statements cannot be empty, but if you 
+for some reason have an <code class="w3-codespan">if</code> statement with no content, put in the <code class="w3-codespan">pass</code> statement to avoid getting an error.</p>
+
+<div class="w3-example">
+<h3>Example</h3>
+<div class="w3-code notranslate pythonHigh">
+  a = 33<br>b = 200<br><br>if b &gt; a:<br>&nbsp; pass</div>
+<a target="_blank" class="w3-btn w3-margin-bottom" href="trypython.asp?filename=demo_if_pass">Try it Yourself &raquo;</a>
+</div>
+
+<!--end-->
+</div>
+    </div>
+  </div>
+</div>
+
+<ul class="pager navbar-fixed-bottom">
+  <li class="previous"><a href="pydictionaries.html">&laquo;Previous</a></li>
+  <li class="next"><a href="pywhileloops.html">Next&raquo;</a></li>
+</ul>
+
+
+<footer class="mt-auto">
+<div class="jumbotron text-center" style="margin-bottom:0">
+copyright&copy; TeekaY-X maintained by <a href="https://TeekaY-X.github.io/AsahlumaTyika">Asahluma Tyika</a>
+</div>
+</footer>
+
+
+</body>
+</html>

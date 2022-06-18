@@ -1,0 +1,361 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <title>TeekaY-X | Python Data Types</title>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="icon" href="/css/icon.png" />
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+  <link rel="stylesheet" href="/css/index.css" />
+</head>
+<body class="d-flex flex-column min-vh-100">
+
+<!--<div class="jumbotron text-center" style="margin-bottom:0">
+  <h1>My First Bootstrap Page</h1>
+  <p>Resize this responsive page to see the effect!</p> 
+</div>-->
+
+<nav class="navbar navbar-inverse navbar-fixed-top">
+  <div class="container-fluid">
+    <div class="navbar-header">
+      <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#myNavbar">
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>                        
+      </button>
+      <a class="navbar-brand" href="#">TeekaY-X | Python Data Types </a>
+    </div>
+    <div class="collapse navbar-collapse" id="myNavbar">
+      <ul class="nav navbar-nav">
+        <li><a href="https://TeekaY-X.github.io">Home</a></li>
+          <li class="dropdown">
+        <a class="dropdown-toggle" data-toggle="dropdown" href="#">Python Course 
+        <span class="caret"></span></a>
+        <ul class="dropdown-menu">
+          <li><a href="pyintro.html">Python Introduction</a></li>
+          <li><a href="gtstt.html">Python Getting Started</a></li>
+          <li><a href="syntax.html">Python Syntax</a></li>
+          <li><a href="pycomments.html">Python Comments</a></li>
+          <li><a href="pyvariables.html">Python Variables</a></li>
+          <li class="active"><a href="pydatatypes.html">Python Data Types</a></li>
+          <li><a href="pynumbers.html">Python Numbers</a></li>
+          <li><a href="/python/pycasting.html">Python Casting</a></li>
+          <li><a href="/python/pystrings.html">Python Strings</a></li>
+          <li><a href="/python/pybooleans.html">Python Booleans</a></li>
+          <li><a href="/python/pyoperators.html">Python Operators</a></li>
+          <li><a href="/python/pylists.html">Python Lists</a></li>
+          <li><a href="/python/pytuples.html">Python Tuples</a></li>
+          <li><a href="/python/pysets.html">Python Sets</a></li>
+          <li><a href="/python/pydictionaries.html">Python Dictionaries</a></li>
+          <li><a href="/python/pyifelse.html">Python If...Else</a></li>
+          <li><a href="/python/pywhileloops.html">Python While Loops</a></li>
+          <li><a href="/python/pyforloops.html">Python For Loops</a></li>
+          <li><a href="/python/pyfunctions.html">Python Functions</a></li>
+          <li><a href="/python/pylambda.html">Python Lambda</a></li>
+          <li><a href="/python/pyarrays.html">Python Arrays</a></li>
+          <li><a href="/python/pyclasses.html">Python Classes/Objects</a></li>
+          <li><a href="/python/pyinheritance.html">Python Inheritance</a></li>
+          <li><a href="/python/pyiterators.html">Python Iterators</a></li>
+          <li><a href="/python/pyscope.html">Python Scope</a></li>
+          <li><a href="/python/pymodules.html">Python Modules</a></li>
+          <li><a href="/python/pydates.html">Python Dates</a></li>
+          <li><a href="/python/pymaths.html">Python Math</a></li>
+          <li><a href="/python/pyJSON.html">Python JSON</a></li>
+          <li><a href="/python/pyRegEx.html">Python RegEx</a></li>
+          <li><a href="/python/pypip.html">Python PIP</a></li>
+          <li><a href="/python/pytryexcept.html">Python Try...Except</a></li>
+          <li><a href="/python/pyusrinput.html">Python User Input</a></li>
+          <li><a href="/python/pyStringFormat.html">Python String Formatting</a></li>
+        </ul>
+      </li>
+      
+        <li class="dropdown">
+        <a class="dropdown-toggle" data-toggle="dropdown" href="#">Flask Course
+        <span class="caret"></span></a>
+        <ul class="dropdown-menu">
+          <li><a href="#">Coming Soon</a></li>
+          <li><a href="#">Coming Soon</a></li>
+          <li><a href="#">Coming Soon</a></li>
+        </ul>
+      </li>
+      
+    <li><a href="https://TeekaY-X.github.io/about.html">About us</a></li>
+       <!-- <li><a href="#">Python</a></li>
+        <li><a href="#">Python-Flask</a></li>-->
+      </ul>
+    </div>
+  </div>
+</nav>
+<br>
+<br>
+<div class="container-fluid">
+  <div class="row">
+    <div class="col-sm-8">
+<div class="jumbotron">
+  <h1>Python Data Types</h1>
+  <br />
+<h2>Built-in Data Types</h2>
+<p>In programming, data type is an important concept.</p>
+<p>Variables can store data of different types, and different types can do 
+different things.</p>
+<p>Python has the following data types built-in by default, in these categories:</p>
+<table class="w3-table">
+  <tr>
+    <td style="width:160px;">Text Type:</td>
+    <td><code class="w3-codespan">str</code></td>
+  </tr>
+  <tr>
+    <td>Numeric Types:</td>
+    <td><code class="w3-codespan">int</code>, <code class="w3-codespan">float</code>,
+    <code class="w3-codespan">complex</code></td>
+  </tr>
+  <tr>
+    <td>Sequence Types:</td>
+    <td><code class="w3-codespan">list</code>, <code class="w3-codespan">tuple</code>, 
+    <code class="w3-codespan">range</code></td>
+  </tr>
+  <tr>
+    <td>Mapping Type:</td>
+    <td><code class="w3-codespan">dict</code></td>
+  </tr>
+  <tr>
+    <td>Set Types:</td>
+    <td><code class="w3-codespan">set</code>, <code class="w3-codespan">frozenset</code></td>
+  </tr>
+  <tr>
+    <td>Boolean Type:</td>
+    <td><code class="w3-codespan">bool</code></td>
+  </tr>
+  <tr>
+    <td>Binary Types:</td>
+    <td><code class="w3-codespan">bytes</code>, <code class="w3-codespan">bytearray</code>, 
+    <code class="w3-codespan">memoryview</code></td>
+  </tr>
+  <tr>
+    <td>None Type:</td>
+    <td><code class="w3-codespan">NoneType</code></td>
+  </tr>
+</table>
+
+<hr>
+<h2>Getting the Data Type</h2>
+
+<p>You can get the data type of any object by using the <code class="w3-codespan">type()</code> function:</p>
+
+<div class="w3-example">
+<h3>Example</h3>
+  <p>Print the data type of the variable x:</p>
+<div class="w3-code notranslate pythonHigh">
+x = 5<br>
+print(type(x))
+</div>
+
+</div>
+
+<hr>
+
+<h2>Setting the Data Type</h2>
+
+<p>In Python, the data type is set when you assign a value to a variable:</p>
+<style>
+#dtref td:nth-child(1) {
+  font-family: Consolas,"courier new";
+  font-size: 110%;
+}
+</style>
+<table id="dtref" class="ws-table-all notranslate table-responsive">
+<tr>
+<th style="min-width:350px">Example</th>
+<th>Data Type</th>
+
+</tr>
+<tr>
+<td>x = &quot;Hello World&quot;</td>
+<td>str</td>
+<td></td>
+</tr>
+<tr>
+<td>x = 20</td>
+<td>int</td>
+<td></td>
+</tr>
+<tr>
+<td>x = 20.5</td>
+<td>float</td>
+<td></td>
+</tr>
+<tr>
+<td>x = 1j</td>
+<td>complex</td>
+<td></td>
+</tr>
+<tr>
+<td>x = [&quot;apple&quot;, &quot;banana&quot;, &quot;cherry&quot;]</td>
+<td>list</td>
+<td></td>
+</tr>
+  <tr>
+<td>x = (&quot;apple&quot;, &quot;banana&quot;, &quot;cherry&quot;)</td>
+<td>tuple</td>
+<td></td>
+  </tr>
+  <tr>
+<td>x = range(6)</td>
+<td>range</td>
+<td></td>
+  </tr>
+  <tr>
+<td>x = {&quot;name&quot; : &quot;John&quot;, &quot;age&quot; : 36}</td>
+<td>dict</td>
+<td></td>
+  </tr>
+  <tr>
+<td>x = {&quot;apple&quot;, &quot;banana&quot;, &quot;cherry&quot;}</td>
+<td>set</td>
+<td></td>
+  </tr>
+  <tr>
+<td>x = frozenset({&quot;apple&quot;, &quot;banana&quot;, &quot;cherry&quot;})</td>
+<td>frozenset</td>
+<td></td>
+  </tr>
+  <tr>
+<td>x = True</td>
+<td>bool</td>
+<td></td>
+  </tr>
+  <tr>
+<td>x = b&quot;Hello&quot;</td>
+<td>bytes</td>
+<td></td>
+  </tr>
+  <tr>
+<td>x = bytearray(5)</td>
+<td>bytearray</td>
+<td></td>
+  </tr>
+<tr>
+<td>x = memoryview(bytes(5))</td>
+<td>memoryview</td>
+<td></td>
+</tr>
+<tr>
+<td>x = None</td>
+<td>NoneType</td>
+<td></td>
+</tr>
+</table>
+
+<hr>
+<div id="midcontentadcontainer" style="overflow:auto;text-align:center">
+
+  
+</div>
+<hr>
+
+<h2>Setting the Specific Data Type</h2>
+<p>If you want to specify the data type, you can use the following 
+constructor functions:</p>
+
+<table id="dtref" class="ws-table-all notranslate">
+<tr>
+<th style="min-width:350px">Example</th>
+<th>Data Type</th>
+
+</tr>
+<tr>
+<td>x = str(&quot;Hello World&quot;)</td>
+<td>str</td>
+
+</tr>
+<tr>
+<td>x = int(20)</td>
+<td>int</td>
+
+</tr>
+<tr>
+<td>x = float(20.5)</td>
+<td>float</td>
+
+</tr>
+<tr>
+<td>x = complex(1j)</td>
+<td>complex</td>
+
+</tr>
+<tr>
+<td>x = list((&quot;apple&quot;, &quot;banana&quot;, &quot;cherry&quot;))</td>
+<td>list</td>
+
+</tr>
+  <tr>
+<td>x = tuple((&quot;apple&quot;, &quot;banana&quot;, &quot;cherry&quot;))</td>
+<td>tuple</td>
+
+  </tr>
+  <tr>
+<td>x = range(6)</td>
+<td>range</td>
+
+  </tr>
+  <tr>
+<td>x = dict(name=&quot;John&quot;, age=36)</td>
+<td>dict</td>
+
+  </tr>
+  <tr>
+<td>x = set((&quot;apple&quot;, &quot;banana&quot;, &quot;cherry&quot;))</td>
+<td>set</td>
+
+  </tr>
+  <tr>
+<td>x = frozenset((&quot;apple&quot;, &quot;banana&quot;, &quot;cherry&quot;))</td>
+<td>frozenset</td>
+
+  </tr>
+  <tr>
+<td>x = bool(5)</td>
+<td>bool</td>
+
+  </tr>
+  <tr>
+<td>x = bytes(5)</td>
+<td>bytes</td>
+
+  </tr>
+  <tr>
+<td>x = bytearray(5)</td>
+<td>bytearray</td>
+<td></td>
+  </tr>
+<tr>
+<td>x = memoryview(bytes(5))</td>
+<td>memoryview</td></td>
+</tr>
+</table>
+
+  
+  
+ <!--end -->
+</div>
+    </div>
+  </div>
+</div>
+
+<ul class="pager navbar-fixed-bottom">
+  <li class="previous"><a href="pyvariables.html">&laquo;Previous</a></li>
+  <li class="next"><a href="pynumbers.html">Next&raquo;</a></li>
+</ul>
+
+
+<footer class="mt-auto">
+<div class="jumbotron text-center" style="margin-bottom:0">
+copyright&copy; TeekaY-X maintained by <a href="https://TeekaY-X.github.io/AsahlumaTyika">Asahluma Tyika</a>
+</div>
+</footer>
+
+</body>
+</html>

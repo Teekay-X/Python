@@ -1,0 +1,300 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <title>TeekaY-X | Python Inheritance</title>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="icon" href="/css/icon.png" />
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+  <link rel="stylesheet" href="/css/index.css" />
+</head>
+<body class="d-flex flex-column min-vh-100">
+
+<!--<div class="jumbotron text-center" style="margin-bottom:0">
+  <h1>My First Bootstrap Page</h1>
+  <p>Resize this responsive page to see the effect!</p> 
+</div>-->
+
+<nav class="navbar navbar-inverse navbar-fixed-top">
+  <div class="container-fluid">
+    <div class="navbar-header">
+      <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#myNavbar">
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>                        
+      </button>
+      <a class="navbar-brand" href="#">TeekaY-X | Python Inheritance</a>
+    </div>
+    <div class="collapse navbar-collapse" id="myNavbar">
+      <ul class="nav navbar-nav">
+        <li><a href="https://TeekaY-X.github.io">Home</a></li>
+          <li class="dropdown">
+        <a class="dropdown-toggle" data-toggle="dropdown" href="#">Python Course 
+        <span class="caret"></span></a>
+        <ul class="dropdown-menu">
+          <li><a href="pyintro.html">Python Introduction</a></li>
+          <li><a href="gtstt.html">Python Getting Started</a></li>
+          <li><a href="syntax.html">Python Syntax</a></li>
+          <li><a href="pycomments.html">Python Comments</a></li>
+          <li><a href="pyvariables.html">Python Variables</a></li>
+          <li><a href="pydatatypes.html">Python Data Types</a></li>
+          <li><a href="pynumbers.html">Python Numbers</a></li>
+          <li><a href="/python/pycasting.html">Python Casting</a></li>
+          <li><a href="/python/pystrings.html">Python Strings</a></li>
+          <li><a href="/python/pybooleans.html">Python Booleans</a></li>
+          <li><a href="/python/pyoperators.html">Python Operators</a></li>
+          <li><a href="/python/pylists.html">Python Lists</a></li>
+          <li><a href="/python/pytuples.html">Python Tuples</a></li>
+          <li><a href="/python/pysets.html">Python Sets</a></li>
+          <li><a href="/python/pydictionaries.html">Python Dictionaries</a></li>
+          <li><a href="/python/pyifelse.html">Python If...Else</a></li>
+          <li><a href="/python/pywhileloops.html">Python While Loops</a></li>
+          <li><a href="/python/pyforloops.html">Python For Loops</a></li>
+          <li><a href="/python/pyfunctions.html">Python Functions</a></li>
+          <li><a href="/python/pylambda.html">Python Lambda</a></li>
+          <li><a href="/python/pyarrays.html">Python Arrays</a></li>
+          <li><a href="/python/pyclasses.html">Python Classes/Objects</a></li>
+          <li class="active"><a href="/python/pyinheritance.html">Python Inheritance</a></li>
+          <li><a href="/python/pyiterators.html">Python Iterators</a></li>
+          <li><a href="/python/pyscope.html">Python Scope</a></li>
+          <li><a href="/python/pymodules.html">Python Modules</a></li>
+          <li><a href="/python/pydates.html">Python Dates</a></li>
+          <li><a href="/python/pymaths.html">Python Math</a></li>
+          <li><a href="/python/pyJSON.html">Python JSON</a></li>
+          <li><a href="/python/pyRegEx.html">Python RegEx</a></li>
+          <li><a href="/python/pypip.html">Python PIP</a></li>
+          <li><a href="/python/pytryexcept.html">Python Try...Except</a></li>
+          <li><a href="/python/pyusrinput.html">Python User Input</a></li>
+          <li><a href="/python/pyStringFormat.html">Python String Formatting</a></li>
+        </ul>
+      </li>
+      
+        <li class="dropdown">
+        <a class="dropdown-toggle" data-toggle="dropdown" href="#">Flask Course
+        <span class="caret"></span></a>
+        <ul class="dropdown-menu">
+          <li><a href="#">Coming Soon</a></li>
+          <li><a href="#">Coming Soon</a></li>
+          <li><a href="#">Coming Soon</a></li>
+        </ul>
+      </li>
+      <li><a href="https://TeekaY-X.github.io/about.html">About us</a></li>
+       <!-- <li><a href="#">Python</a></li>
+        <li><a href="#">Python-Flask</a></li>-->
+      </ul>
+    </div>
+  </div>
+</nav>
+<br>
+<br>
+<div class="container-fluid">
+  <div class="row">
+    <div class="col-sm-8">
+      <div class="jumbotron">
+        
+        <h2>Python Inheritance</h2>
+<p>Inheritance allows us to define a class that inherits all the methods and properties from another class.</p>
+<p><strong>Parent class</strong> is the class being inherited from, also called 
+base class.</p>
+
+<p><strong>Child class</strong> is the class that inherits from another class, 
+also called derived class.</p>
+
+<hr>
+
+<h2>Create a Parent Class</h2>
+<p>Any class can be a parent class, so the syntax is the same as creating any 
+other class:</p>
+
+<div class="w3-example">
+<h3>Example</h3>
+<p>Create a class named <code class="w3-codespan">Person</code>, with
+<code class="w3-codespan">firstname</code> and <code class="w3-codespan">lastname</code> properties, 
+and a <code class="w3-codespan">printname</code> method:</p>
+<div class="w3-code notranslate pythonHigh">
+class Person:<br>&nbsp; def __init__(self, fname, lname):<br>&nbsp;&nbsp;&nbsp; 
+  self.firstname = fname<br>&nbsp;&nbsp;&nbsp; self.lastname = lname<br><br>&nbsp; 
+  def printname(self):<br>&nbsp;&nbsp;&nbsp; print(self.firstname, 
+  self.lastname)<br><br>#Use the Person class to create an object, and then 
+  execute the printname method:<br><br>x = Person(&quot;John&quot;, &quot;Doe&quot;)<br>
+  x.printname()</div>
+<a target="_blank" class="w3-btn w3-margin-bottom" href="trypython.asp?filename=demo_inheritance_parent">Try it Yourself &raquo;</a>
+</div>
+
+<hr>
+
+<h2>Create a Child Class</h2>
+<p>To create a class that inherits the functionality from another class, send the parent class as a parameter when creating the child 
+class:</p>
+
+<div class="w3-example">
+<h3>Example</h3>
+<p>Create a class named <code class="w3-codespan">Student</code>, which will inherit the properties 
+and methods from 
+the <code class="w3-codespan">Person</code> class:</p>
+<div class="w3-code notranslate pythonHigh">
+class Student(Person):<br>&nbsp; pass</div>
+</div>
+
+<div class="w3-panel w3-note">
+  <p><strong>Note:</strong> Use the <code class="w3-codespan">pass</code> 
+  keyword when you do not want to add any other properties or methods to the 
+  class.</p>
+</div>
+
+<p>Now the Student class has the same properties and methods as the Person 
+class.</p>
+
+<div class="w3-example">
+<h3>Example</h3>
+<p>Use the <code class="w3-codespan">Student</code> class to create an object, 
+and then execute the <code class="w3-codespan">printname</code> method:</p>
+<div class="w3-code notranslate pythonHigh">
+  x = Student(&quot;Mike&quot;, &quot;Olsen&quot;)<br>x.printname()</div>
+<a target="_blank" class="w3-btn w3-margin-bottom" href="trypython.asp?filename=demo_inheritance_child">Try it Yourself &raquo;</a>
+</div>
+
+
+<hr>
+<div id="midcontentadcontainer" style="overflow:auto;text-align:center">
+<!-- MidContent -->
+<!-- <p class="adtext">Advertisement</p> -->
+
+  <div id="adngin-mid_content-0"></div>
+  
+</div>
+<hr>
+
+<h2>Add the __init__() Function</h2>
+
+<p>So far we have created a child class that inherits the properties and methods 
+from its parent.</p>
+<p>We want to add the <code class="w3-codespan">__init__()</code> function to the child class (instead of the <code class="w3-codespan">pass</code> keyword).</p>
+
+<div class="w3-panel w3-note">
+  <p><strong>Note:</strong> The <code class="w3-codespan">__init__()</code> function is called automatically every time the class is being used to create a new object.</p>
+</div>
+
+<div class="w3-example">
+  <h3>Example</h3>
+<p>Add the <code class="w3-codespan">__init__()</code> function to the
+<code class="w3-codespan">Student</code> class:</p>
+<div class="w3-code notranslate pythonHigh">
+  class Student(Person):<br>&nbsp; def __init__(self, fname, lname):<br>&nbsp;&nbsp;&nbsp; 
+  #add properties etc.</div>
+</div>
+
+
+<p>When you add the <code class="w3-codespan">__init__()</code> function, the child class will no longer inherit 
+the parent's <code class="w3-codespan">__init__()</code> function.</p>
+<div class="w3-panel w3-note">
+  <p><strong>Note:</strong> The child's <code class="w3-codespan">__init__()</code> 
+  function <strong>overrides</strong> the inheritance of the parent's <code class="w3-codespan">
+  __init__()</code> function.</p>
+</div>
+
+<p>To keep the inheritance of the parent's <code class="w3-codespan">__init__()</code> 
+function, add a call to the 
+parent's <code class="w3-codespan">__init__()</code> function:</p>
+
+<div class="w3-example">
+<h3>Example</h3>
+<div class="w3-code notranslate pythonHigh">
+  class Student(Person):<br>&nbsp; def __init__(self, fname, lname):<br>&nbsp;&nbsp;&nbsp; 
+  Person.__init__(self, fname, lname)</div>
+<a target="_blank" class="w3-btn w3-margin-bottom" href="trypython.asp?filename=demo_inheritance_init">Try it Yourself &raquo;</a>
+</div>
+
+<p>Now we have successfully added the __init__() function, and kept the 
+inheritance of the parent class, and we are ready to add functionality in the
+<code class="w3-codespan">__init__()</code> function.</p>
+
+<hr>
+
+<h2>Use the super() Function</h2>
+
+<p>Python also has a <code class="w3-codespan">super()</code> function that 
+will make the child class inherit all the methods and properties from its 
+parent:</p>
+
+<div class="w3-example">
+  <h3>Example</h3>
+  <div class="w3-code notranslate pythonHigh">
+  class Student(Person):<br>&nbsp; def __init__(self, fname, lname):<br>&nbsp;&nbsp;&nbsp; 
+    super().__init__(fname, lname)</div>
+  <a target="_blank" class="w3-btn w3-margin-bottom" href="trypython.asp?filename=demo_inheritance_super">Try it Yourself &raquo;</a>
+</div>
+
+<p>By using the <code class="w3-codespan">super()</code> function, you do not 
+have to use the name of the parent element, it will automatically inherit the 
+methods and properties from its parent.</p>
+
+<hr>
+<h2>Add Properties</h2>
+<div class="w3-example">
+<h3>Example</h3>
+<p>Add a property called <code class="w3-codespan">graduationyear</code> to the
+<code class="w3-codespan">Student</code> class:</p>
+<div class="w3-code notranslate pythonHigh">
+  class Student(Person):<br>&nbsp; def __init__(self, fname, lname):<br>&nbsp;&nbsp;&nbsp; 
+  super().__init__(fname, lname)<br>&nbsp;&nbsp;&nbsp; self.graduationyear 
+  = 2019</div>
+<a target="_blank" class="w3-btn w3-margin-bottom" href="trypython.asp?filename=demo_inheritance_add_prop">Try it Yourself &raquo;</a>
+</div>
+
+<p>In the example below, the year <code class="w3-codespan">2019</code> should be a variable, and passed into the 
+<code class="w3-codespan">Student</code> class when creating student objects.
+To do so, add another parameter in the __init__() function:</p>
+
+<div class="w3-example">
+<h3>Example</h3>
+<p>Add a <code class="w3-codespan">year</code> parameter, and pass the correct 
+year when creating objects:</p>
+<div class="w3-code notranslate pythonHigh">
+  class Student(Person):<br>&nbsp; def __init__(self, fname, lname, year):<br>&nbsp;&nbsp;&nbsp; 
+  super().__init__(fname, lname)<br>&nbsp;&nbsp;&nbsp; self.graduationyear 
+  = year<br><br>x = Student(&quot;Mike&quot;, &quot;Olsen&quot;, 2019)</div>
+<a target="_blank" class="w3-btn w3-margin-bottom" href="trypython.asp?filename=demo_inheritance_add_prop2">Try it Yourself &raquo;</a>
+</div>
+
+<hr>
+<h2>Add Methods</h2>
+<div class="w3-example">
+<h3>Example</h3>
+<p>Add a method called <code class="w3-codespan">welcome</code> to the
+<code class="w3-codespan">Student</code> class:</p>
+<div class="w3-code notranslate pythonHigh">
+  class Student(Person):<br>&nbsp; def __init__(self, fname, lname, year):<br>&nbsp;&nbsp;&nbsp; 
+  super().__init__(fname, lname)<br>&nbsp;&nbsp;&nbsp; self.graduationyear 
+  = year<br><br>&nbsp; def welcome(self):<br>&nbsp;&nbsp;&nbsp; print(&quot;Welcome&quot;, 
+  self.firstname, self.lastname, &quot;to the class of&quot;, self.graduationyear)</div>
+<a target="_blank" class="w3-btn w3-margin-bottom" href="trypython.asp?filename=demo_inheritance_add_method">Try it Yourself &raquo;</a>
+</div>
+
+<p>If you add a method in the child class with the same name as a function in 
+the parent class, the inheritance of the parent method will be overridden.</p>
+        
+<!--end-->
+</div>
+    </div>
+  </div>
+</div>
+
+<ul class="pager navbar-fixed-bottom">
+  <li class="previous"><a href="pyclasses.html">&laquo;Previous</a></li>
+  <li class="next"><a href="pyiterators.html">Next&raquo;</a></li>
+</ul>
+
+
+<footer class="mt-auto">
+<div class="jumbotron text-center" style="margin-bottom:0">
+copyright&copy; TeekaY-X maintained by <a href="https://TeekaY-X.github.io/AsahlumaTyika">Asahluma Tyika</a>
+</div>
+</footer>
+
+
+</body>
+</html>

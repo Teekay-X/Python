@@ -1,0 +1,273 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <title>TeekaY-X | Python  Booleans</title>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="icon" href="/css/icon.png" />
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+  <link rel="stylesheet" href="/css/index.css" />
+</head>
+<body class="d-flex flex-column min-vh-100">
+
+<!--<div class="jumbotron text-center" style="margin-bottom:0">
+  <h1>My First Bootstrap Page</h1>
+  <p>Resize this responsive page to see the effect!</p> 
+</div>-->
+
+<nav class="navbar navbar-inverse navbar-fixed-top">
+  <div class="container-fluid">
+    <div class="navbar-header">
+      <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#myNavbar">
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>                        
+      </button>
+      <a class="navbar-brand" href="#">TeekaY-X | Python Booleans</a>
+    </div>
+    <div class="collapse navbar-collapse" id="myNavbar">
+      <ul class="nav navbar-nav">
+        <li><a href="https://TeekaY-X.github.io">Home</a></li>
+          <li class="dropdown">
+        <a class="dropdown-toggle" data-toggle="dropdown" href="#">Python Course 
+        <span class="caret"></span></a>
+        <ul class="dropdown-menu">
+          <li><a href="pyintro.html">Python Introduction</a></li>
+          <li><a href="gtstt.html">Python Getting Started</a></li>
+          <li><a href="syntax.html">Python Syntax</a></li>
+          <li><a href="pycomments.html">Python Comments</a></li>
+          <li><a href="pyvariables.html">Python Variables</a></li>
+          <li><a href="pydatatypes.html">Python Data Types</a></li>
+          <li><a href="pynumbers.html">Python Numbers</a></li>
+          <li><a href="/python/pycasting.html">Python Casting</a></li>
+          <li><a href="/python/pystrings.html">Python Strings</a></li>
+          <li class="active"><a href="/python/pybooleans.html">Python Booleans</a></li>
+          <li><a href="/python/pyoperators.html">Python Operators</a></li>
+          <li><a href="/python/pylists.html">Python Lists</a></li>
+          <li><a href="/python/pytuples.html">Python Tuples</a></li>
+          <li><a href="/python/pysets.html">Python Sets</a></li>
+          <li><a href="/python/pydictionaries.html">Python Dictionaries</a></li>
+          <li><a href="/python/pyifelse.html">Python If...Else</a></li>
+          <li><a href="/python/pywhileloops.html">Python While Loops</a></li>
+          <li><a href="/python/pyforloops.html">Python For Loops</a></li>
+          <li><a href="/python/pyfunctions.html">Python Functions</a></li>
+          <li><a href="/python/pylambda.html">Python Lambda</a></li>
+          <li><a href="/python/pyarrays.html">Python Arrays</a></li>
+          <li><a href="/python/pyclasses.html">Python Classes/Objects</a></li>
+          <li><a href="/python/pyinheritance.html">Python Inheritance</a></li>
+          <li><a href="/python/pyiterators.html">Python Iterators</a></li>
+          <li><a href="/python/pyscope.html">Python Scope</a></li>
+          <li><a href="/python/pymodules.html">Python Modules</a></li>
+          <li><a href="/python/pydates.html">Python Dates</a></li>
+          <li><a href="/python/pymaths.html">Python Math</a></li>
+          <li><a href="/python/pyJSON.html">Python JSON</a></li>
+          <li><a href="/python/pyRegEx.html">Python RegEx</a></li>
+          <li><a href="/python/pypip.html">Python PIP</a></li>
+          <li><a href="/python/pytryexcept.html">Python Try...Except</a></li>
+          <li><a href="/python/pyusrinput.html">Python User Input</a></li>
+          <li><a href="/python/pyStringFormat.html">Python String Formatting</a></li>
+        </ul>
+      </li>
+      
+        <li class="dropdown">
+        <a class="dropdown-toggle" data-toggle="dropdown" href="#">Flask Course
+        <span class="caret"></span></a>
+        <ul class="dropdown-menu">
+          <li><a href="#">Coming Soon</a></li>
+          <li><a href="#">Coming Soon</a></li>
+          <li><a href="#">Coming Soon</a></li>
+        </ul>
+      </li>
+      <li><a href="https://TeekaY-X.github.io/about.html">About us</a></li>
+       <!-- <li><a href="#">Python</a></li>
+        <li><a href="#">Python-Flask</a></li>-->
+      </ul>
+    </div>
+  </div>
+</nav>
+<br>
+<br>
+<div class="container-fluid">
+  <div class="row">
+    <div class="col-sm-8">
+      <div class="jumbotron">
+        <h1>Python Booleans</h1>
+        <br />
+<p class="intro">Booleans represent one of two values: 
+<code class="w3-codespan">True</code> or <code class="w3-codespan">False</code>.</p>
+<hr>
+<h2>Boolean Values</h2>
+<p>In programming you often need to know if an expression is 
+<code class="w3-codespan">True</code> or <code class="w3-codespan">False</code>.</p>
+<p>You can evaluate any expression in Python, and get one of two 
+answers, 
+<code class="w3-codespan">True</code> or <code class="w3-codespan">False</code>.</p>
+<p>When you compare two values, the expression is evaluated and Python returns 
+the Boolean answer:</p>
+
+<div class="w3-example">
+<h3>Example</h3>
+<div class="w3-code notranslate pythonHigh">
+  print(10 &gt; 9)<br>print(10 == 9)<br>print(10 &lt; 9)</div>
+
+</div>
+
+
+<p>When you run a condition in an if statement, Python returns 
+<code class="w3-codespan">True</code> or <code class="w3-codespan">False</code>:</p>
+
+<div class="w3-example">
+<h3>Example</h3>
+  <p>Print a message based on whether the condition is <code class="w3-codespan">True</code> or 
+  <code class="w3-codespan">False</code>:</p>
+<div class="w3-code notranslate pythonHigh">
+  a = 200<br>b = 33<br><br>if b &gt; a:<br>&nbsp; print(&quot;b is greater than a&quot;)<br>
+  else:<br>&nbsp; print(&quot;b is not greater than a&quot;)</div>
+
+</div>
+<hr>
+<h2>Evaluate Values and Variables</h2>
+<p>The <code class="w3-codespan">bool()</code> function allows you to evaluate 
+any value, and give you 
+<code class="w3-codespan">True</code> or <code class="w3-codespan">False</code> 
+in return,</p>
+
+<div class="w3-example">
+<h3>Example</h3>
+  <p>Evaluate a string and a number:</p>
+<div class="w3-code notranslate pythonHigh">
+  print(bool(&quot;Hello&quot;))<br>print(bool(15))<br></div>
+
+</div>
+
+<div class="w3-example">
+<h3>Example</h3>
+  <p>Evaluate two variables:</p>
+<div class="w3-code notranslate pythonHigh">
+  x = &quot;Hello&quot;<br>y = 15<br><br>print(bool(x))<br>print(bool(y))<br></div>
+
+</div>
+
+
+<hr>
+<div id="midcontentadcontainer" style="overflow:auto;text-align:center">
+
+  </div>
+  
+</div>
+<hr>
+
+
+<h2>Most Values are True</h2>
+
+<p>Almost any value is evaluated to <code class="w3-codespan">True</code> if it 
+has some sort of content.</p>
+<p>Any string is <code class="w3-codespan">True</code>, except empty strings.</p>
+<p>Any number is <code class="w3-codespan">True</code>, except 
+<code class="w3-codespan">0</code>.</p>
+<p>Any list, tuple, set, and dictionary are <code class="w3-codespan">True</code>, except 
+empty ones.</p>
+
+<div class="w3-example">
+<h3>Example</h3>
+  <p>The following will return True:</p>
+<div class="w3-code notranslate pythonHigh">
+  bool(&quot;abc&quot;)<br>bool(123)<br>bool([&quot;apple&quot;, &quot;cherry&quot;, &quot;banana&quot;])<br></div>
+  
+</div>
+
+<hr>
+
+<h2>Some Values are False</h2>
+
+<p>In fact, there are not many values that evaluate to
+<code class="w3-codespan">False</code>, except empty values, such as <code class="w3-codespan">()</code>,
+<code class="w3-codespan">[]</code>, <code class="w3-codespan">{}</code>, 
+<code class="w3-codespan">&quot;&quot;</code>, the number
+<code class="w3-codespan">0</code>, and the value <code class="w3-codespan">None</code>. 
+And of course the value <code class="w3-codespan">False</code> evaluates to
+<code class="w3-codespan">False</code>.</p>
+
+<div class="w3-example">
+<h3>Example</h3>
+  <p>The following will return False:</p>
+<div class="w3-code notranslate pythonHigh">
+  bool(False)<br>bool(None)<br>bool(0)<br>bool(&quot;&quot;)<br>bool(())<br>bool([])<br>
+  bool({})</div>
+  
+</div>
+
+<p>One more value, or object in this case, evaluates to 
+<code class="w3-codespan">False</code>, and that is if you have an object that 
+is made from a class with a <code class="w3-codespan">__len__</code> function that returns 
+<code class="w3-codespan">0</code> or 
+<code class="w3-codespan">False</code>: </p>
+
+<div class="w3-example">
+<h3>Example</h3>
+<div class="w3-code notranslate pythonHigh">
+  class myclass():<br>&nbsp; def __len__(self):<br>&nbsp;&nbsp;&nbsp; return 0<br>
+  <br>myobj = myclass()<br>print(bool(myobj))</div>
+
+</div>
+
+<hr>
+<h2>Functions can Return a Boolean</h2>
+
+<p>You can create functions that returns a Boolean Value:</p>
+
+<div class="w3-example">
+<h3>Example</h3>
+  <p>Print the answer of a function:</p>
+<div class="w3-code notranslate pythonHigh">
+  def myFunction() :<br>&nbsp; return True<br><br>print(myFunction())</div>
+
+</div>
+
+<p>You can execute code based on the Boolean answer of a function:</p>
+
+<div class="w3-example">
+<h3>Example</h3>
+  <p>Print &quot;YES!&quot; if the function returns True, otherwise print &quot;NO!&quot;:</p>
+<div class="w3-code notranslate pythonHigh">
+  def myFunction() :<br>&nbsp; return True<br><br>if myFunction():<br>&nbsp; 
+  print(&quot;YES!&quot;)<br>else:<br>&nbsp; print(&quot;NO!&quot;)</div>
+
+</div>
+
+<p>Python also has many built-in functions that return a boolean value, like the 
+<code class="w3-codespan">isinstance()</code> 
+function, which can be used to determine if an object is of a certain data type:</p>
+
+<div class="w3-example">
+<h3>Example</h3>
+  <p>Check if an object is an integer or not:</p>
+<div class="w3-code notranslate pythonHigh">
+  x = 200<br>print(isinstance(x, int))</div>
+
+</div>
+
+<!-- end -->
+</div>
+    </div>
+  </div>
+</div>
+
+<ul class="pager navbar-fixed-bottom">
+  <li class="previous"><a href="pystrings.html">&laquo;Previous</a></li>
+  <li class="next"><a href="pyoperators.html">Next&raquo;</a></li>
+</ul>
+
+
+<footer class="mt-auto">
+<div class="jumbotron text-center" style="margin-bottom:0">
+copyright&copy; TeekaY-X maintained by <a href="https://TeekaY-X.github.io/AsahlumaTyika">Asahluma Tyika</a>
+</div>
+</footer>
+
+
+</body>
+</html>

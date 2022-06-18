@@ -1,0 +1,744 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <title>TeekaY-X | Python Dictionaries</title>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="icon" href="/css/icon.png" />
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+  <link rel="stylesheet" href="/css/index.css" />
+</head>
+<body class="d-flex flex-column min-vh-100">
+
+<!--<div class="jumbotron text-center" style="margin-bottom:0">
+  <h1>My First Bootstrap Page</h1>
+  <p>Resize this responsive page to see the effect!</p> 
+</div>-->
+
+<nav class="navbar navbar-inverse navbar-fixed-top">
+  <div class="container-fluid">
+    <div class="navbar-header">
+      <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#myNavbar">
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>                        
+      </button>
+      <a class="navbar-brand" href="#">TeekaY-X | Python Dictionaries</a>
+    </div>
+    <div class="collapse navbar-collapse" id="myNavbar">
+      <ul class="nav navbar-nav">
+        <li><a href="https://TeekaY-X.github.io">Home</a></li>
+          <li class="dropdown">
+        <a class="dropdown-toggle" data-toggle="dropdown" href="#">Python Course 
+        <span class="caret"></span></a>
+        <ul class="dropdown-menu">
+          <li><a href="pyintro.html">Python Introduction</a></li>
+          <li><a href="gtstt.html">Python Getting Started</a></li>
+          <li><a href="syntax.html">Python Syntax</a></li>
+          <li><a href="pycomments.html">Python Comments</a></li>
+          <li><a href="pyvariables.html">Python Variables</a></li>
+          <li><a href="pydatatypes.html">Python Data Types</a></li>
+          <li><a href="pynumbers.html">Python Numbers</a></li>
+          <li><a href="/python/pycasting.html">Python Casting</a></li>
+          <li><a href="/python/pystrings.html">Python Strings</a></li>
+          <li><a href="/python/pybooleans.html">Python Booleans</a></li>
+          <li><a href="/python/pyoperators.html">Python Operators</a></li>
+          <li><a href="/python/pylists.html">Python Lists</a></li>
+          <li><a href="/python/pytuples.html">Python Tuples</a></li>
+          <li><a href="/python/pysets.html">Python Sets</a></li>
+          <li class="active"><a href="/python/pydictionaries.html">Python Dictionaries</a></li>
+          <li><a href="/python/pyifelse.html">Python If...Else</a></li>
+          <li><a href="/python/pywhileloops.html">Python While Loops</a></li>
+          <li><a href="/python/pyforloops.html">Python For Loops</a></li>
+          <li><a href="/python/pyfunctions.html">Python Functions</a></li>
+          <li><a href="/python/pylambda.html">Python Lambda</a></li>
+          <li><a href="/python/pyarrays.html">Python Arrays</a></li>
+          <li><a href="/python/pyclasses.html">Python Classes/Objects</a></li>
+          <li><a href="/python/pyinheritance.html">Python Inheritance</a></li>
+          <li><a href="/python/pyiterators.html">Python Iterators</a></li>
+          <li><a href="/python/pyscope.html">Python Scope</a></li>
+          <li><a href="/python/pymodules.html">Python Modules</a></li>
+          <li><a href="/python/pydates.html">Python Dates</a></li>
+          <li><a href="/python/pymaths.html">Python Math</a></li>
+          <li><a href="/python/pyJSON.html">Python JSON</a></li>
+          <li><a href="/python/pyRegEx.html">Python RegEx</a></li>
+          <li><a href="/python/pypip.html">Python PIP</a></li>
+          <li><a href="/python/pytryexcept.html">Python Try...Except</a></li>
+          <li><a href="/python/pyusrinput.html">Python User Input</a></li>
+          <li><a href="/python/pyStringFormat.html">Python String Formatting</a></li>
+        </ul>
+      </li>
+      
+        <li class="dropdown">
+        <a class="dropdown-toggle" data-toggle="dropdown" href="#">Flask Course
+        <span class="caret"></span></a>
+        <ul class="dropdown-menu">
+          <li><a href="#">Coming Soon</a></li>
+          <li><a href="#">Coming Soon</a></li>
+          <li><a href="#">Coming Soon</a></li>
+        </ul>
+      </li>
+      <li><a href="https://TeekaY-X.github.io/about.html">About us</a></li>
+       <!-- <li><a href="#">Python</a></li>
+        <li><a href="#">Python-Flask</a></li>-->
+      </ul>
+    </div>
+  </div>
+</nav>
+<br>
+<br>
+<div class="container-fluid">
+  <div class="row">
+    <div class="col-sm-8">
+      <div class="jumbotron">
+<h1>Python - Dictionaries </h1>
+<br />
+
+<div class="w3-codeline notranslate pythonHigh">
+thisdict =  {<br>
+&nbsp;&nbsp;"brand": "Ford",<br>
+&nbsp;&nbsp;"model": "Mustang&quot;,<br>
+&nbsp;&nbsp;"year": 1964<br>
+}
+</div>
+
+<hr>
+
+<h2>Dictionary</h2>
+
+<p>Dictionaries are used to store data values in key:value pairs.</p>
+
+<p>A dictionary is a collection which is ordered*, changeable and do not 
+allow duplicates.</p>
+
+<div class="w3-panel w3-note">
+  <p>As of Python version 3.7, dictionaries are <em>ordered</em>. 
+  In Python 3.6 and earlier, dictionaries are <em>unordered</em>.</p>
+</div>
+
+<p>Dictionaries are written with curly brackets, and have keys and values:</p>
+
+<div class="w3-example">
+<h3>Example</h3>
+<p>Create and print a dictionary:</p>
+<div class="w3-code notranslate pythonHigh">
+thisdict =	{<br>
+&nbsp;&nbsp;"brand": "Ford",<br>
+&nbsp;&nbsp;"model": "Mustang&quot;,<br>
+&nbsp;&nbsp;"year": 1964<br>
+}<br>
+print(thisdict)<br>
+</div>
+
+</div>
+
+<hr>
+<h2>Dictionary Items</h2>
+
+<p>Dictionary items are ordered, changeable, and does not allow duplicates.</p>
+
+<p>Dictionary items are presented in key:value pairs, and can be referred to by 
+using the key name.</p>
+<div class="w3-example">
+<h3>Example</h3>
+<p>Print the "brand" value of the dictionary:</p>
+<div class="w3-code notranslate pythonHigh">
+thisdict =	{<br>
+&nbsp;&nbsp;"brand": "Ford",<br>
+&nbsp;&nbsp;"model": "Mustang&quot;,<br>
+&nbsp;&nbsp;"year": 1964<br>
+}<br>
+print(thisdict[&quot;brand&quot;])<br>
+</div>
+
+</div>
+
+<hr>
+
+<h2>Ordered or Unordered?</h2>
+
+<div class="w3-panel w3-note">
+  <p>As of Python version 3.7, dictionaries are <em>ordered</em>. 
+  In Python 3.6 and earlier, dictionaries are <em>unordered</em>.</p>
+</div>
+
+<p>When we say that dictionaries are ordered, it means that the items have a defined order, and that order will not change.</p>
+
+
+<p>Unordered means that the items does not 
+have a defined order, you cannot refer to an item by using an index.</p>
+
+<hr>
+
+<h2>Changeable</h2>
+
+<p>Dictionaries are changeable, meaning that we can change, add or remove items after the 
+dictionary has been created.</p>
+
+<hr>
+
+<h2>Duplicates Not Allowed</h2>
+<p>Dictionaries cannot have two items with the same key:</p>
+<div class="w3-example">
+<h3>Example</h3>
+<p>Duplicate values will overwrite existing values:</p>
+<div class="w3-code notranslate pythonHigh">
+thisdict =	{<br>
+&nbsp;&nbsp;"brand": "Ford",<br>
+&nbsp;&nbsp;"model": "Mustang&quot;,<br>
+&nbsp;&nbsp;"year": 1964,<br>&nbsp; &quot;year&quot;: 2020<br>
+}<br>
+print(thisdict)</div>
+
+</div>
+
+<hr>
+
+<hr>
+
+<h2>Dictionary Length</h2>
+
+<p>To determine how many items a dictionary has, use the <code class="w3-codespan">
+len()</code> function:</p>
+
+<div class="w3-example">
+<h3>Example</h3>
+<p>Print the number of items in the dictionary:</p>
+<div class="w3-code notranslate pythonHigh">
+print(len(thisdict))
+</div>
+
+</div>
+
+<hr>
+
+<h2>Dictionary Items - Data Types</h2>
+
+<p>The values in dictionary items can be of any data type:</p>
+
+<div class="w3-example">
+<h3>Example</h3>
+<p>String, int, boolean, and list data types:</p>
+<div class="w3-code notranslate pythonHigh">
+thisdict =	{<br>
+&nbsp;&nbsp;"brand": "Ford",<br>
+&nbsp;&nbsp;"electric": False,<br>
+&nbsp;&nbsp;"year": 1964,<br>&nbsp; &quot;colors&quot;: [&quot;red&quot;, &quot;white&quot;, &quot;blue&quot;]<br>
+} </div>
+
+</div>
+
+<hr>
+<h2>type()</h2>
+
+<p>From Python's perspective, dictionaries are defined as objects with the data type 'dict':</p>
+
+<div class="w3-codeline notranslate">
+&lt;class 'dict'&gt;
+</div>
+
+<div class="w3-example">
+<h3>Example</h3>
+<p>Print the data type of a dictionary:</p>
+<div class="w3-code notranslate pythonHigh">
+thisdict =	{<br>
+&nbsp;&nbsp;"brand": "Ford",<br>
+&nbsp;&nbsp;"model": "Mustang&quot;,<br>
+&nbsp;&nbsp;"year": 1964<br>
+}<br>
+print(type(thisdict))</div>
+
+</div>
+
+<hr>
+
+<h2>Python Collections (Arrays)</h2>
+<p>There are four collection data types in the Python programming language:</p>
+<ul>
+<li><strong><a href="pylists.html">List</a></strong> is a collection which is ordered and changeable. Allows duplicate members.</li>
+<li><strong><a href="pytuples.html">Tuple</a></strong> is a collection which is ordered and unchangeable. Allows duplicate members.</li>
+<li><strong><a href="pysets.html">Set</a></strong> is a collection which is unordered, 
+unchangeable*, and unindexed. No duplicate members.</li>
+<li><strong>Dictionary</strong> is a collection which is ordered** and changeable. No duplicate members.</li>
+</ul>
+<div class="w3-panel w3-note">
+  <p>*Set <em>items</em> are unchangeable, but you can remove and/or add items 
+  whenever you like.</p>
+  <p>**As of Python version 3.7, dictionaries are <em>ordered</em>. 
+  In Python 3.6 and earlier, dictionaries are <em>unordered</em>.</p>
+</div>
+
+<p>When choosing a collection type, it is useful to understand the properties of that type. Choosing the right type for a particular data set could mean retention of meaning, and, it could mean an increase in efficiency or security.</p>
+<hr />
+<h1>Python - Access Dictionary Items</h1>
+<br />
+<h2>Accessing Items</h2>
+
+<p>You can access the items of a dictionary by referring to its key name, inside 
+square brackets:</p>
+
+<div class="w3-example">
+<h3>Example</h3>
+<p>Get the value of the &quot;model&quot; key:</p>
+<div class="w3-code notranslate pythonHigh">
+thisdict =	{<br>
+&nbsp;&nbsp;"brand": "Ford",<br>
+&nbsp;&nbsp;"model": "Mustang&quot;,<br>
+&nbsp;&nbsp;"year": 1964<br>
+}<br>x = thisdict[&quot;model&quot;]<br>
+</div>
+</div>
+
+<p>There is also a method called <code class="w3-codespan">get()</code> that will give you the same result:</p>
+
+<div class="w3-example">
+<h3>Example</h3>
+<p>Get the value of the &quot;model&quot; key:</p>
+<div class="w3-code notranslate pythonHigh">
+  x = thisdict.get(&quot;model&quot;)<br>
+</div>
+</div>
+<hr>
+
+<h2>Get Keys</h2>
+
+<p>The <code class="w3-codespan">keys()</code> method will return a list of all the keys in the dictionary.</p>
+
+<div class="w3-example">
+<h3>Example</h3>
+<p>Get a list of the keys:</p>
+<div class="w3-code notranslate pythonHigh">
+  x = thisdict.keys()</div>
+
+</div>
+
+<p>The list of the keys is a <em>view</em> of the dictionary, meaning that any 
+changes done to the dictionary will be reflected in the keys list.</p>
+<div class="w3-example">
+<h3>Example</h3>
+<p>Add a new item to the original dictionary, and see that the keys list gets 
+updated as well:</p>
+<div class="w3-code notranslate pythonHigh">
+  car = {<br>&quot;brand&quot;: &quot;Ford&quot;,<br>&quot;model&quot;: &quot;Mustang&quot;,<br>&quot;year&quot;: 1964<br>}<br>
+  <br>x = car.keys()<br><br>print(x) #before the change<br><br>car[&quot;color&quot;] = 
+  &quot;white&quot;<br><br>print(x) #after the change</div>
+</div>
+<hr>
+
+<hr>
+<h2>Get Values</h2>
+
+<p>The <code class="w3-codespan">values()</code> method will return a list of all the values in the dictionary.</p>
+
+<div class="w3-example">
+<h3>Example</h3>
+<p>Get a list of the values:</p>
+<div class="w3-code notranslate pythonHigh">
+  x = thisdict.values()</div>
+
+</div>
+
+<p>The list of the values is a <em>view</em> of the dictionary, meaning that any 
+changes done to the dictionary will be reflected in the values list.</p>
+<div class="w3-example">
+<h3>Example</h3>
+<p>Make a change in the original dictionary, and see that the values list gets 
+updated as well:</p>
+<div class="w3-code notranslate pythonHigh">
+  car = {<br>&quot;brand&quot;: &quot;Ford&quot;,<br>&quot;model&quot;: &quot;Mustang&quot;,<br>&quot;year&quot;: 1964<br>}<br>
+  <br>x = car.values()<br><br>print(x) #before the change<br><br>car[&quot;year&quot;] 
+  = 2020<br><br>print(x) #after the change</div>
+
+</div>
+
+<div class="w3-example">
+<h3>Example</h3>
+<p>Add a new item to the original dictionary, and see that the values list gets 
+updated as well:</p>
+<div class="w3-code notranslate pythonHigh">
+  car = {<br>&quot;brand&quot;: &quot;Ford&quot;,<br>&quot;model&quot;: &quot;Mustang&quot;,<br>&quot;year&quot;: 1964<br>}<br>
+  <br>x = car.values()<br><br>print(x) #before the change<br><br>car[&quot;color&quot;] 
+  = &quot;red&quot;<br><br>print(x) #after the change</div>
+
+</div>
+<hr>
+<h2>Get Items</h2>
+
+<p>The <code class="w3-codespan">items()</code> method will return each item in a dictionary, as tuples in a list.</p>
+
+<div class="w3-example">
+<h3>Example</h3>
+<p>Get a list of the key:value pairs</p>
+<div class="w3-code notranslate pythonHigh">
+  x = thisdict.items()</div>
+
+</div>
+
+<p>The returned list is a <em>view</em> of the items of the dictionary, meaning that any 
+changes done to the dictionary will be reflected in the items list.</p>
+<div class="w3-example">
+<h3>Example</h3>
+<p>Make a change in the original dictionary, and see that the items list gets 
+updated as well:</p>
+<div class="w3-code notranslate pythonHigh">
+  car = {<br>&quot;brand&quot;: &quot;Ford&quot;,<br>&quot;model&quot;: &quot;Mustang&quot;,<br>&quot;year&quot;: 1964<br>}<br>
+  <br>x = car.items()<br><br>print(x) #before the change<br><br>car[&quot;year&quot;] 
+  = 2020<br><br>print(x) #after the change</div>
+</div>
+
+<div class="w3-example">
+<h3>Example</h3>
+<p>Add a new item to the original dictionary, and see that the items list gets 
+updated as well:</p>
+<div class="w3-code notranslate pythonHigh">
+  car = {<br>&quot;brand&quot;: &quot;Ford&quot;,<br>&quot;model&quot;: &quot;Mustang&quot;,<br>&quot;year&quot;: 1964<br>}<br>
+  <br>x = car.items()<br><br>print(x) #before the change<br><br>car[&quot;color&quot;] 
+  = &quot;red&quot;<br><br>print(x) #after the change</div>
+</div>
+<hr>
+
+
+<h2>Check if Key Exists</h2>
+
+<p>To determine if a specified key is present in a dictionary use the <code class="w3-codespan">in</code> keyword:</p>
+
+<div class="w3-example">
+<h3>Example</h3>
+<p>Check if "model" is present in the dictionary:</p>
+<div class="w3-code notranslate pythonHigh">
+thisdict =	{<br>
+&nbsp;&nbsp;"brand": "Ford",<br>
+&nbsp;&nbsp;"model": "Mustang",<br>
+&nbsp;&nbsp;"year": 1964<br>
+}<br>
+  if &quot;model&quot; in thisdict:<br>&nbsp; print(&quot;Yes, 'model' is 
+  one of the keys in the thisdict dictionary&quot;)</div>
+</div>
+<hr />
+<h1>python - Change Dictionary Items</h1>
+<br />
+<h2>Change Values</h2>
+
+<p>You can change the value of a specific item by referring to its key name:</p>
+
+<div class="w3-example">
+<h3>Example</h3>
+<p>Change the &quot;year&quot; to 2018:</p>
+<div class="w3-code notranslate pythonHigh">
+thisdict =	{<br>
+&nbsp;&nbsp;"brand": "Ford",<br>
+&nbsp;&nbsp;"model": "Mustang",<br>
+&nbsp;&nbsp;"year": 1964<br>
+}<br>thisdict[&quot;year&quot;] = 2018<br>
+</div>
+</div>
+
+<hr>
+
+<h2>Update Dictionary</h2>
+
+<p>The <code class="w3-codespan">update()</code> method will update the dictionary with the items from the given 
+argument.</p>
+
+<p>The argument must be a dictionary, or an iterable object with key:value pairs.</p>
+
+<div class="w3-example">
+<h3>Example</h3>
+<p>Update the "year" of the car by using the <code class="w3-codespan">update()</code> 
+method:</p>
+<div class="w3-code notranslate pythonHigh">
+thisdict =	{<br>
+&nbsp;&nbsp;"brand": "Ford",<br>
+&nbsp;&nbsp;"model": "Mustang",<br>
+&nbsp;&nbsp;"year": 1964<br>
+}<br>thisdict.update({&quot;year&quot;: 2020})</div>
+</div>
+<hr />
+<h1>Python -"Add Dictionary Items</h1>
+<br />
+<h2>Adding Items</h2>
+
+<p>Adding an item to the dictionary is done by using a new index key and assigning a value to it:</p>
+
+<div class="w3-example">
+<h3>Example</h3>
+<div class="w3-code notranslate pythonHigh">
+thisdict =	{<br>
+&nbsp;&nbsp;"brand": "Ford",<br>
+&nbsp;&nbsp;"model": "Mustang",<br>
+&nbsp;&nbsp;"year": 1964<br>
+}<br>thisdict[&quot;color&quot;] = &quot;red&quot;<br>print(thisdict)<br>
+</div>
+</div>
+<hr>
+<h2>Update Dictionary</h2>
+
+<p>The <code class="w3-codespan">update()</code> method will update the dictionary with the items from 
+a given 
+argument. If the item does not exist, the item will be added.</p>
+
+<p>The argument must be a dictionary, or an iterable object with key:value pairs.</p>
+
+<div class="w3-example">
+<h3>Example</h3>
+<p>Add a color item to the dictionary by using the <code class="w3-codespan">update()</code> 
+method:</p>
+<div class="w3-code notranslate pythonHigh">
+thisdict =	{<br>
+&nbsp;&nbsp;"brand": "Ford",<br>
+&nbsp;&nbsp;"model": "Mustang",<br>
+&nbsp;&nbsp;"year": 1964<br>
+}<br>thisdict.update({&quot;color&quot;: 
+  &quot;red&quot;})</div>
+
+</div>
+<hr />
+<h1>Python - Remove Dictionary Items</h1>
+<br />
+<h2>Removing Items</h2>
+
+<p>There are several methods to remove items from a dictionary:</p>
+
+
+<div class="w3-example">
+<h3>Example</h3>
+  <p>The <code class="w3-codespan">pop()</code> method removes the item with the specified key name:</p>
+<div class="w3-code notranslate pythonHigh">
+thisdict =	{<br>
+&nbsp;&nbsp;"brand": "Ford",<br>
+&nbsp;&nbsp;"model": "Mustang",<br>
+&nbsp;&nbsp;"year": 1964<br>
+}<br>thisdict.pop(&quot;model&quot;)<br>
+  print(thisdict)</div>
+</div>
+
+<div class="w3-example">
+<h3>Example</h3>
+  <p>The <code class="w3-codespan">popitem()</code> method removes the last 
+  inserted item (in versions before 3.7, a random item is removed instead):</p>
+<div class="w3-code notranslate pythonHigh">
+thisdict =	{<br>
+&nbsp;&nbsp;"brand": "Ford",<br>
+&nbsp;&nbsp;"model": "Mustang",<br>
+&nbsp;&nbsp;"year": 1964<br>
+}<br>thisdict.popitem()<br>
+  print(thisdict)</div>
+</div>
+
+<div class="w3-example">
+<h3>Example</h3>
+  <p>The <code class="w3-codespan">del</code> keyword removes the item with the specified 
+  key name:</p>
+<div class="w3-code notranslate pythonHigh">
+thisdict =	{<br>
+&nbsp;&nbsp;"brand": "Ford",<br>
+&nbsp;&nbsp;"model": "Mustang",<br>
+&nbsp;&nbsp;"year": 1964<br>
+}<br>del thisdict[&quot;model&quot;]<br>print(thisdict)</div>
+</div>
+
+<div class="w3-example w3-pale-red">
+<h3>Example</h3>
+  <p>The <code class="w3-codespan">del</code> keyword can also delete the 
+  dictionary completely:</p>
+<div class="w3-code notranslate pythonHigh w3-border-red">
+thisdict =	{<br>
+&nbsp;&nbsp;"brand": "Ford",<br>
+&nbsp;&nbsp;"model": "Mustang",<br>
+&nbsp;&nbsp;"year": 1964<br>
+}<br>del thisdict<br>print(thisdict) #this will cause an error because &quot;thisdict&quot; 
+  no longer exists.</div>
+
+</div>
+
+<div class="w3-example">
+<h3>Example</h3>
+  <p>The <code class="w3-codespan">clear()</code> method empties the 
+  dictionary:</p>
+<div class="w3-code notranslate pythonHigh">
+thisdict =	{<br>
+&nbsp;&nbsp;"brand": "Ford",<br>
+&nbsp;&nbsp;"model": "Mustang",<br>
+&nbsp;&nbsp;"year": 1964<br>
+}<br>thisdict.clear()<br>print(thisdict)</div>
+</div>
+<hr />
+<h1>Python - Loop Dictionaries</h1>
+<br />
+
+<h2>Loop Through a Dictionary</h2>
+
+<p>You can loop through a dictionary by using a
+<code class="w3-codespan">for</code> loop.</p>
+<p>When looping through a dictionary, the return value are the <em>keys</em> of 
+the dictionary, but there are methods to return the <em>values</em> as well.</p>
+
+<div class="w3-example">
+<h3>Example</h3>
+<p>Print all key names in the dictionary, one by one:</p>
+<div class="w3-code notranslate pythonHigh">
+  for x in thisdict:<br>&nbsp; print(x)</div>
+
+</div>
+
+<div class="w3-example">
+  <h3>Example</h3>
+<p>Print all <em>values</em> in the dictionary, one by one:</p>
+<div class="w3-code notranslate pythonHigh">
+  for x in thisdict:<br>&nbsp; print(thisdict[x])</div>
+
+</div>
+
+<div class="w3-example">
+<h3>Example</h3>
+<p>You can also use the <code class="w3-codespan">values()</code> method to 
+return values of a dictionary:</p>
+<div class="w3-code notranslate pythonHigh">
+  for x in thisdict.values():<br>&nbsp; print(x)</div>
+</div>
+
+
+<div class="w3-example">
+<h3>Example</h3>
+<p>You can use the <code class="w3-codespan">keys()</code> method to 
+return the keys of a dictionary:</p>
+<div class="w3-code notranslate pythonHigh">
+  for x in thisdict.keys():<br>&nbsp; print(x)</div>
+</div>
+
+<div class="w3-example">
+<h3>Example</h3>
+<p>Loop through both <em>keys</em> and <em>values</em>, by using the
+<code class="w3-codespan">items()</code> method:</p>
+<div class="w3-code notranslate pythonHigh">
+  for x, y in thisdict.items():<br>&nbsp; print(x, y)</div>
+</div>
+<hr />
+<h1>Python - Copy Dictionaries</h1>
+<br />
+<h2>Copy a Dictionary</h2>
+<p>You cannot copy a dictionary simply by typing <code class="w3-codespan">dict2 = 
+dict1</code>, because: <code class="w3-codespan">dict2</code> will only be a <em>
+reference</em> to <code class="w3-codespan">dict1</code>, and changes made in
+<code class="w3-codespan">dict1</code> will automatically also be made in
+<code class="w3-codespan">dict2</code>.</p>
+
+<p>There are ways to make a copy, one way is to use the built-in Dictionary 
+method <code class="w3-codespan">
+copy()</code>.</p>
+
+<div class="w3-example">
+<h3>Example</h3>
+<p>Make a copy of a dictionary with the <code class="w3-codespan">copy()</code> method:</p>
+<div class="w3-code notranslate pythonHigh">
+thisdict =	{<br>
+&nbsp;&nbsp;"brand": "Ford",<br>
+&nbsp;&nbsp;"model": "Mustang",<br>
+&nbsp;&nbsp;"year": 1964<br>
+}<br>mydict 
+  = thisdict.copy()<br>
+  print(mydict)
+</div>
+
+</div>
+
+<p>Another way to make a copy is to use the built-in function 
+<code class="w3-codespan">dict()</code>.</p>
+
+<div class="w3-example">
+<h3>Example</h3>
+<p>Make a copy of a dictionary with the <code class="w3-codespan">dict()</code> 
+function:</p>
+<div class="w3-code notranslate pythonHigh">
+thisdict =	{<br>
+&nbsp;&nbsp;"brand": "Ford",<br>
+&nbsp;&nbsp;"model": "Mustang",<br>
+&nbsp;&nbsp;"year": 1964<br>
+}<br>mydict 
+  = dict(thisdict)<br>
+  print(mydict)</div>
+</div>
+<hr />
+<h1>Python - Nested Dictionaries</h1>
+<br />
+
+<h2>Nested Dictionaries</h2>
+<p>A dictionary can contain dictionaries, this is called nested 
+dictionaries.</p>
+<div class="w3-example">
+  <h3>Example</h3>
+<p>Create a dictionary that contain three dictionaries:</p>
+<div class="w3-code notranslate pythonHigh">
+  myfamily = {<br>&nbsp; &quot;child1&quot; : {<br>&nbsp;&nbsp;&nbsp; &quot;name&quot; : &quot;Emil&quot;,<br>
+  &nbsp;&nbsp;&nbsp; &quot;year&quot; : 2004<br>&nbsp; },<br>&nbsp; &quot;child2&quot; : {<br>&nbsp;&nbsp;&nbsp; 
+  &quot;name&quot; : &quot;Tobias&quot;,<br>&nbsp;&nbsp;&nbsp; &quot;year&quot; : 2007<br>&nbsp; },<br>&nbsp; 
+  &quot;child3&quot; : {<br>&nbsp;&nbsp;&nbsp; &quot;name&quot; : &quot;Linus&quot;,<br>
+  &nbsp;&nbsp;&nbsp; &quot;year&quot; : 2011<br>&nbsp; }<br>} </div>
+</div>
+
+<p>Or, if you want to add three dictionaries into a new 
+dictionary:</p>
+
+<div class="w3-example">
+<h3>Example</h3>
+<p>Create three dictionaries, then create one dictionary that will contain the 
+other three dictionaries:</p>
+<div class="w3-code notranslate pythonHigh">
+  child1 = {<br>&nbsp; &quot;name&quot; : &quot;Emil&quot;,<br>&nbsp; &quot;year&quot; : 2004<br>}<br>child2 = {<br>&nbsp; 
+  &quot;name&quot; : &quot;Tobias&quot;,<br>&nbsp; &quot;year&quot; : 2007<br>}<br>child3 = {<br>&nbsp; &quot;name&quot; : &quot;Linus&quot;,<br>&nbsp; 
+  &quot;year&quot; : 2011<br>}<br><br>myfamily = {<br>&nbsp; &quot;child1&quot; : child1,<br>&nbsp; 
+  &quot;child2&quot; : child2,<br>&nbsp; &quot;child3&quot; : child3<br>}</div>
+
+</div>
+<hr />
+<h1>Python Dictionary Methods</h1>
+<br />
+<h2>Dictionary Methods</h2>
+
+<p>Python has a set of built-in methods that you can use on dictionaries.</p>
+
+<table class="ws-table-all notranslate">
+<tr>
+<th>Method</th>
+<th>Description</th>
+</tr>
+<tr><td>clear()</td><td>Removes all the elements from the dictionary</td></tr>
+<tr><td>copy()</td><td>Returns a copy of the dictionary</td></tr>
+<tr><td>fromkeys()</td><td>Returns a dictionary with the specified keys and value</td></tr>
+<tr><td>get()</td><td>Returns the value of the specified key</td></tr>
+<tr><td>items()</td><td>Returns a list containing a tuple for each key value pair</td></tr>
+<tr><td>keys()</td><td>Returns a list containing the dictionary's keys</td></tr>
+<tr><td>pop()</td><td>Removes the element with the specified key</td></tr>
+<tr><td>popitem()</td><td>Removes the last 
+  inserted key-value pair</td></tr>
+<tr><td>setdefault()</td><td>Returns the value of the specified key. If the key does not exist: insert the key, with the specified value</td></tr>
+<tr><td>update()</td><td>Updates the dictionary with the specified key-value pairs</td></tr>
+<tr><td>values()</td><td>Returns a list of all the values in the dictionary</td></tr>
+</table>
+
+
+
+<!--end--> 
+</div>
+    </div>
+  </div>
+</div>
+
+<ul class="pager navbar-fixed-bottom">
+  <li class="previous"><a href="pysets.html">&laquo;Previous</a></li>
+  <li class="next"><a href="pyifelse.html">Next&raquo;</a></li>
+</ul>
+
+
+<footer class="mt-auto">
+<div class="jumbotron text-center" style="margin-bottom:0">
+copyright&copy; TeekaY-X maintained by <a href="https://TeekaY-X.github.io/AsahlumaTyika">Asahluma Tyika</a>
+</div>
+</footer>
+
+
+</body>
+</html>

@@ -1,0 +1,275 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <title>TeekaY-X | Python Classes/Objects</title>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="icon" href="/css/icon.png" />
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+  <link rel="stylesheet" href="/css/index.css" />
+</head>
+<body class="d-flex flex-column min-vh-100">
+
+<!--<div class="jumbotron text-center" style="margin-bottom:0">
+  <h1>My First Bootstrap Page</h1>
+  <p>Resize this responsive page to see the effect!</p> 
+</div>-->
+
+<nav class="navbar navbar-inverse navbar-fixed-top">
+  <div class="container-fluid">
+    <div class="navbar-header">
+      <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#myNavbar">
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>                        
+      </button>
+      <a class="navbar-brand" href="#">TeekaY-X|Python Classes/Objects</a>
+    </div>
+    <div class="collapse navbar-collapse" id="myNavbar">
+      <ul class="nav navbar-nav">
+        <li><a href="https://TeekaY-X.github.io">Home</a></li>
+          <li class="dropdown">
+        <a class="dropdown-toggle" data-toggle="dropdown" href="#">Python Course 
+        <span class="caret"></span></a>
+        <ul class="dropdown-menu">
+          <li><a href="pyintro.html">Python Introduction</a></li>
+          <li><a href="gtstt.html">Python Getting Started</a></li>
+          <li><a href="syntax.html">Python Syntax</a></li>
+          <li><a href="pycomments.html">Python Comments</a></li>
+          <li><a href="pyvariables.html">Python Variables</a></li>
+          <li><a href="pydatatypes.html">Python Data Types</a></li>
+          <li><a href="pynumbers.html">Python Numbers</a></li>
+          <li><a href="/python/pycasting.html">Python Casting</a></li>
+          <li><a href="/python/pystrings.html">Python Strings</a></li>
+          <li><a href="/python/pybooleans.html">Python Booleans</a></li>
+          <li><a href="/python/pyoperators.html">Python Operators</a></li>
+          <li><a href="/python/pylists.html">Python Lists</a></li>
+          <li><a href="/python/pytuples.html">Python Tuples</a></li>
+          <li><a href="/python/pysets.html">Python Sets</a></li>
+          <li><a href="/python/pydictionaries.html">Python Dictionaries</a></li>
+          <li><a href="/python/pyifelse.html">Python If...Else</a></li>
+          <li><a href="/python/pywhileloops.html">Python While Loops</a></li>
+          <li><a href="/python/pyforloops.html">Python For Loops</a></li>
+          <li><a href="/python/pyfunctions.html">Python Functions</a></li>
+          <li><a href="/python/pylambda.html">Python Lambda</a></li>
+          <li><a href="/python/pyarrays.html">Python Arrays</a></li>
+          <li class="active"><a href="/python/pyclasses.html">Python Classes/Objects</a></li>
+          <li><a href="/python/pyinheritance.html">Python Inheritance</a></li>
+          <li><a href="/python/pyiterators.html">Python Iterators</a></li>
+          <li><a href="/python/pyscope.html">Python Scope</a></li>
+          <li><a href="/python/pymodules.html">Python Modules</a></li>
+          <li><a href="/python/pydates.html">Python Dates</a></li>
+          <li><a href="/python/pymaths.html">Python Math</a></li>
+          <li><a href="/python/pyJSON.html">Python JSON</a></li>
+          <li><a href="/python/pyRegEx.html">Python RegEx</a></li>
+          <li><a href="/python/pypip.html">Python PIP</a></li>
+          <li><a href="/python/pytryexcept.html">Python Try...Except</a></li>
+          <li><a href="/python/pyusrinput.html">Python User Input</a></li>
+          <li><a href="/python/pyStringFormat.html">Python String Formatting</a></li>
+        </ul>
+      </li>
+      
+        <li class="dropdown">
+        <a class="dropdown-toggle" data-toggle="dropdown" href="#">Flask Course
+        <span class="caret"></span></a>
+        <ul class="dropdown-menu">
+          <li><a href="#">Coming Soon</a></li>
+          <li><a href="#">Coming Soon</a></li>
+          <li><a href="#">Coming Soon</a></li>
+        </ul>
+      </li>
+      <li><a href="https://TeekaY-X.github.io/about.html">About us</a></li>
+       <!-- <li><a href="#">Python</a></li>
+        <li><a href="#">Python-Flask</a></li>-->
+      </ul>
+    </div>
+  </div>
+</nav>
+<br>
+<br>
+<div class="container-fluid">
+  <div class="row">
+    <div class="col-sm-8">
+      <div class="jumbotron">
+        <br />
+        <h1>Python Classes/Objects</h1>
+<p>Python is an object oriented programming language.</p>
+<p>Almost everything in Python is an object, with its properties and methods.</p>
+<p>A Class is like an object constructor, or a "blueprint" for creating objects.</p>
+<hr>
+<h2>Create a Class</h2>
+<p>To create a class, use the keyword <code class="w3-codespan">class</code>:</p>
+
+<div class="w3-example">
+<h3>Example</h3>
+<p>Create a class named MyClass, with a property named x:</p>
+<div class="w3-code notranslate pythonHigh">
+  class MyClass:<br>&nbsp; x = 5</div>
+
+</div>
+
+
+<hr>
+
+<h2>Create Object</h2>
+
+<p>Now we can use the class named MyClass to create objects:</p>
+
+<div class="w3-example">
+<h3>Example</h3>
+<p>Create an object named p1, and print the value of x:</p>
+<div class="w3-code notranslate pythonHigh">
+  p1 = MyClass()<br>print(p1.x)</div>
+
+</div>
+
+<hr>
+<h2>The __init__() Function</h2>
+
+<p>The examples above are classes and objects in their simplest form, and are 
+not really useful in real life applications.</p>
+<p>To understand the meaning of classes we have to understand the built-in __init__() 
+function.</p>
+<p>All classes have a function called __init__(), which is always executed when 
+the class is being initiated.</p>
+<p>Use the __init__() function to assign values to object properties, or other 
+operations that are necessary to do when the object 
+is being created:</p>
+
+<div class="w3-example">
+<h3>Example</h3>
+<p>Create a class named Person, use the __init__() function to assign values 
+for name and age:</p>
+<div class="w3-code notranslate pythonHigh">
+  class Person:<br>&nbsp; def __init__(self, name, age):<br>&nbsp;&nbsp;&nbsp; 
+  self.name = name<br>&nbsp;&nbsp;&nbsp; self.age = age<br><br>p1 = Person(&quot;John&quot;, 
+  36)<br>
+  <br>print(p1.name)<br>print(p1.age)</div>
+</div>
+<div class="w3-panel w3-note">
+  <p><strong>Note:</strong> The <code class="w3-codespan">__init__()</code> function is called automatically every time the class is being used to create a new object.</p>
+</div>
+
+<hr>
+
+<hr>
+
+<h2>Object Methods</h2>
+
+<p>Objects can also contain methods. Methods in objects are functions that 
+belong to the object.</p>
+<p>Let us create a method in the Person class:</p>
+<div class="w3-example">
+  <h3>Example</h3>
+<p>Insert a function that prints a greeting, and execute it on the p1 object:</p>
+<div class="w3-code notranslate pythonHigh">
+  class Person:<br>&nbsp; def __init__(self, name, age):<br>&nbsp;&nbsp;&nbsp; 
+  self.name = name<br>&nbsp;&nbsp;&nbsp; self.age = age<br><br>&nbsp; def myfunc(self):<br>&nbsp;&nbsp;&nbsp; 
+  print(&quot;Hello my name is &quot; + self.name)<br><br>p1 = Person(&quot;John&quot;, 
+  36)<br>p1.myfunc()</div>
+
+</div>
+
+<div class="w3-panel w3-note">
+  <p><strong>Note:</strong> The <code class="w3-codespan">self</code> parameter 
+  is a reference to the current instance of the class, and is used to access variables that belong to the class.</p>
+</div>
+
+<hr>
+
+<h2>The self Parameter</h2>
+<p>The <code class="w3-codespan">self</code> parameter is a reference to the 
+current instance of the class, and is used to access variables that belongs to the class.</p>
+<p>It does not have to be named <code class="w3-codespan">self</code> , you can 
+call it whatever you like, but it has to be the first parameter of any function 
+in the class:</p>
+
+<div class="w3-example">
+<h3>Example</h3>
+<p>Use the words <em>mysillyobject</em> and <em>abc</em> instead of <em>self</em>:</p>
+<div class="w3-code notranslate pythonHigh">
+  class Person:<br>&nbsp; def __init__(mysillyobject, name, age):<br>&nbsp;&nbsp;&nbsp; 
+  mysillyobject.name = name<br>&nbsp;&nbsp;&nbsp; mysillyobject.age = age<br><br>&nbsp; def myfunc(abc):<br>&nbsp;&nbsp;&nbsp; 
+  print(&quot;Hello my name is &quot; + abc.name)<br><br>p1 = Person(&quot;John&quot;, 
+  36)<br>p1.myfunc()</div>
+</div>
+
+<hr>
+
+<h2>Modify Object Properties</h2>
+
+<p>You can modify properties on objects like this:</p>
+
+<div class="w3-example">
+<h3>Example</h3>
+<p>Set the age of p1 to 40:</p>
+<div class="w3-code notranslate pythonHigh">
+  p1.age = 40</div>
+
+</div>
+
+<hr>
+
+<h2>Delete Object Properties</h2>
+
+<p>You can delete properties on objects by using the <code class="w3-codespan">
+del</code> keyword:</p>
+
+<div class="w3-example">
+<h3>Example</h3>
+<p>Delete the age property from the p1 object:</p>
+<div class="w3-code notranslate pythonHigh">
+  del p1.age</div>
+
+</div>
+
+<hr>
+
+<h2>Delete Objects</h2>
+
+<p>You can delete objects by using the <code class="w3-codespan">del</code> keyword:</p>
+
+<div class="w3-example">
+<h3>Example</h3>
+<p>Delete the p1 object:</p>
+<div class="w3-code notranslate pythonHigh">
+  del p1</div>
+
+</div>
+
+<hr>
+<h2>The pass Statement</h2>
+<p><code class="w3-codespan">class</code> definitions cannot be empty, but if 
+you for some reason have a <code class="w3-codespan">class</code> definition with no content, put in the <code class="w3-codespan">pass</code> statement to avoid getting an error.</p>
+
+<div class="w3-example">
+<h3>Example</h3>
+<div class="w3-code notranslate pythonHigh">
+  class Person:<br>&nbsp; pass</div>
+
+</div>
+        
+  <!--end-->
+</div>
+    </div>
+  </div>
+</div>
+
+<ul class="pager navbar-fixed-bottom">
+  <li class="previous"><a href="pyarrays.html">&laquo;Previous</a></li>
+  <li class="next"><a href="pyinheritance.html">Next&raquo;</a></li>
+</ul>
+
+
+<footer class="mt-auto">
+<div class="jumbotron text-center" style="margin-bottom:0">
+copyright&copy; TeekaY-X maintained by <a href="https://TeekaY-X.github.io/AsahlumaTyika">Asahluma Tyika</a>
+</div>
+</footer>
+
+
+</body>
+</html>

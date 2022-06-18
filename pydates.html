@@ -1,0 +1,402 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <title>TeekaY-X | Python Dates</title>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="icon" href="/css/icon.png" />
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+  <link rel="stylesheet" href="/css/index.css" />
+</head>
+<body class="d-flex flex-column min-vh-100">
+
+<!--<div class="jumbotron text-center" style="margin-bottom:0">
+  <h1>My First Bootstrap Page</h1>
+  <p>Resize this responsive page to see the effect!</p> 
+</div>-->
+
+<nav class="navbar navbar-inverse navbar-fixed-top">
+  <div class="container-fluid">
+    <div class="navbar-header">
+      <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#myNavbar">
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>                        
+      </button>
+      <a class="navbar-brand" href="#">TeekaY-X | Python Dates</a>
+    </div>
+    <div class="collapse navbar-collapse" id="myNavbar">
+      <ul class="nav navbar-nav">
+        <li><a href="https://TeekaY-X.github.io">Home</a></li>
+          <li class="dropdown">
+        <a class="dropdown-toggle" data-toggle="dropdown" href="#">Python Course 
+        <span class="caret"></span></a>
+        <ul class="dropdown-menu">
+          <li><a href="pyintro.html">Python Introduction</a></li>
+          <li><a href="gtstt.html">Python Getting Started</a></li>
+          <li><a href="syntax.html">Python Syntax</a></li>
+          <li><a href="pycomments.html">Python Comments</a></li>
+          <li><a href="pyvariables.html">Python Variables</a></li>
+          <li><a href="pydatatypes.html">Python Data Types</a></li>
+          <li><a href="pynumbers.html">Python Numbers</a></li>
+          <li><a href="/python/pycasting.html">Python Casting</a></li>
+          <li><a href="/python/pystrings.html">Python Strings</a></li>
+          <li><a href="/python/pybooleans.html">Python Booleans</a></li>
+          <li><a href="/python/pyoperators.html">Python Operators</a></li>
+          <li><a href="/python/pylists.html">Python Lists</a></li>
+          <li><a href="/python/pytuples.html">Python Tuples</a></li>
+          <li><a href="/python/pysets.html">Python Sets</a></li>
+          <li><a href="/python/pydictionaries.html">Python Dictionaries</a></li>
+          <li><a href="/python/pyifelse.html">Python If...Else</a></li>
+          <li><a href="/python/pywhileloops.html">Python While Loops</a></li>
+          <li><a href="/python/pyforloops.html">Python For Loops</a></li>
+          <li><a href="/python/pyfunctions.html">Python Functions</a></li>
+          <li><a href="/python/pylambda.html">Python Lambda</a></li>
+          <li><a href="/python/pyarrays.html">Python Arrays</a></li>
+          <li><a href="/python/pyclasses.html">Python Classes/Objects</a></li>
+          <li><a href="/python/pyinheritance.html">Python Inheritance</a></li>
+          <li><a href="/python/pyiterators.html">Python Iterators</a></li>
+          <li><a href="/python/pyscope.html">Python Scope</a></li>
+          <li><a href="/python/pymodules.html">Python Modules</a></li>
+          <li class="active"><a href="/python/pydates.html">Python Dates</a></li>
+          <li><a href="/python/pymaths.html">Python Math</a></li>
+          <li><a href="/python/pyJSON.html">Python JSON</a></li>
+          <li><a href="/python/pyRegEx.html">Python RegEx</a></li>
+          <li><a href="/python/pypip.html">Python PIP</a></li>
+          <li><a href="/python/pytryexcept.html">Python Try...Except</a></li>
+          <li><a href="/python/pyusrinput.html">Python User Input</a></li>
+          <li><a href="/python/pyStringFormat.html">Python String Formatting</a></li>
+        </ul>
+      </li>
+      
+        <li class="dropdown">
+        <a class="dropdown-toggle" data-toggle="dropdown" href="#">Flask Course
+        <span class="caret"></span></a>
+        <ul class="dropdown-menu">
+          <li><a href="#">Coming Soon</a></li>
+          <li><a href="#">Coming Soon</a></li>
+          <li><a href="#">Coming Soon</a></li>
+        </ul>
+      </li>
+      <li><a href="https://TeekaY-X.github.io/about.html">About us</a></li>
+       <!-- <li><a href="#">Python</a></li>
+        <li><a href="#">Python-Flask</a></li>-->
+      </ul>
+    </div>
+  </div>
+</nav>
+<br>
+<br>
+<div class="container-fluid">
+  <div class="row">
+    <div class="col-sm-8">
+      <div class="jumbotron">
+
+<h2>Python Dates</h2>
+<p>A date in Python is not a data type of its own, but we can import a module 
+named <code class="w3-codespan">datetime</code> to work with dates as date 
+objects.</p>
+<div class="w3-example">
+  <h3>Example</h3>
+<p>Import the datetime module and display the current date:</p>
+<div class="w3-code notranslate pythonHigh">
+  import datetime<br><br>x = datetime.datetime.now()<br>print(x)</div>
+
+</div>
+
+<hr>
+
+<h2>Date Output</h2>
+
+<p>When we execute the code from the example above the result will be:</p>
+
+<code class="w3-codespan">
+<script>
+
+cc = "2018/05/06 09:30:20"
+var d = new Date();
+
+var m = d.getMonth() + 1;
+if (m < 10) m = "0" + m
+
+var day = d.getDate();
+if (day < 10) day = "0" + day;
+
+var h = d.getHours();
+if (h < 10) h = "0" + h;
+
+var n = d.getMinutes();
+if (n < 10) n = "0" + n;
+
+var s = d.getSeconds();
+if (s < 10) s = "0" + s;
+
+var ms = d.getMilliseconds();
+while (ms.toString().length < 3) {
+  ms = "0" + ms;
+}
+var ex = Math.floor(Math.random() * 999);
+while (ex.toString().length < 3) {
+  ex = "0" + ex;
+}
+
+var x = d.getFullYear() + "-" + m + "-" + day + " " + h + ":" + n + ":" + s + "." + ms + ex
+document.write(x);
+</script>
+</code>
+
+<p>The date contains year, month, day, hour, minute, second, and microsecond.</p>
+<p>The <code class="w3-codespan">datetime</code> module has many methods to return information about the date 
+object.</p>
+<p>Here are a few examples, you will learn more about them later in this 
+chapter: </p>
+
+<div class="w3-example">
+<h3>Example</h3>
+<p>Return the year and name of weekday:</p>
+<div class="w3-code notranslate pythonHigh">
+  import datetime<br><br>x = datetime.datetime.now()<br><br>print(x.year)<br>
+  print(x.strftime(&quot;%A&quot;))</div>
+
+</div>
+
+<hr>
+<h2>Creating Date Objects</h2>
+
+<p>To create a date, we can use the <code class="w3-codespan">datetime()</code> class (constructor) of the
+<code class="w3-codespan">datetime</code> module.</p>
+<p>The <code class="w3-codespan">datetime()</code> class requires three parameters to create a date: year, 
+month, day.</p>
+
+<div class="w3-example">
+<h3>Example</h3>
+<p>Create a date object:</p>
+<div class="w3-code notranslate pythonHigh">
+  import datetime<br><br>x = datetime.datetime(2020, 5, 17)<br>
+  <br>print(x)</div>
+
+</div>
+
+<p>The <code class="w3-codespan">datetime()</code> class also takes parameters for time and timezone (hour, 
+minute, second, microsecond, tzone), but they are optional, and has a default 
+value of <code class="w3-codespan">0</code>, (<code class="w3-codespan">None</code> for timezone).</p>
+
+
+<hr>
+
+<hr>
+
+<h2>The strftime() Method</h2>
+
+<p>The <code class="w3-codespan">datetime</code> object has a method for formatting date objects into readable strings.</p>
+<p>The method is called <code class="w3-codespan">strftime()</code>, and takes one parameter, 
+<code class="w3-codespan">format</code>, to specify the format of the returned string:</p>
+<div class="w3-example">
+  <h3>Example</h3>
+<p>Display the name of the month:</p>
+<div class="w3-code notranslate pythonHigh">
+  import datetime<br><br>x = datetime.datetime(2018, 6, 1)<br><br>print(x.strftime(&quot;%B&quot;))</div>
+
+</div>
+
+<p>A reference of all the legal format codes:</p>
+<table class="ws-table-all notranslate">
+<tr>
+<th style="width:25%">Directive</th>
+<th style="width:35%">Description</th>
+<th style="width:30%">Example</th>
+
+</tr>
+<tr>
+<td>%a</td>
+<td>Weekday, short version</td>
+<td>Wed</td>
+
+</tr>
+<tr>
+<td>%A</td>
+<td>Weekday, full version</td>
+<td>Wednesday</td>
+
+</tr>
+<tr>
+<td>%w</td>
+<td>Weekday as a number 0-6, 0 is Sunday</td>
+<td>3</td>
+
+</tr>
+<tr>
+<td>%d</td>
+<td>Day of month 01-31</td>
+<td>31</td>
+</tr>
+<tr>
+<td>%b</td>
+<td>Month name, short version</td>
+<td>Dec</td>
+
+</tr>
+<tr>
+<td>%B</td>
+<td>Month name, full version</td>
+<td>December</td>
+
+</tr>
+<tr>
+<td>%m</td>
+<td>Month as a number 01-12</td>
+<td>12</td>
+
+</tr>
+<tr>
+<td>%y</td>
+<td>Year, short version, without century</td>
+<td>18</td>
+
+</tr>
+<tr>
+<td>%Y</td>
+<td>Year, full version</td>
+<td>2018</td>
+
+</tr>
+<tr>
+<td>%H</td>
+<td>Hour 00-23</td>
+<td>17</td>
+
+</tr>
+<tr>
+<td>%I</td>
+<td>Hour 00-12</td>
+<td>05</td>
+
+</tr>
+<tr>
+<td>%p</td>
+<td>AM/PM</td>
+<td>PM</td>
+
+</tr>
+<tr>
+<td>%M</td>
+<td>Minute 00-59</td>
+<td>41</td>
+
+</tr>
+<tr>
+<td>%S</td>
+<td>Second 00-59</td>
+<td>08</td>
+
+</tr>
+<tr>
+<td>%f</td>
+<td>Microsecond 000000-999999</td>
+<td>548513</td>
+
+</tr>
+<tr>
+<td>%z</td>
+<td>UTC offset</td>
+<td>+0100</td>
+<td></td>
+</tr>
+<tr>
+<td>%Z</td>
+<td>Timezone</td>
+<td>CST</td>
+<td></td>
+</tr>
+<tr>
+<td>%j</td>
+<td>Day number of year 001-366</td>
+<td>365</td>
+
+</tr>
+<tr>
+<td>%U</td>
+<td>Week number of year, Sunday as the first day of week, 00-53</td>
+<td>52</td>
+
+</tr>
+<tr>
+<td>%W</td>
+<td>Week number of year, Monday as the first day of week, 00-53</td>
+<td>52</td>
+
+</tr>
+<tr>
+<td>%c</td>
+<td>Local version of date and time</td>
+<td>Mon Dec 31 17:41:00 2018</td>
+
+</tr>
+<tr>
+<td>%C</td>
+<td>Century</td>
+<td>20</td>
+
+</tr>
+<tr>
+<td>%x</td>
+<td>Local version of date</td>
+<td>12/31/18</td>
+
+</tr>
+<tr>
+<td>%X</td>
+<td>Local version of time</td>
+<td>17:41:00</td>
+
+</tr>
+<tr>
+<td>%%</td>
+<td>A % character</td>
+<td>%</td>
+
+</tr>
+<tr>
+<td>%G</td>
+<td>ISO 8601 year</td>
+<td>2018</td>
+
+</tr>
+<tr>
+<td>%u</td>
+<td>ISO 8601 weekday (1-7)</td>
+<td>1</td>
+
+</tr>
+<tr>
+<td>%V</td>
+<td>ISO 8601 weeknumber (01-53)</td>
+<td>01</td>
+
+</tr>
+</table>
+
+<!--end-->        
+</div>
+    </div>
+  </div>
+</div>
+
+<ul class="pager navbar-fixed-bottom">
+  <li class="previous"><a href="pymodules.html">&laquo;Previous</a></li>
+  <li class="next"><a href="pymaths.html">Next&raquo;</a></li>
+</ul>
+
+
+<footer class="mt-auto">
+<div class="jumbotron text-center" style="margin-bottom:0">
+copyright&copy; TeekaY-X maintained by <a href="https://TeekaY-X.github.io/AsahlumaTyika">Asahluma Tyika</a>
+</div>
+</footer>
+
+
+</body>
+</html>
