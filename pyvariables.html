@@ -1,0 +1,487 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <title>TeekaY-X | Python Variables</title>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="icon" href="/css/icon.png" />
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+  <link rel="stylesheet" href="/css/index.css" />
+</head>
+<body class="d-flex flex-column min-vh-100">
+
+<!--<div class="jumbotron text-center" style="margin-bottom:0">
+  <h1>My First Bootstrap Page</h1>
+  <p>Resize this responsive page to see the effect!</p> 
+</div>-->
+
+<nav class="navbar navbar-inverse navbar-fixed-top">
+  <div class="container-fluid">
+    <div class="navbar-header">
+      <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#myNavbar">
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>                        
+      </button>
+      <a class="navbar-brand" href="#">TeekaY-X | Python Variables</a>
+    </div>
+    <div class="collapse navbar-collapse" id="myNavbar">
+      <ul class="nav navbar-nav">
+        <li><a href="https://TeekaY-X.github.io">Home</a></li>
+          <li class="dropdown">
+        <a class="dropdown-toggle" data-toggle="dropdown" href="#">Python Course 
+        <span class="caret"></span></a>
+        <ul class="dropdown-menu">
+          <li><a href="pyintro.html">Python Introduction</a></li>
+          <li><a href="gtstt.html">Python Getting Started</a></li>
+          <li><a href="syntax.html">Python Syntax</a></li>
+          <li><a href="pycomments.html">Python Comments</a></li>
+          <li class="active"><a href="pyvariables.html">Python Variables</a></li>
+          <li><a href="pydatatypes.html">Python Data Types</a></li>
+          <li><a href="pynumbers.html">Python Numbers</a></li>
+         <li><a href="/python/pycasting.html">Python Casting</a></li>
+          <li><a href="/python/pystrings.html">Python Strings</a></li>
+          <li><a href="/python/pybooleans.html">Python Booleans</a></li>
+          <li><a href="/python/pyoperators.html">Python Operators</a></li>
+          <li><a href="/python/pylists.html">Python Lists</a></li>
+          <li><a href="/python/pytuples.html">Python Tuples</a></li>
+          <li><a href="/python/pysets.html">Python Sets</a></li>
+          <li><a href="/python/pydictionaries.html">Python Dictionaries</a></li>
+          <li><a href="/python/pyifelse.html">Python If...Else</a></li>
+          <li><a href="/python/pywhileloops.html">Python While Loops</a></li>
+          <li><a href="/python/pyforloops.html">Python For Loops</a></li>
+          <li><a href="/python/pyfunctions.html">Python Functions</a></li>
+          <li><a href="/python/pylambda.html">Python Lambda</a></li>
+          <li><a href="/python/pyarrays.html">Python Arrays</a></li>
+          <li><a href="/python/pyclasses.html">Python Classes/Objects</a></li>
+          <li><a href="/python/pyinheritance.html">Python Inheritance</a></li>
+          <li><a href="/python/pyiterators.html">Python Iterators</a></li>
+          <li><a href="/python/pyscope.html">Python Scope</a></li>
+          <li><a href="/python/pymodules.html">Python Modules</a></li>
+          <li><a href="/python/pydates.html">Python Dates</a></li>
+          <li><a href="/python/pymaths.html">Python Math</a></li>
+          <li><a href="/python/pyJSON.html">Python JSON</a></li>
+          <li><a href="/python/pyRegEx.html">Python RegEx</a></li>
+          <li><a href="/python/pypip.html">Python PIP</a></li>
+          <li><a href="/python/pytryexcept.html">Python Try...Except</a></li>
+          <li><a href="/python/pyusrinput.html">Python User Input</a></li>
+          <li><a href="/python/pyStringFormat.html">Python String Formatting</a></li>
+        </ul>
+      </li>
+      
+        <li class="dropdown">
+        <a class="dropdown-toggle" data-toggle="dropdown" href="#">Flask Course
+        <span class="caret"></span></a>
+        <ul class="dropdown-menu">
+          <li><a href="#">Coming Soon</a></li>
+          <li><a href="#">Coming Soon</a></li>
+          <li><a href="#">Coming Soon</a></li>
+        </ul>
+      </li>
+      
+    <li><a href="https://TeekaY-X.github.io/about.html">About us</a></li>
+       <!-- <li><a href="#">Python</a></li>
+        <li><a href="#">Python-Flask</a></li>-->
+      </ul>
+    </div>
+  </div>
+</nav>
+<br>
+<br>
+<div class="container-fluid">
+  <div class="row">
+    <div class="col-sm-8">
+<div class="jumbotron">
+  <h1>Python Variables</h1>
+<p>Variables are containers for storing data values.</p>
+<hr>
+<h2>Creating Variables</h2>
+<p>Python has no command for declaring a variable.</p>
+
+<p>A variable is created the moment you first assign a value to it.</p>
+
+<div class="w3-example">
+<h3>Example</h3>
+<div class="w3-code notranslate pythonHigh">
+x = 5<br>
+y = "John"<br>
+print(x)<br>
+print(y)
+</div>
+
+</div>
+
+<p>Variables do not need to be declared with any particular <em>type</em>, and can even change type after they have been set.</p>
+
+<div class="w3-example">
+<h3>Example</h3>
+<div class="w3-code notranslate pythonHigh">
+x = 4&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; # x is of type int<br>
+x = "Sally" # x is now of type str<br>
+print(x)
+</div>
+
+</div>
+
+<hr>
+<h2>Casting</h2>
+
+<p>If you want to specify the data type of a variable, this can be done with casting.</p>
+
+<div class="w3-example">
+<h3>Example</h3>
+<div class="w3-code notranslate pythonHigh">
+x = 
+  str(3)&nbsp;&nbsp;&nbsp; # x will be '3'<br>y = int(3)&nbsp;&nbsp;&nbsp; # y 
+  will be 3<br>z = float(3)&nbsp; # z will be 3.0</div>
+
+</div>
+<hr>
+  
+
+<hr>
+
+<h2>Get the Type</h2>
+
+<p>You can get the data type of a variable with the <code>type()</code> function.</p>
+
+<div class="w3-example">
+<h3>Example</h3>
+<div class="w3-code notranslate pythonHigh">
+  x = 5<br>y = &quot;John&quot;<br>print(type(x))<br>print(type(y))</div>
+
+</div>
+
+<div class="w3-note w3-panel">You will learn more about 
+  <a href="python_datatypes.asp">data types</a> and
+  <a href="python_casting.asp">casting</a> later in this tutorial.</div>
+
+<hr>
+
+<h2>Single or Double Quotes?</h2>
+
+<p>String variables can be declared either by using single or double quotes:</p>
+
+<div class="w3-example">
+<h3>Example</h3>
+<div class="w3-code notranslate pythonHigh">
+x = &quot;John&quot;<br># is the same as<br>x = 
+  'John'
+</div>
+
+</div>
+
+<hr>
+
+<h2>Case-Sensitive</h2>
+
+<p>Variable names are case-sensitive.</p>
+
+<div class="w3-example">
+<h3>Example</h3>
+<p>This will create two variables:</p>
+<div class="w3-code notranslate pythonHigh">
+  a = 4<br>A = 
+  &quot;Sally&quot;<br>#A will not overwrite a</div>
+  </div>
+
+<hr />
+
+<h1>Python Variable Names</h1>
+
+<h2>Variable Names</h2>
+
+A variable can have a short name (like x and y) or a more descriptive name (age, carname, total_volume).
+
+Rules for Python variables:
+
+<ul>
+<li>A variable name must start with a letter or the underscore character</li>
+<li>A variable name cannot start with a number</li>
+<li>A variable name can only contain alpha-numeric characters and underscores (A-z, 0-9, and _ )</li>
+<li>Variable names are case-sensitive (age, Age and AGE are three different variables)</li>
+</ul>
+<div class="w3-example">
+<h3>Example</h3>
+<p>Legal variable names:</p>
+<div class="w3-code notranslate pythonHigh">
+myvar = &quot;John&quot;<br>my_var = "John"<br>_my_var = "John"<br>myVar = "John"<br>
+  MYVAR = "John"<br>myvar2 = "John"</div>
+
+</div>
+
+<div class="w3-example w3-pale-red">
+<h3>Example</h3>
+<p>Illegal variable names:</p>
+<div class="w3-code notranslate pythonHigh w3-border-red">
+2myvar = "John"<br>my-var = "John"<br>
+  my var = "John"</div>
+
+</div>
+
+
+<div class="w3-panel w3-note">
+  <p>Remember that variable names are case-sensitive</p>
+</div>
+
+<hr>
+<div id="midcontentadcontainer" style="overflow:auto;text-align:center">
+
+  
+</div>
+<hr>
+
+<h2>Multi Words Variable Names</h2>
+
+<p>Variable names with more than one word can be difficult to read.</p>
+
+<p>There are several techniques you can use to make them more readable:</p>
+<h2>Camel Case</h2>
+<p>Each word, except the first, starts with a capital letter:</p>
+
+<div class="w3-codeline notranslate pythonHigh">
+myVariableName = "John"
+</div>
+<hr>
+<h2>Pascal Case</h2>
+<p>Each word starts with a capital letter:</p>
+
+<div class="w3-codeline notranslate pythonHigh">
+MyVariableName = "John"
+</div>
+<hr>
+<h2>Snake Case</h2>
+<p>Each word is separated by an underscore character:</p>
+
+<div class="w3-codeline notranslate pythonHigh">
+my_variable_name = "John"
+</div>
+
+<hr />
+
+<h1>Python Variables - Assign Multiple Values</h1>
+<br />
+
+<h2>Many Values to Multiple Variables</h2>
+
+<p>Python allows you to assign values to multiple variables in one line:</p>
+
+<div class="w3-example">
+<h3>Example</h3>
+<div class="w3-code notranslate pythonHigh">
+  x, y, z = &quot;Orange&quot;, &quot;Banana&quot;, &quot;Cherry&quot;<br>print(x)<br>print(y)<br>print(z)
+</div>
+
+</div>
+
+<div class="w3-panel w3-note">
+  <p><strong>Note:</strong> Make sure the number of variables matches the number of values, or else you will get an error.</p>
+</div>
+
+<hr>
+
+<h2>One Value to Multiple Variables</h2>
+
+<p>And you can assign the <em>same</em> value to multiple variables in one line:</p>
+
+<div class="w3-example">
+<h3>Example</h3>
+<div class="w3-code notranslate pythonHigh">
+  x = y = z = &quot;Orange&quot;<br>print(x)<br>print(y)<br>print(z)
+</div>
+
+</div>
+
+<hr>
+<h2>Unpack a Collection</h2>
+
+<p>If you have a collection of values in a list, tuple etc.
+Python allows you to extract the values into variables. This is called <em>unpacking</em>.</p>
+
+<p></p>
+
+<div class="w3-example">
+<h3>Example</h3>
+<p>Unpack a list:</p>
+<div class="w3-code notranslate pythonHigh">
+fruits = [&quot;apple&quot;, &quot;banana&quot;, &quot;cherry&quot;]<br>
+x, y, z = fruits<br>
+print(x)<br>
+print(y)<br>
+print(z)
+</div>
+
+</div>
+
+<div class="w3-panel w3-note">
+  <p>You will learn more about unpacking in the Unpacking chapter.</p>
+</div>
+
+<hr />
+<h1>Python Output Variables</h1>
+<br />
+
+<h2>Output Variables</h2>
+
+<p>The Python <code class="w3-codespan">print()</code> function is often used to output variables.</p>
+
+<div class="w3-example">
+<h3>Example</h3>
+<div class="w3-code notranslate pythonHigh">
+x = "Python is awesome"<br>
+print(x)
+</div>
+
+</div>
+
+
+<p>In the <code class="w3-codespan">print()</code> function, you output multiple 
+variables, separated by a comma:</p>
+
+<div class="w3-example">
+<h3>Example</h3>
+<div class="w3-code notranslate pythonHigh">
+  x = &quot;Python&quot;<br>y = &quot;is&quot;<br>z = &quot;awesome&quot;<br>print(x, y, z)
+</div>
+
+</div>
+
+<p>You can also use the <code class="w3-codespan">+</code> operator to output 
+multiple variables:</p>
+
+<div class="w3-example">
+<h3>Example</h3>
+<div class="w3-code notranslate pythonHigh">
+x = &quot;Python &quot;<br>y = &quot;is &quot;<br>z = &quot;awesome&quot;<br>print(x 
+  + y + z)
+</div>
+
+</div>
+
+<div class="w3-panel w3-note">
+  <p>Notice the space character after <code class="w3-codespan">"Python "</code> and <code class="w3-codespan">"is "</code>,
+  without them the result would be "Pythonisawesome".</p>
+</div>
+
+<p>For numbers, the <code class="w3-codespan">+</code> character works as a mathematical operator:</p>
+
+<div class="w3-example">
+<h3>Example</h3>
+<div class="w3-code notranslate pythonHigh">
+x = 5<br>y = 10<br>print(x + y)
+</div>
+
+</div>
+
+<p>In the <code class="w3-codespan">print()</code> function, when you try to 
+combine a string and a number with the <code class="w3-codespan">+</code> 
+operator, Python will give you an error:</p>
+
+<div class="w3-example w3-pale-red">
+<h3>Example</h3>
+<div class="w3-code notranslate pythonHigh w3-border-red">
+  x = 5<br>y = &quot;John&quot;<br>print(x + y)
+</div>
+</div>
+
+<p>The best way to output multiple variables in the <code class="w3-codespan">print()</code> function is to separate them with commas,
+which even support different data types:</p>
+
+<div class="w3-example">
+<h3>Example</h3>
+<div class="w3-code notranslate pythonHigh">
+x = 5<br>y = &quot;John&quot;<br>print(x, y)
+</div>
+</div>
+
+
+<hr />
+<h1>Python Global Variables</h1>
+<br />
+<h2>Output variables</h2>
+<br />
+<p>Variables that are created outside of a function (as in all of the examples 
+above) are known as global variables.</p>
+<p>Global variables can be used by everyone, both inside of 
+functions and outside.</p>
+
+<div class="w3-example">
+<h3>Example</h3>
+  <p>Create a variable outside of a function, and use it inside the function</p>
+<div class="w3-code notranslate pythonHigh">
+x = &quot;awesome&quot;<br><br>
+  def myfunc():<br>&nbsp; print(&quot;Python is &quot; + x)<br><br>myfunc()</div>
+</div>
+
+<p>If you create a variable with the same name inside a function, this variable 
+will be local, and can only be used inside the function. The global variable 
+with the same name will remain as it was, global and with the original value.</p>
+
+<div class="w3-example">
+<h3>Example</h3>
+  <p>Create a variable inside a function, with the same name as the global 
+  variable</p>
+<div class="w3-code notranslate pythonHigh">
+x = &quot;awesome&quot;<br><br>
+  def myfunc():<br>&nbsp; x = &quot;fantastic&quot;<br>&nbsp; print(&quot;Python is &quot; + x)<br><br>myfunc()<br>
+  <br>print(&quot;Python is &quot; + x)</div>
+</div>
+
+<hr>
+
+<hr>
+
+<h2>The global Keyword</h2>
+<p>Normally, when you create a variable inside a function, that variable is 
+local, and can only be used inside that function.</p>
+<p>To create a global variable inside a function, you can use the 
+<code class="w3-codespan">global</code> keyword.</p>
+
+<div class="w3-example">
+<h3>Example</h3>
+  <p>If you use the <code class="w3-codespan">global</code> keyword, the variable belongs to the global scope:</p>
+<div class="w3-code notranslate pythonHigh">
+  def myfunc():<br>&nbsp; global x<br>&nbsp; x = &quot;fantastic&quot;<br><br>myfunc()<br>
+  <br>print(&quot;Python is &quot; + x)</div>
+
+</div>
+
+<p>Also, use the <code class="w3-codespan">global</code> keyword if you want to change a global variable inside a function.</p>
+
+<div class="w3-example">
+<h3>Example</h3>
+  <p>To change the value of a global variable inside a function, refer to the 
+  variable by using the <code class="w3-codespan">global</code> keyword:</p>
+<div class="w3-code notranslate pythonHigh">
+  x = &quot;awesome&quot;<br><br>def myfunc():<br>&nbsp; global x<br>&nbsp; x = &quot;fantastic&quot;<br><br>myfunc()<br>
+  <br>print(&quot;Python is &quot; + x)</div>
+
+</div>
+
+
+<!-- end -->
+
+</div>
+</div>
+    </div>
+  </div>
+</div>
+
+<ul class="pager navbar-fixed-bottom">
+  <li class="previous"><a href="pycomments.html">&laquo;Previous</a></li>
+  <li class="next"><a href="pydatatypes.html">Next&raquo;</a></li>
+</ul>
+
+
+<footer class="mt-auto">
+<div class="jumbotron text-center" style="margin-bottom:0">
+copyright&copy; TeekaY-X maintained by <a href="https://TeekaY-X.github.io/AsahlumaTyika">Asahluma Tyika</a>
+</div>
+</footer>
+
+
+</body>
+</html>

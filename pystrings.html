@@ -1,0 +1,808 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <title>TeekaY-X | Python Strings</title>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="icon" href="/css/icon.png" />
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+  <link rel="stylesheet" href="/css/index.css" />
+</head>
+<body class="d-flex flex-column min-vh-100">
+
+<!--<div class="jumbotron text-center" style="margin-bottom:0">
+  <h1>My First Bootstrap Page</h1>
+  <p>Resize this responsive page to see the effect!</p> 
+</div>-->
+
+<nav class="navbar navbar-inverse navbar-fixed-top">
+  <div class="container-fluid">
+    <div class="navbar-header">
+      <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#myNavbar">
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>                        
+      </button>
+      <a class="navbar-brand" href="#">TeekaY-X | Python Strings</a>
+    </div>
+    <div class="collapse navbar-collapse" id="myNavbar">
+      <ul class="nav navbar-nav">
+        <li><a href="https://TeekaY-X.github.io">Home</a></li>
+          <li class="dropdown">
+        <a class="dropdown-toggle" data-toggle="dropdown" href="#">Python Course 
+        <span class="caret"></span></a>
+        <ul class="dropdown-menu">
+          <li><a href="pyintro.html">Python Introduction</a></li>
+          <li><a href="gtstt.html">Python Getting Started</a></li>
+          <li><a href="syntax.html">Python Syntax</a></li>
+          <li><a href="pycomments.html">Python Comments</a></li>
+          <li><a href="pyvariables.html">Python Variables</a></li>
+          <li><a href="pydatatypes.html">Python Data Types</a></li>
+          <li><a href="pynumbers.html">Python Numbers</a></li>
+          <li><a href="/python/pycasting.html">Python Casting</a></li>
+          <li class="active"><a href="/python/pystrings.html">Python Strings</a></li>
+          <li><a href="/python/pybooleans.html">Python Booleans</a></li>
+          <li><a href="/python/pyoperators.html">Python Operators</a></li>
+          <li><a href="/python/pylists.html">Python Lists</a></li>
+          <li><a href="/python/pytuples.html">Python Tuples</a></li>
+          <li><a href="/python/pysets.html">Python Sets</a></li>
+          <li><a href="/python/pydictionaries.html">Python Dictionaries</a></li>
+          <li><a href="/python/pyifelse.html">Python If...Else</a></li>
+          <li><a href="/python/pywhileloops.html">Python While Loops</a></li>
+          <li><a href="/python/pyforloops.html">Python For Loops</a></li>
+          <li><a href="/python/pyfunctions.html">Python Functions</a></li>
+          <li><a href="/python/pylambda.html">Python Lambda</a></li>
+          <li><a href="/python/pyarrays.html">Python Arrays</a></li>
+          <li><a href="/python/pyclasses.html">Python Classes/Objects</a></li>
+          <li><a href="/python/pyinheritance.html">Python Inheritance</a></li>
+          <li><a href="/python/pyiterators.html">Python Iterators</a></li>
+          <li><a href="/python/pyscope.html">Python Scope</a></li>
+          <li><a href="/python/pymodules.html">Python Modules</a></li>
+          <li><a href="/python/pydates.html">Python Dates</a></li>
+          <li><a href="/python/pymaths.html">Python Math</a></li>
+          <li><a href="/python/pyJSON.html">Python JSON</a></li>
+          <li><a href="/python/pyRegEx.html">Python RegEx</a></li>
+          <li><a href="/python/pypip.html">Python PIP</a></li>
+          <li><a href="/python/pytryexcept.html">Python Try...Except</a></li>
+          <li><a href="/python/pyusrinput.html">Python User Input</a></li>
+          <li><a href="/python/pyStringFormat.html">Python String Formatting</a></li>
+        </ul>
+      </li>
+      
+        <li class="dropdown">
+        <a class="dropdown-toggle" data-toggle="dropdown" href="#">Flask Course
+        <span class="caret"></span></a>
+        <ul class="dropdown-menu">
+          <li><a href="#">Coming Soon</a></li>
+          <li><a href="#">Coming Soon</a></li>
+          <li><a href="#">Coming Soon</a></li>
+        </ul>
+      </li>
+      <li><a href="https://TeekaY-X.github.io/about.html">About us</a></li>
+       <!-- <li><a href="#">Python</a></li>
+        <li><a href="#">Python-Flask</a></li>-->
+      </ul>
+    </div>
+  </div>
+</nav>
+<br>
+<br>
+<div class="container-fluid">
+  <div class="row">
+    <div class="col-sm-8">
+      <div class="jumbotron">
+        <h1>Python Strings</h1>
+        
+       
+        <h2>Strings</h2>
+<p>Strings in python are surrounded by either single quotation marks, or double quotation marks.</p>
+
+<p><span class="w3-codespan">'hello'</span> is the same as <span class="w3-codespan">"hello"</span>.</p>
+
+<p>You can display a string literal with the <code class="w3-codespan">print()</code> function:</p>
+
+<div class="w3-example">
+<h3>Example</h3>
+<div class="w3-code notranslate pythonHigh">
+print(&quot;Hello&quot;)<br>
+print('Hello')
+</div>
+
+</div>
+
+<hr>
+<h2>Assign String to a Variable</h2>
+
+<p>Assigning a string to a variable is done with the variable name followed by 
+an equal sign and the string:</p>
+
+<div class="w3-example">
+<h3>Example</h3>
+<div class="w3-code notranslate pythonHigh">
+a = "Hello&quot;<br>print(a)</div>
+
+</div>
+
+<hr>
+
+<h2>Multiline Strings</h2>
+
+<p>You can assign a multiline string to a variable by using three quotes:</p>
+
+<div class="w3-example">
+<h3>Example</h3>
+<p>You can use three double quotes:</p>
+<div class="w3-code notranslate pythonHigh">
+  a = &quot;&quot;&quot;Lorem ipsum dolor sit amet,<br>consectetur adipiscing elit,<br>sed do 
+  eiusmod tempor incididunt<br>ut labore et dolore magna aliqua.&quot;&quot;&quot;<br>print(a)</div>
+
+</div>
+
+<p>Or three single quotes:</p>
+
+<div class="w3-example">
+<h3>Example</h3>
+<div class="w3-code notranslate pythonHigh">
+  a = '''Lorem ipsum dolor sit amet,<br>consectetur adipiscing elit,<br>sed do 
+  eiusmod tempor incididunt<br>ut labore et dolore magna aliqua.'''<br>print(a)</div>
+
+</div>
+
+<div class="w3-panel w3-note">
+  <p><strong>Note:</strong> in the result, the line breaks are inserted at the same position as in the code.</p>
+</div>
+
+<hr>
+<div id="midcontentadcontainer" style="overflow:auto;text-align:center">
+
+  
+</div>
+<hr>
+
+<h2>Strings are Arrays</h2>
+
+<p>Like many other popular programming languages, strings in Python are arrays of bytes representing unicode characters.</p>
+<p>However, Python does not have a character data type, a single character is simply a string with a length of 1.</p>
+<p>Square brackets can be used to access elements of the string.</p>
+
+<div class="w3-example">
+<h3>Example</h3>
+<p>Get the character at position 1 (remember that the first character has the 
+position 0):</p>
+<div class="w3-code notranslate pythonHigh">
+a = "Hello, World!"<br>
+print(a[1])
+</div>
+</div>
+<hr>
+
+<h2>Looping Through a String</h2>
+
+<p>Since strings are arrays, we can loop through the characters in a string, with a <code class="w3-codespan">for</code> loop.</p>
+
+<div class="w3-example">
+<h3>Example</h3>
+<p>Loop through the letters in the word &quot;banana&quot;:</p>
+<div class="w3-code notranslate pythonHigh">
+  for x in &quot;banana&quot;:<br>&nbsp; print(x)
+</div>
+
+</div>
+
+<p>You will learn more about for loops in our <a href="pyforloops.html">Python For Loops</a> chapter.</p>
+
+<hr>
+
+<h2>String Length</h2>
+
+<p>To get the length of a string, use the <code class="w3-codespan">len()</code> function.</p>
+<div class="w3-example">
+<h3>Example</h3>
+<p>The <code class="w3-codespan">len()</code> function returns the length of a string:</p>
+<div class="w3-code notranslate pythonHigh">
+a = "Hello, World!"<br>
+print(len(a))
+</div>
+
+</div>
+<hr>
+<h2>Check String</h2>
+
+<p>To check if a certain phrase or character is present in a string, we can use 
+the keyword 
+<code class="w3-codespan">in</code>.</p>
+
+<div class="w3-example">
+<h3>Example</h3>
+<p>Check if &quot;free&quot; is present in the following text:</p>
+<div class="w3-code notranslate pythonHigh">
+  txt = "The best things in life are free!&quot;<br>print(&quot;free&quot; in txt)<br>
+</div>
+
+</div>
+
+<p>Use it in an <code class="w3-codespan">if</code> statement:</p>
+
+<div class="w3-example">
+<h3>Example</h3>
+<p>Print only if &quot;free&quot; is present:</p>
+<div class="w3-code notranslate pythonHigh">
+  txt = "The best things in life are free!&quot;<br>if &quot;free&quot; in txt:<br>&nbsp;
+print(&quot;Yes, 'free' is present.&quot;)
+</div>
+
+</div>
+<p>Learn more about If statements in our <a href="pyifelse.html">Python 
+If...Else</a> chapter.</p>
+<hr>
+
+<h2>Check if NOT</h2>
+
+<p>To check if a certain phrase or character is NOT present in a string, we can use 
+the keyword <code class="w3-codespan">not in</code>.</p>
+
+<div class="w3-example">
+<h3>Example</h3>
+<p>Check if &quot;expensive&quot; is NOT present in the following text:</p>
+<div class="w3-code notranslate pythonHigh">
+  txt = "The best things in life are free!&quot;<br>print(&quot;expensive&quot; not in txt)
+  </div>
+
+</div>
+
+<p>Use it in an <code class="w3-codespan">if</code> statement:</p>
+
+<div class="w3-example">
+<h3>Example</h3>
+<p>print only if &quot;expensive&quot; is NOT present:</p>
+<div class="w3-code notranslate pythonHigh">
+  txt = "The best things in life are free!&quot;<br>if &quot;expensive&quot; not in txt:<br>&nbsp;
+print(&quot;No, 'expensive' is NOT present.&quot;)
+  </div>
+  </div>
+  <hr />
+  <h1>Python - Slicing strings</h1>
+  <br />
+  <h2>Slicing</h2>
+
+<p>You can return a range of characters by using the slice syntax.</p>
+<p>Specify the start index and the end index, separated by a colon, to return a 
+part of the string.</p>
+
+<div class="w3-example">
+<h3>Example</h3>
+<p>Get the characters from position 2 to position 5 (not included):</p>
+<div class="w3-code notranslate pythonHigh">
+b = "Hello, World!&quot;<br>
+  print(b[2:5])
+</div>
+
+</div>
+
+<div class="w3-panel w3-note">
+  <p><strong>Note: </strong>The first character has index 0.</p>
+</div>
+<hr>
+
+<h2>Slice From the Start</h2>
+<p>By leaving out the start index, the range will start at the first character:</p>
+
+<div class="w3-example">
+<h3>Example</h3>
+<p>Get the characters from the start to position 5 (not included):</p>
+<div class="w3-code notranslate pythonHigh">
+b = "Hello, World!&quot;<br>
+  print(b[:5])
+</div>
+</div>
+
+<hr>
+<div id="midcontentadcontainer" style="overflow:auto;text-align:center">
+
+  
+</div>
+<hr>
+<h2>Slice To the End</h2>
+<p>By leaving out the <em>end </em>index, the range will go to the end:</p>
+
+<div class="w3-example">
+<h3>Example</h3>
+<p>Get the characters from position 2, and all the way to the end:</p>
+<div class="w3-code notranslate pythonHigh">
+b = "Hello, World!&quot;<br>
+  print(b[2:])
+</div>
+
+</div>
+
+<hr>
+
+<h2>Negative Indexing</h2>
+
+Use negative indexes to start the slice from the end of the string:
+
+<div class="w3-example">
+<h3>Example</h3>
+<p>Get the characters:</p>
+  <p>From: &quot;o&quot; in &quot;World!&quot; (position -5)</p>
+  <p>To, but not included: &quot;d&quot; in &quot;World!&quot; (position -2):</p>
+<div class="w3-code notranslate pythonHigh">
+b = "Hello, World!&quot;<br>
+  print(b[-5:-2])
+</div>
+</div>
+<br />
+<hr />
+<h1>Python - Modify Strings</h1>
+<br />
+
+
+<p class="intro">Python has a set of built-in methods that you can use on strings.</p>
+
+<hr>
+
+<h2>Upper Case</h2>
+
+<div class="w3-example">
+<h3>Example</h3>
+<p>The <code class="w3-codespan">upper()</code> method returns the string in upper case:</p>
+<div class="w3-code notranslate pythonHigh">
+a = "Hello, World!"<br>
+print(a.upper())
+</div>
+
+</div>
+<hr>
+
+<h2>Lower Case</h2>
+
+<div class="w3-example">
+<h3>Example</h3>
+<p>The <code class="w3-codespan">lower()</code> method returns the string in lower case:</p>
+<div class="w3-code notranslate pythonHigh">
+a = "Hello, World!"<br>
+print(a.lower())
+</div>
+
+</div>
+
+<hr>
+
+<h2>Remove Whitespace</h2>
+
+<p>Whitespace is the space before and/or after the actual text, and very often you want to remove this space.</p>
+
+<div class="w3-example">
+<h3>Example</h3>
+<p>The <code class="w3-codespan">strip()</code> method removes any whitespace from the beginning or the end:</p>
+<div class="w3-code notranslate pythonHigh">
+a = " Hello, World! "<br>
+print(a.strip()) # returns &quot;Hello, World!&quot;
+</div>
+
+</div>
+<hr>
+<div id="midcontentadcontainer" style="overflow:auto;text-align:center">
+  
+</div>
+<hr>
+
+<h2>Replace String</h2>
+
+<div class="w3-example">
+<h3>Example</h3>
+<p>The <code class="w3-codespan">replace()</code> method replaces a string with another string:</p>
+<div class="w3-code notranslate pythonHigh">
+a = "Hello, World!"<br>
+print(a.replace(&quot;H&quot;, &quot;J&quot;))
+</div>
+
+</div>
+<hr>
+
+
+<h2>Split String</h2>
+<p>The <code class="w3-codespan">split()</code> method returns a list where the text between the specified separator becomes the list items.</p>
+<div class="w3-example">
+<h3>Example</h3>
+<p>The <code class="w3-codespan">split()</code> method splits the string into substrings if it finds instances of the separator:</p>
+<div class="w3-code notranslate pythonHigh">
+a = "Hello, World!"<br>
+print(a.split(",")) # 
+  returns ['Hello', ' World!']
+</div>
+
+</div>
+
+<p>Learn more about Lists in our <a href="pylists.html">Python Lists</a> chapter.</p>
+
+<hr />
+<h1>Python - String Concatenation</h1>
+<br />
+<h2>String Concatenation</h2>
+
+<p>To concatenate, or combine, two strings you can use the + operator.</p>
+
+<div class="w3-example">
+<h3>Example</h3>
+<p>Merge variable <code class="w3-codespan">a</code> with variable 
+<code class="w3-codespan">b</code> into variable <code class="w3-codespan">c</code>:</p>
+<div class="w3-code notranslate pythonHigh">
+  a = &quot;Hello&quot;<br>b = &quot;World&quot;<br>c = a + b<br>
+print(c)
+</div>
+
+</div>
+
+<div class="w3-example">
+<h3>Example</h3>
+<p>To add a space between them, add a <code class="w3-codespan">" "</code>:</p>
+<div class="w3-code notranslate pythonHigh">
+  a = &quot;Hello&quot;<br>b = &quot;World&quot;<br>c = a + " " + b<br>
+print(c)
+</div>
+</div>
+<hr />
+<h1>Python - Format Strings</h1>
+<br />
+<h2>String Format</h2>
+
+<p>As we learned in the Python Variables chapter, we cannot combine strings and numbers like this:</p>
+
+<div class="w3-example w3-pale-red">
+<h3>Example</h3>
+<div class="w3-code notranslate pythonHigh w3-border-red">
+  age = 36<br>txt = &quot;My name is John, I am &quot; + age<br>print(txt)
+</div>
+
+</div>
+
+<p>But we can combine strings and numbers by using the <code class="w3-codespan">format()</code> method!</p>
+
+<p>The <code class="w3-codespan">format()</code> method takes the passed arguments, 
+formats them, and places them in the string where the placeholders
+<code class="w3-codespan">{}</code> are:</p>
+
+<div class="w3-example">
+<h3>Example</h3>
+<p>Use the <code class="w3-codespan">format()</code> method to insert numbers 
+into strings:</p>
+<div class="w3-code notranslate pythonHigh">
+  age = 36<br>txt = &quot;My name is John, and I am {}&quot;<br>print(txt.format(age))
+</div>
+
+</div>
+
+<p>The format() method takes unlimited number of arguments, and are placed into 
+the respective placeholders:</p>
+
+<div class="w3-example">
+<h3>Example</h3>
+<div class="w3-code notranslate pythonHigh">
+  quantity = 3<br>itemno = 567<br>price = 49.95<br>myorder = &quot;I want {} 
+  pieces of item {} for {} dollars.&quot;<br>print(myorder.format(quantity, 
+  itemno, price))
+</div>
+
+</div>
+
+<p>You can use index numbers <code class="w3-codespan">{0}</code> to be sure the arguments are placed 
+in the correct placeholders:</p>
+
+<div class="w3-example">
+<h3>Example</h3>
+<div class="w3-code notranslate pythonHigh">
+  quantity = 3<br>itemno = 567<br>price = 49.95<br>myorder = &quot;I want to pay {2} 
+  dollars for {0} pieces of item {1}.&quot;<br>print(myorder.format(quantity, 
+  itemno, price))
+</div>
+
+</div>
+
+<hr>
+
+<p>Learn more about String Formatting in our <a href="pyStringFormat.html">String Formatting</a> chapter.</p>
+
+<hr />
+<h1>Python - Escape Characters</h1>
+<br />
+
+<h2>Escape Character</h2>
+
+<p>To insert characters that are illegal in a string, use an escape character.</p>
+<p>An escape character is a backslash <code class="w3-codespan">\</code> followed by the character you want to insert.</p>
+<p>An example of an illegal character is a double quote inside a string that is surrounded by double quotes:</p>
+
+<div class="w3-example w3-pale-red">
+<h3>Example</h3>
+<p>You will get an error if you use double quotes inside a string that is 
+surrounded by double quotes:</p>
+<div class="w3-code notranslate pythonHigh w3-border-red">
+txt = "We are the so-called "Vikings" from the north."
+</div>
+
+</div>
+
+<p>To fix this problem, use the escape character <code class="w3-codespan">\"</code>:</p>
+
+<div class="w3-example">
+<h3>Example</h3>
+<p>The escape character allows you to use double quotes when you normally would not be allowed:</p>
+<div class="w3-code notranslate pythonHigh">
+txt = "We are the so-called \"Vikings\" from the north."
+</div>
+
+</div>
+<hr>
+
+<h2>Escape Characters</h2>
+<p>Other escape characters used in Python:</p>
+
+<table class="ws-table-all notranslate">
+<tbody><tr>
+  <th width="25%">Code</th>
+  <th>Result</th>
+</tr>
+<tr>
+  <td>\'</td>
+  <td>Single Quote</td>
+
+</tr>
+<tr>
+  <td>\\</td>
+  <td>Backslash</td>
+
+</tr>
+<tr>
+  <td>\n</td>
+  <td>New Line</td>
+
+</tr>
+<tr>
+  <td>\r</td>
+  <td>Carriage Return</td>
+
+</tr>
+<tr>
+  <td>\t</td>
+  <td>Tab</td>
+
+</tr>
+<tr>
+  <td>\b</td>
+  <td>Backspace</td>
+
+</tr>
+<tr>
+  <td>\f</td>
+  <td>Form Feed</td>
+<td></td>
+</tr>
+<tr>
+  <td>\ooo</td>
+  <td>Octal value</td>
+
+</tr>
+<tr>
+  <td>\xhh</td>
+  <td>Hex value</td>
+
+</tr>
+</tbody></table>
+
+<hr />
+<h1>Python - String Methods</h1>
+<br />
+
+<h2>String Methods</h2>
+<p>Python has a set of built-in methods that you can use on strings.</p>
+
+<div class="w3-panel w3-note">
+  <p><strong>Note:</strong> All string methods returns new values. They do not change the original string.</p>
+</div>
+
+<table class="ws-table-all notranslate">
+<tr>
+<th>Method</th>
+<th>Description</th>
+</tr>
+  <tr>
+    <td><a href="ref_string_capitalize.html">capitalize()</a></td><td>Converts the first 
+    character to upper case</td>
+  </tr>
+  <tr>
+    <td><a href="ref_string_casefold.html">casefold()</a></td><td>Converts string into 
+    lower case</td>
+  </tr>
+  <tr>
+    <td><a href="ref_string_center.html">center()</a></td><td>Returns a centered 
+    string</td>
+  </tr>
+  <tr>
+    <td><a href="ref_string_count.html">count()</a></td><td>Returns the number of 
+    times a specified value occurs in a string</td>
+  </tr>
+  <tr>
+    <td><a href="ref_string_encode.html">encode()</a></td><td>Returns an encoded 
+    version of the string</td>
+  </tr>
+  <tr>
+    <td><a href="ref_string_endswith.html">endswith()</a></td><td>Returns true if the 
+    string ends with the specified value</td>
+  </tr>
+  <tr>
+    <td><a href="ref_string_expandtabs.html">expandtabs()</a></td><td>Sets the 
+    tab size of the string</td>
+  </tr>
+  <tr>
+    <td><a href="ref_string_find.html">find()</a></td><td>Searches the string for a 
+    specified value and returns the position of where it was found</td>
+  </tr>
+  <tr>
+    <td><a href="ref_string_format.html">format()</a></td><td>Formats specified 
+    values in a string</td>
+  </tr>
+  <tr>
+    <td>format_map()</td><td>Formats specified 
+    values in a string</td>
+  </tr>
+  <tr>
+    <td><a href="ref_string_index.html">index()</a></td><td>Searches the string 
+    for a specified value and returns the position of where it was found</td>
+  </tr>
+  <tr>
+    <td><a href="ref_string_isalnum.html">isalnum()</a></td><td>Returns True if all 
+    characters in the string are alphanumeric</td>
+  </tr>
+  <tr>
+    <td><a href="ref_string_isalpha.html">isalpha()</a></td><td>Returns True if all 
+    characters in the string are in the alphabet</td>
+  </tr>
+  <tr>
+    <td><a href="ref_string_isdecimal.html">isdecimal()</a></td><td>Returns True if all 
+    characters in the string are decimals</td>
+  </tr>
+  <tr>
+    <td><a href="ref_string_isdigit.html">isdigit()</a></td><td>Returns True if all 
+    characters in the string are digits</td>
+  </tr>
+  <tr>
+    <td><a href="ref_string_isidentifier.html">isidentifier()</a></td><td>Returns True if 
+    the string is an identifier</td>
+  </tr>
+  <tr>
+    <td><a href="ref_string_islower.html">islower()</a></td><td>Returns True if all 
+    characters in the string are lower case</td>
+  </tr>
+  <tr>
+    <td><a href="ref_string_isnumeric.html">isnumeric()</a></td><td>Returns True if 
+    all characters in the string are numeric</td>
+  </tr>
+  <tr>
+    <td><a href="ref_string_isprintable.html">isprintable()</a></td><td>Returns True if 
+    all characters in the string are printable</td>
+  </tr>
+  <tr>
+    <td><a href="ref_string_isspace.html">isspace()</a></td><td>Returns True if all 
+    characters in the string are whitespaces</td>
+  </tr>
+  <tr>
+    <td><a href="ref_string_istitle.html">istitle()</a></td>
+    <td>Returns True if the string follows the rules of a 
+    title</td>
+  </tr>
+  <tr>
+    <td><a href="ref_string_isupper.html">isupper()</a></td><td>Returns True if all 
+    characters in the string are upper case</td>
+  </tr>
+  <tr>
+    <td><a href="ref_string_join.html">join()</a></td><td>Joins the elements of 
+    an iterable to the end of the string</td>
+  </tr>
+  <tr>
+    <td><a href="ref_string_ljust.html">ljust()</a></td><td>Returns a left justified 
+    version of the string</td>
+  </tr>
+  <tr>
+    <td><a href="ref_string_lower.html">lower()</a></td><td>Converts a string into 
+    lower case</td>
+  </tr>
+  <tr>
+    <td><a href="ref_string_lstrip.html">lstrip()</a></td><td>Returns a left trim 
+    version of the string</td>
+  </tr>
+  <tr>
+    <td><a href="ref_string_maketrans.html">maketrans()</a></td><td>Returns a 
+    translation table to be used in translations</td>
+  </tr>
+  <tr>
+    <td><a href="ref_string_partition.html">partition()</a></td><td>Returns a tuple 
+    where the string is parted into three parts</td>
+  </tr>
+  <tr>
+    <td><a href="ref_string_replace.html">replace()</a></td><td>Returns a string 
+    where a specified value is replaced with a specified value</td>
+  </tr>
+  <tr>
+    <td><a href="ref_string_rfind.html">rfind()</a></td><td>Searches the string for 
+    a specified value and returns the last position of where it was found</td>
+  </tr>
+  <tr>
+    <td><a href="ref_string_rindex.html">rindex()</a></td><td>Searches the string for 
+    a specified value and returns the last position of where it was found</td>
+  </tr>
+  <tr>
+    <td><a href="ref_string_rjust.html">rjust()</a></td><td>Returns a right justified 
+    version of the string</td>
+  </tr>
+  <tr>
+    <td><a href="ref_string_rpartition.html">rpartition()</a></td><td>Returns a tuple 
+    where the string is parted into three parts</td>
+  </tr>
+  <tr>
+    <td><a href="ref_string_rsplit.html">rsplit()</a></td><td>Splits the string at 
+    the specified separator, and returns a list</td>
+  </tr>
+  <tr>
+    <td><a href="ref_string_rstrip.html">rstrip()</a></td><td>Returns a right trim 
+    version of the string</td>
+  </tr>
+  <tr>
+    <td><a href="ref_string_split.html">split()</a></td><td>Splits the string at 
+    the specified separator, and returns a list</td>
+  </tr>
+  <tr>
+    <td><a href="ref_string_splitlines.html">splitlines()</a></td><td>Splits the string 
+    at line breaks and returns a list</td>
+  </tr>
+  <tr>
+    <td><a href="ref_string_startswith.html">startswith()</a></td><td>Returns true if 
+    the string starts with the specified value</td>
+  </tr>
+  <tr>
+    <td><a href="ref_string_strip.html">strip()</a></td><td>Returns a trimmed version of the string</td>
+  </tr>
+  <tr>
+    <td><a href="ref_string_swapcase.html">swapcase()</a></td><td>Swaps cases, lower 
+    case becomes upper case and vice versa</td>
+  </tr>
+  <tr>
+    <td><a href="ref_string_title.html">title()</a></td><td>Converts the first 
+    character of each word to upper case</td>
+  </tr>
+  <tr>
+    <td><a href="ref_string_translate.html">translate()</a></td><td>Returns a 
+    translated string</td>
+  </tr>
+  <tr>
+    <td><a href="ref_string_upper.html">upper()</a></td><td>Converts a string 
+    into upper case</td>
+  </tr>
+<tr><td><a href="ref_string_zfill.html">zfill()</a></td><td>Fills the string with 
+  a specified number of 0 values at the beginning</td></tr>
+</table>
+
+
+   <!-- end -->     
+</div>
+    </div>
+  </div>
+</div>
+
+<ul class="pager navbar-fixed-bottom">
+  <li class="previous"><a href="pycasting.html">&laquo;Previous</a></li>
+  <li class="next"><a href="pybooleans.html">Next&raquo;</a></li>
+</ul>
+
+
+<footer class="mt-auto">
+<div class="jumbotron text-center" style="margin-bottom:0">
+copyright&copy; TeekaY-X maintained by <a href="https://TeekaY-X.github.io/AsahlumaTyika">Asahluma Tyika</a>
+</div>
+</footer>
+
+</body>
+</html>

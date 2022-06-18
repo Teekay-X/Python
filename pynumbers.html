@@ -1,0 +1,251 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <title>TeekaY-X | Python Numbers</title>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="icon" href="/css/icon.png" />
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+  <link rel="stylesheet" href="/css/index.css" />
+</head>
+<body class="d-flex flex-column min-vh-100">
+
+<!--<div class="jumbotron text-center" style="margin-bottom:0">
+  <h1>My First Bootstrap Page</h1>
+  <p>Resize this responsive page to see the effect!</p> 
+</div>-->
+
+<nav class="navbar navbar-inverse navbar-fixed-top">
+  <div class="container-fluid">
+    <div class="navbar-header">
+      <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#myNavbar">
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>                        
+      </button>
+      <a class="navbar-brand" href="#">TeekaY-X | Python Numbers</a>
+    </div>
+    <div class="collapse navbar-collapse" id="myNavbar">
+      <ul class="nav navbar-nav">
+        <li><a href="https://TeekaY-X.github.io">Home</a></li>
+          <li class="dropdown">
+        <a class="dropdown-toggle" data-toggle="dropdown" href="#">Python Course 
+        <span class="caret"></span></a>
+        <ul class="dropdown-menu">
+          <li><a href="pyintro.html">Python Introduction</a></li>
+          <li><a href="gtstt.html">Python Getting Started</a></li>
+          <li><a href="syntax.html">Python Syntax</a></li>
+          <li><a href="pycomments.html">Python Comments</a></li>
+          <li><a href="pyvariables.html">Python Variables</a></li>
+          <li><a href="pydatatypes.html">Python Data Types</a></li>
+          <li class="active"><a href="pynumbers.html">Python Numbers</a></li>
+          <li><a href="/python/pycasting.html">Python Casting</a></li>
+          <li><a href="/python/pystrings.html">Python Strings</a></li>
+          <li><a href="/python/pybooleans.html">Python Booleans</a></li>
+          <li><a href="/python/pyoperators.html">Python Operators</a></li>
+          <li><a href="/python/pylists.html">Python Lists</a></li>
+          <li><a href="/python/pytuples.html">Python Tuples</a></li>
+          <li><a href="/python/pysets.html">Python Sets</a></li>
+          <li><a href="/python/pydictionaries.html">Python Dictionaries</a></li>
+          <li><a href="/python/pyifelse.html">Python If...Else</a></li>
+          <li><a href="/python/pywhileloops.html">Python While Loops</a></li>
+          <li><a href="/python/pyforloops.html">Python For Loops</a></li>
+          <li><a href="/python/pyfunctions.html">Python Functions</a></li>
+          <li><a href="/python/pylambda.html">Python Lambda</a></li>
+          <li><a href="/python/pyarrays.html">Python Arrays</a></li>
+          <li><a href="/python/pyclasses.html">Python Classes/Objects</a></li>
+          <li><a href="/python/pyinheritance.html">Python Inheritance</a></li>
+          <li><a href="/python/pyiterators.html">Python Iterators</a></li>
+          <li><a href="/python/pyscope.html">Python Scope</a></li>
+          <li><a href="/python/pymodules.html">Python Modules</a></li>
+          <li><a href="/python/pydates.html">Python Dates</a></li>
+          <li><a href="/python/pymaths.html">Python Math</a></li>
+          <li><a href="/python/pyJSON.html">Python JSON</a></li>
+          <li><a href="/python/pyRegEx.html">Python RegEx</a></li>
+          <li><a href="/python/pypip.html">Python PIP</a></li>
+          <li><a href="/python/pytryexcept.html">Python Try...Except</a></li>
+          <li><a href="/python/pyusrinput.html">Python User Input</a></li>
+          <li><a href="/python/pyStringFormat.html">Python String Formatting</a></li>
+        </ul>
+      </li>
+      
+        <li class="dropdown">
+        <a class="dropdown-toggle" data-toggle="dropdown" href="#">Flask Course
+        <span class="caret"></span></a>
+        <ul class="dropdown-menu">
+          <li><a href="#">Coming Soon</a></li>
+          <li><a href="#">Coming Soon</a></li>
+          <li><a href="#">Coming Soon</a></li>
+        </ul>
+      </li>
+      
+    <li><a href="https://TeekaY-X.github.io/about.html">About us</a></li>
+       <!-- <li><a href="#">Python</a></li>
+        <li><a href="#">Python-Flask</a></li>-->
+      </ul>
+    </div>
+  </div>
+</nav>
+<br>
+<br>
+<div class="container-fluid">
+  <div class="row">
+    <div class="col-sm-8">
+<div class="jumbotron">
+  <h1>Python Numbers</h1>
+  <br />
+  <h2>Python Numbers</h2>
+
+<p>There are three numeric types in Python:</p>
+<ul>
+  <li><code class="w3-codespan">int</code></li>
+  <li><code class="w3-codespan">float</code></li>
+  <li><code class="w3-codespan">complex</code></li>
+</ul>
+
+<p>Variables of numeric types are created when you assign a value to them:</p>
+
+<div class="w3-example">
+<h3>Example</h3>
+<div class="w3-code notranslate pythonHigh">
+x = 1&nbsp;&nbsp;&nbsp; 
+  # int<br>y = 2.8&nbsp; # float<br>z = 1j&nbsp;&nbsp; # complex<br>
+</div>
+</div>
+
+<p>To verify the type of any object in Python, use the <code class="w3-codespan">type()</code> function:</p>
+
+<div class="w3-example">
+<h3>Example</h3>
+<div class="w3-code notranslate pythonHigh">
+  print(type(x))<br>print(type(y))<br>print(type(z))<br>
+</div>
+</div>
+
+<hr>
+
+<h2>Int</h2>
+
+<p>Int, or integer, is a whole number, 
+positive or negative, without decimals, of unlimited length.</p>
+
+
+<div class="w3-example">
+<h3>Example</h3>
+<p>Integers:</p>
+<div class="w3-code notranslate pythonHigh">
+x = 1<br>y = 35656222554887711<br>z = 
+  -3255522<br><br>print(type(x))<br>print(type(y))<br>print(type(z))</div>
+
+</div>
+
+<hr>
+
+<h2>Float</h2>
+
+<p>Float, or "floating point number" is a number, positive or negative, containing one or more decimals.</p>
+
+<div class="w3-example">
+<h3>Example</h3>
+<p>Floats:</p>
+<div class="w3-code notranslate pythonHigh">
+x = 1.10<br>y = 1.0<br>z = -35.59<br><br>print(type(x))<br>print(type(y))<br>print(type(z))</div>
+
+</div>
+
+<p>Float can also be scientific numbers with an "e" to indicate the power of 10.</p>
+
+<div class="w3-example">
+<h3>Example</h3>
+<p>Floats:</p>
+<div class="w3-code notranslate pythonHigh">
+  x = 35e3<br>y = 12E4<br>z = -87.7e100<br><br>print(type(x))<br>print(type(y))<br>
+  print(type(z))</div>
+
+</div>
+
+<hr>
+<div id="midcontentadcontainer" style="overflow:auto;text-align:center">
+<!-- MidContent -->
+<!-- <p class="adtext">Advertisement</p> -->
+
+  <div id="adngin-mid_content-0"></div>
+  
+</div>
+<hr>
+
+<h2>Complex</h2>
+
+<p>Complex numbers are written with a &quot;j&quot; as the imaginary part:</p>
+
+<div class="w3-example">
+<h3>Example</h3>
+<p>Complex:</p>
+<div class="w3-code notranslate pythonHigh">
+  x = 3+5j<br>y = 5j<br>z = -5j<br><br>print(type(x))<br>print(type(y))<br>
+  print(type(z))</div>
+
+</div>
+
+<hr>
+
+<h2>Type Conversion</h2>
+
+<p>You can convert from one type to another with the <code class="w3-codespan">int()</code>, 
+<code class="w3-codespan">float()</code>, and <code class="w3-codespan">complex()</code> methods:</p>
+
+<div class="w3-example">
+<h3>Example</h3>
+<p>Convert from one type to another:</p>
+<div class="w3-code notranslate pythonHigh">
+  x = 1&nbsp;&nbsp;&nbsp; # int<br>y = 2.8&nbsp; # float<br>z = 1j&nbsp;&nbsp; # complex<br><br>#convert from int to float:<br>
+  a = float(x)<br><br>#convert from float to int:<br>
+  b = int(y)<br><br>#convert from int to complex:<br>c = complex(x)<br><br>print(a)<br>print(b)<br>
+  print(c)<br><br>print(type(a))<br>print(type(b))<br>
+  print(type(c))</div>
+
+</div>
+
+<div class="w3-panel w3-note">
+  <p><strong>Note:</strong> You cannot convert complex numbers into another number type.</p>
+</div>
+
+<hr>
+
+<h2>Random Number</h2>
+
+<p>Python does not have a <code class="w3-codespan">random()</code> function to 
+make a random number, but Python has a built-in module called
+<code class="w3-codespan">random</code> that can be used to make random numbers:</p>
+
+<div class="w3-example">
+<h3>Example</h3>
+<p>Import the random module, and display a random number between 1 and 9:</p>
+<div class="w3-code notranslate pythonHigh">
+  import random<br><br>print(random.randrange(1, 10))</div>
+
+</div>
+  
+  <!-- end -->
+</div>
+    </div>
+  </div>
+</div>
+
+<ul class="pager navbar-fixed-bottom">
+  <li class="previous"><a href="pydatatypes.html">&laquo;Previous</a></li>
+  <li class="next"><a href="pycasting.html">Next&raquo;</a></li>
+</ul>
+
+
+<footer class="mt-auto">
+<div class="jumbotron text-center" style="margin-bottom:0">
+copyright&copy; TeekaY-X maintained by <a href="https://TeekaY-X.github.io/AsahlumaTyika">Asahluma Tyika</a>
+</div>
+</footer>
+
+</body>
+</html>

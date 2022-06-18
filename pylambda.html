@@ -1,0 +1,222 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <title>TeekaY-X | Python Lambda</title>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="icon" href="/css/icon.png" />
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+  <link rel="stylesheet" href="/css/index.css" />
+</head>
+<body class="d-flex flex-column min-vh-100">
+
+<!--<div class="jumbotron text-center" style="margin-bottom:0">
+  <h1>My First Bootstrap Page</h1>
+  <p>Resize this responsive page to see the effect!</p> 
+</div>-->
+
+<nav class="navbar navbar-inverse navbar-fixed-top">
+  <div class="container-fluid">
+    <div class="navbar-header">
+      <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#myNavbar">
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>                        
+      </button>
+      <a class="navbar-brand" href="#">TeekaY-X | Python Lambda</a>
+    </div>
+    <div class="collapse navbar-collapse" id="myNavbar">
+      <ul class="nav navbar-nav">
+        <li><a href="https://TeekaY-X.github.io">Home</a></li>
+          <li class="dropdown">
+        <a class="dropdown-toggle" data-toggle="dropdown" href="#">Python Course 
+        <span class="caret"></span></a>
+        <ul class="dropdown-menu">
+          <li><a href="pyintro.html">Python Introduction</a></li>
+          <li><a href="gtstt.html">Python Getting Started</a></li>
+          <li><a href="syntax.html">Python Syntax</a></li>
+          <li><a href="pycomments.html">Python Comments</a></li>
+          <li><a href="pyvariables.html">Python Variables</a></li>
+          <li><a href="pydatatypes.html">Python Data Types</a></li>
+          <li><a href="pynumbers.html">Python Numbers</a></li>
+          <li><a href="/python/pycasting.html">Python Casting</a></li>
+          <li><a href="/python/pystrings.html">Python Strings</a></li>
+          <li><a href="/python/pybooleans.html">Python Booleans</a></li>
+          <li><a href="/python/pyoperators.html">Python Operators</a></li>
+          <li><a href="/python/pylists.html">Python Lists</a></li>
+          <li><a href="/python/pytuples.html">Python Tuples</a></li>
+          <li><a href="/python/pysets.html">Python Sets</a></li>
+          <li><a href="/python/pydictionaries.html">Python Dictionaries</a></li>
+          <li><a href="/python/pyifelse.html">Python If...Else</a></li>
+          <li><a href="/python/pywhileloops.html">Python While Loops</a></li>
+          <li><a href="/python/pyforloops.html">Python For Loops</a></li>
+          <li><a href="/python/pyfunctions.html">Python Functions</a></li>
+          <li class="active"><a href="/python/pylambda.html">Python Lambda</a></li>
+          <li><a href="/python/pyarrays.html">Python Arrays</a></li>
+          <li><a href="/python/pyclasses.html">Python Classes/Objects</a></li>
+          <li><a href="/python/pyinheritance.html">Python Inheritance</a></li>
+          <li><a href="/python/pyiterators.html">Python Iterators</a></li>
+          <li><a href="/python/pyscope.html">Python Scope</a></li>
+          <li><a href="/python/pymodules.html">Python Modules</a></li>
+          <li><a href="/python/pydates.html">Python Dates</a></li>
+          <li><a href="/python/pymaths.html">Python Math</a></li>
+          <li><a href="/python/pyJSON.html">Python JSON</a></li>
+          <li><a href="/python/pyRegEx.html">Python RegEx</a></li>
+          <li><a href="/python/pypip.html">Python PIP</a></li>
+          <li><a href="/python/pytryexcept.html">Python Try...Except</a></li>
+          <li><a href="/python/pyusrinput.html">Python User Input</a></li>
+          <li><a href="/python/pyStringFormat.html">Python String Formatting</a></li>
+        </ul>
+      </li>
+      
+        <li class="dropdown">
+        <a class="dropdown-toggle" data-toggle="dropdown" href="#">Flask Course
+        <span class="caret"></span></a>
+        <ul class="dropdown-menu">
+          <li><a href="#">Coming Soon</a></li>
+          <li><a href="#">Coming Soon</a></li>
+          <li><a href="#">Coming Soon</a></li>
+        </ul>
+      </li>
+      <li><a href="https://TeekaY-X.github.io/about.html">About us</a></li>
+       <!-- <li><a href="#">Python</a></li>
+        <li><a href="#">Python-Flask</a></li>-->
+      </ul>
+    </div>
+  </div>
+</nav>
+<br>
+<br>
+<div class="container-fluid">
+  <div class="row">
+    <div class="col-sm-8">
+      <div class="jumbotron">
+        <h1>Python Lambda Functions</h1>
+        <p class="intro">A lambda function is a small anonymous function.</p>
+<p class="intro">A lambda function can take any number of arguments, but can only have one expression.</p>
+<hr>
+
+<h2>Syntax</h2>
+<div class="w3-code w3-border notranslate">
+lambda <em>arguments </em>: <em>expression</em>
+</div>
+
+<p>The expression is executed and the result is returned:</p>
+<div class="w3-example">
+<h3>Example</h3>
+  <p>Add 10 to argument <code class="w3-codespan">a</code>, and 
+  return the result:</p>
+<div class="w3-code notranslate pythonHigh">
+  x = lambda a : a + 10<br>print(x(5))</div>
+
+</div>
+
+<p>Lambda functions can take any number of arguments:</p>
+<div class="w3-example">
+<h3>Example</h3>
+  <p>Multiply argument <code class="w3-codespan">a</code> with argument 
+  <code class="w3-codespan">b</code> and return the 
+  result:</p>
+<div class="w3-code notranslate pythonHigh">
+  x = lambda a, b : a * b<br>print(x(5, 6))</div>
+
+</div>
+
+<div class="w3-example">
+<h3>Example</h3>
+  <p>Summarize argument <code class="w3-codespan">a</code>, 
+  <code class="w3-codespan">b</code>, and <code class="w3-codespan">c</code> and 
+  return the 
+  result:</p>
+<div class="w3-code notranslate pythonHigh">
+  x = lambda a, b, c : a + b + c<br>print(x(5, 6, 
+  2))</div>
+</div>
+<hr>
+
+<hr>
+<h2>Why Use Lambda Functions?</h2>
+
+<p>The power of lambda is better shown when you use them as an anonymous 
+function inside another function.</p>
+<p>Say you have a function definition that takes one argument, and that argument 
+will be multiplied with an unknown number:</p>
+
+<div class="w3-example">
+<div class="w3-code notranslate pythonHigh">
+def myfunc(n):<br>
+&nbsp;&nbsp;return lambda a : a * n
+</div>
+</div>
+
+<p>Use that function definition to make a function that always doubles the 
+number you send in:</p>
+
+<div class="w3-example">
+<h3>Example</h3>
+<div class="w3-code notranslate pythonHigh">
+def myfunc(n):<br>
+&nbsp;&nbsp;return lambda a : a * n<br>
+<br>
+  mydoubler = myfunc(2)<br>
+  <br>print(mydoubler(11))
+</div>
+
+</div>
+
+<p>Or, use the same function definition to make a function that always <em>triples</em> the 
+number you send in:</p>
+
+<div class="w3-example">
+<h3>Example</h3>
+<div class="w3-code notranslate pythonHigh">
+def myfunc(n):<br>
+&nbsp;&nbsp;return lambda a : a * n<br>
+<br>
+  mytripler = myfunc(3)<br>
+  <br>print(mytripler(11))
+</div>
+</div>
+
+<p>Or, use the same function definition to make both functions, in the same 
+program:</p>
+
+<div class="w3-example">
+<h3>Example</h3>
+<div class="w3-code notranslate pythonHigh">
+def myfunc(n):<br>
+&nbsp;&nbsp;return lambda a : a * n<br>
+<br>
+  mydoubler = myfunc(2)<br>mytripler = myfunc(3)<br>
+  <br>print(mydoubler(11))
+<br>print(mytripler(11))
+</div>
+</div>
+
+<div class="w3-panel w3-note">
+  <p>Use lambda functions when an anonymous function is required for a short period of time.</p>
+</div>
+<!--end -->
+</div>
+    </div>
+  </div>
+</div>
+
+<ul class="pager navbar-fixed-bottom">
+  <li class="previous"><a href="pyfunctions.html">&laquo;Previous</a></li>
+  <li class="next"><a href="pyarrays.html">Next&raquo;</a></li>
+</ul>
+
+
+<footer class="mt-auto">
+<div class="jumbotron text-center" style="margin-bottom:0">
+copyright&copy; TeekaY-X maintained by <a href="https://TeekaY-X.github.io/AsahlumaTyika">Asahluma Tyika</a>
+</div>
+</footer>
+
+
+</body>
+</html>

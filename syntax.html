@@ -1,0 +1,233 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <title>TeekaY-X | Python Syntax</title>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="icon" href="/css/icon.png" />
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+  <link rel="stylesheet" href="/css/index.css" />
+</head>
+<body class="d-flex flex-column min-vh-100">
+
+<!--<div class="jumbotron text-center" style="margin-bottom:0">
+  <h1>My First Bootstrap Page</h1>
+  <p>Resize this responsive page to see the effect!</p> 
+</div>-->
+
+<nav class="navbar navbar-inverse navbar-fixed-top">
+  <div class="container-fluid">
+    <div class="navbar-header">
+      <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#myNavbar">
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>                        
+      </button>
+      <a class="navbar-brand" href="#">TeekaY-X | Python Syntax</a>
+    </div>
+    <div class="collapse navbar-collapse" id="myNavbar">
+      <ul class="nav navbar-nav">
+        <li><a href="https://TeekaY-X.github.io">Home</a></li>
+          <li class="dropdown">
+        <a class="dropdown-toggle" data-toggle="dropdown" href="#">Python Course 
+        <span class="caret"></span></a>
+        <ul class="dropdown-menu">
+          <li><a href="pyintro.html">Python Introduction</a></li>
+          <li><a href="gtstt.html">Python Getting Started</a></li>
+          <li class="active"><a href="syntax.html">Python Syntax</a></li>
+          <li><a href="pycomments.html">Python Comments</a></li>
+          <li><a href="pyvariables.html">Python Variables</a></li>
+          <li><a href="pydatatypes.html">Python Data Types</a></li>
+          <li><a href="pynumbers.html">Python Numbers</a></li>
+         <li><a href="/python/pycasting.html">Python Casting</a></li>
+          <li><a href="/python/pystrings.html">Python Strings</a></li>
+          <li><a href="/python/pybooleans.html">Python Booleans</a></li>
+          <li><a href="/python/pyoperators.html">Python Operators</a></li>
+          <li><a href="/python/pylists.html">Python Lists</a></li>
+          <li><a href="/python/pytuples.html">Python Tuples</a></li>
+          <li><a href="/python/pysets.html">Python Sets</a></li>
+          <li><a href="/python/pydictionaries.html">Python Dictionaries</a></li>
+          <li><a href="/python/pyifelse.html">Python If...Else</a></li>
+          <li><a href="/python/pywhileloops.html">Python While Loops</a></li>
+          <li><a href="/python/pyforloops.html">Python For Loops</a></li>
+          <li><a href="/python/pyfunctions.html">Python Functions</a></li>
+          <li><a href="/python/pylambda.html">Python Lambda</a></li>
+          <li><a href="/python/pyarrays.html">Python Arrays</a></li>
+          <li><a href="/python/pyclasses.html">Python Classes/Objects</a></li>
+          <li><a href="/python/pyinheritance.html">Python Inheritance</a></li>
+          <li><a href="/python/pyiterators.html">Python Iterators</a></li>
+          <li><a href="/python/pyscope.html">Python Scope</a></li>
+          <li><a href="/python/pymodules.html">Python Modules</a></li>
+          <li><a href="/python/pydates.html">Python Dates</a></li>
+          <li><a href="/python/pymaths.html">Python Math</a></li>
+          <li><a href="/python/pyJSON.html">Python JSON</a></li>
+          <li><a href="/python/pyRegEx.html">Python RegEx</a></li>
+          <li><a href="/python/pypip.html">Python PIP</a></li>
+          <li><a href="/python/pytryexcept.html">Python Try...Except</a></li>
+          <li><a href="/python/pyusrinput.html">Python User Input</a></li>
+          <li><a href="/python/pyStringFormat.html">Python String Formatting</a></li>
+        </ul>
+      </li>
+      
+        <li class="dropdown">
+        <a class="dropdown-toggle" data-toggle="dropdown" href="#">Flask Course
+        <span class="caret"></span></a>
+        <ul class="dropdown-menu">
+          <li><a href="#">Coming Soon</a></li>
+          <li><a href="#">Coming Soon</a></li>
+          <li><a href="#">Coming Soon</a></li>
+        </ul>
+      </li>
+      <li><a href="https://TeekaY-X.github.io/about.html">About us</a></li>
+       <!-- <li><a href="#">Python</a></li>
+        <li><a href="#">Python-Flask</a></li>-->
+      </ul>
+    </div>
+  </div>
+</nav>
+<br>
+<br>
+<div class="container-fluid">
+  <div class="row">
+    <div class="col-sm-8">
+      <div class="jumbotron">
+      
+        <h2>Execute Python Syntax</h2>
+  
+    <p>As we learned in the previous page, Python syntax can be executed by writing directly in the Command Line:</p>
+  
+    <div class="w3-example" style="width:auto;">
+      <div class="w3-code notranslate w3-black">
+        &gt;&gt;&gt; print("Hello, World!")<br>
+        Hello, World!
+      </div>
+    </div>
+    
+
+
+<p>Or by creating a python file on the server, using the .py file extension, and running it in the Command Line:</p>
+
+<div class="w3-example">
+  <div class="w3-code notranslate w3-black">
+    C:\Users\<em>Your Name</em>&gt;python myfile.py
+  </div>
+</div>
+
+<hr>
+
+<a id="python_indentation"></a>
+<h2>Python Indentation</h2>
+
+<p>Indentation refers to the spaces at the beginning of a code line.</p>
+<p>Where in other programming languages the indentation in code is for readability 
+only, the indentation in Python is very important.</p>
+<p>Python uses indentation to indicate a block of code.</p>
+
+<div class="w3-example">
+<h3>Example</h3>
+<div class="w3-code notranslate pythonHigh">
+  if 5 &gt; 2:<br>&nbsp;
+print("Five is greater than two!")
+</div>
+</div>
+
+<p>Python will give you an error if you skip the indentation:</p>
+
+<div class="w3-example w3-pale-red">
+<h3>Example</h3>
+  <p>Syntax Error:</p>
+<div class="w3-code notranslate pythonHigh w3-border-red">
+if 5 &gt; 2:<br>
+print("Five is greater than two!")
+</div>
+</div>
+
+<p>The number of spaces is up to you as a programmer, the most common use is four, but it has 
+to be at least one.</p>
+
+<div class="w3-example">
+<h3>Example</h3>
+<div class="w3-code notranslate pythonHigh">
+  if 5 &gt; 2:<br>&nbsp;print("Five is greater than two!")&nbsp;
+<br>if 5 &gt; 2:<br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; print("Five is greater than two!")&nbsp;
+</div>
+</div>
+
+<p>You have to use the same number of spaces in the same block of code, 
+otherwise Python will give you an error:</p>
+
+<div class="w3-example w3-pale-red">
+<h3>Example</h3>
+  <p>Syntax Error:</p>
+<div class="w3-code notranslate pythonHigh w3-border-red">
+if 5 &gt; 2:<br>
+&nbsp;print("Five is greater than two!")
+<br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; print(&quot;Five is greater than 
+  two!&quot;)</div>
+</div>
+
+<hr>
+<div id="midcontentadcontainer" style="overflow:auto;text-align:center">
+<!-- MidContent -->
+<!-- <p class="adtext">Advertisement</p> -->
+
+  <div id="adngin-mid_content-0"></div>
+  
+</div>
+<hr>
+
+<a id="python_variables"></a>
+<h2>Python Variables</h2>
+
+<p>In Python, variables are created when you assign a value to it:
+<div class="w3-example">
+<h3>Example</h3>
+<p>Variables in Python:</p>
+<div class="w3-code notranslate pythonHigh">
+  x = 5<br>y = &quot;Hello, World!&quot;
+</div>
+</div>
+
+<p>Python has no command for declaring a variable.</p>
+<p>You will learn more about variables in the <a href="python_variables.asp">
+Python Variables</a> chapter.</p>
+<hr>
+<a id="python_comments"></a>
+<h2>Comments</h2>
+
+<p>Python has commenting capability for the purpose of in-code documentation.</p>
+<p>Comments start with a #, and Python will render the rest of the line as a comment:
+<div class="w3-example">
+<h3>Example</h3>
+<p>Comments in Python:</p>
+<div class="w3-code notranslate pythonHigh">
+#This is a comment.<br>
+print("Hello, World!")
+</div>
+
+</div>
+<!-- end -->
+</div>
+</div>
+</div>
+</div>
+
+<ul class="pager navbar-fixed-bottom">
+  <li class="previous"><a href="gtstt.html">&laquo;Previous</a></li>
+  <li class="next"><a href="pycomments.html">Next&raquo;</a></li>
+</ul>
+
+
+
+<footer class="mt-auto">
+<div class="jumbotron text-center" style="margin-bottom:0">
+copyright&copy; TeekaY-X maintained by <a href="https://TeekaY-X.github.io/AsahlumaTyika">Asahluma Tyika</a>
+</div>
+</footer>
+
+
+</body>
+</html>

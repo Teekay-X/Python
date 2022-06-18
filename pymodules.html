@@ -1,0 +1,281 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <title>TeekaY-X | Python Modules</title>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="icon" href="/css/icon.png" />
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+  <link rel="stylesheet" href="/css/index.css" />
+</head>
+<body class="d-flex flex-column min-vh-100">
+
+  <!--<div class="jumbotron text-center" style="margin-bottom:0">
+      <h1>My First Bootstrap Page</h1>
+      <p>Resize this responsive page to see the effect!</p>
+    </div>-->
+
+  <nav class="navbar navbar-inverse navbar-fixed-top">
+    <div class="container-fluid">
+      <div class="navbar-header">
+        <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#myNavbar">
+          <span class="icon-bar"></span>
+          <span class="icon-bar"></span>
+          <span class="icon-bar"></span>
+        </button>
+        <a class="navbar-brand" href="#">TeekaY-X | Python Modules</a>
+      </div>
+      <div class="collapse navbar-collapse" id="myNavbar">
+        <ul class="nav navbar-nav">
+          <li><a href="https://TeekaY-X.github.io">Home</a></li>
+          <li class="dropdown">
+            <a class="dropdown-toggle" data-toggle="dropdown" href="#">Python Course
+              <span class="caret"></span></a>
+            <ul class="dropdown-menu">
+              <li><a href="pyintro.html">Python Introduction</a></li>
+              <li><a href="gtstt.html">Python Getting Started</a></li>
+              <li><a href="syntax.html">Python Syntax</a></li>
+              <li><a href="pycomments.html">Python Comments</a></li>
+              <li><a href="pyvariables.html">Python Variables</a></li>
+              <li><a href="pydatatypes.html">Python Data Types</a></li>
+              <li><a href="pynumbers.html">Python Numbers</a></li>
+              <li><a href="/python/pycasting.html">Python Casting</a></li>
+              <li><a href="/python/pystrings.html">Python Strings</a></li>
+              <li><a href="/python/pybooleans.html">Python Booleans</a></li>
+              <li><a href="/python/pyoperators.html">Python Operators</a></li>
+              <li><a href="/python/pylists.html">Python Lists</a></li>
+              <li><a href="/python/pytuples.html">Python Tuples</a></li>
+              <li><a href="/python/pysets.html">Python Sets</a></li>
+              <li><a href="/python/pydictionaries.html">Python Dictionaries</a></li>
+              <li><a href="/python/pyifelse.html">Python If...Else</a></li>
+              <li><a href="/python/pywhileloops.html">Python While Loops</a></li>
+              <li><a href="/python/pyforloops.html">Python For Loops</a></li>
+              <li><a href="/python/pyfunctions.html">Python Functions</a></li>
+              <li><a href="/python/pylambda.html">Python Lambda</a></li>
+              <li><a href="/python/pyarrays.html">Python Arrays</a></li>
+              <li><a href="/python/pyclasses.html">Python Classes/Objects</a></li>
+              <li><a href="/python/pyinheritance.html">Python Inheritance</a></li>
+              <li><a href="/python/pyiterators.html">Python Iterators</a></li>
+              <li><a href="/python/pyscope.html">Python Scope</a></li>
+              <li class="active"><a href="/python/pymodules.html">Python Modules</a></li>
+              <li><a href="/python/pydates.html">Python Dates</a></li>
+              <li><a href="/python/pymaths.html">Python Math</a></li>
+              <li><a href="/python/pyJSON.html">Python JSON</a></li>
+              <li><a href="/python/pyRegEx.html">Python RegEx</a></li>
+              <li><a href="/python/pypip.html">Python PIP</a></li>
+              <li><a href="/python/pytryexcept.html">Python Try...Except</a></li>
+              <li><a href="/python/pyusrinput.html">Python User Input</a></li>
+              <li><a href="/python/pyStringFormat.html">Python String Formatting</a></li>
+            </ul>
+          </li>
+
+          <li class="dropdown">
+            <a class="dropdown-toggle" data-toggle="dropdown" href="#">Flask Course
+              <span class="caret"></span></a>
+            <ul class="dropdown-menu">
+              <li><a href="#">Coming Soon</a></li>
+              <li><a href="#">Coming Soon</a></li>
+              <li><a href="#">Coming Soon</a></li>
+            </ul>
+          </li>
+          <li><a href="https://TeekaY-X.github.io/about.html">About us</a></li>
+          <!-- <li><a href="#">Python</a></li>
+                            <li><a href="#">Python-Flask</a></li>-->
+        </ul>
+      </div>
+    </div>
+  </nav>
+  <br>
+  <br>
+  <div class="container-fluid">
+    <div class="row">
+      <div class="col-sm-8">
+        <div class="jumbotron">
+
+          <h1>Python Modules</h1>
+
+          <h2>What is a Module?</h2> <p>
+            Consider a module to be the same as a code library.
+          </p>
+          <p>
+            A file containing a set of functions you want to include in your application.
+          </p>
+          <hr> <h2>Create a Module</h2> <p>
+            To create a module just save the code you want in a file with the file extension <code class="w3-codespan">.py</code>:
+          </p>
+          <div class="w3-example">
+            <h3>Example</h3> <p>
+              Save this code in a file named <code class="w3-codespan">mymodule.py</code>
+            </p>
+            <div class="w3-code notranslate pythonHigh">
+              def greeting(name):<br>&nbsp; print(&quot;Hello, &quot; + name)
+            </div>
+          </div>
+          <h2>Use a Module</h2>  <p>
+            Now we can use the module we just created, by using the <code class="w3-codespan">import</code> statement:
+          </p>
+          <div class="w3-example">
+            <h3>Example</h3> <p>
+              Import the module named mymodule, and call the greeting function:
+            </p>
+            <div class="w3-code notranslate pythonHigh">
+              import mymodule<br><br>mymodule.greeting(&quot;Jonathan&quot;)
+            </div>
+            
+          </div>
+          <div class="w3-panel w3-note">
+            <p>
+              <strong>Note:</strong> When using a function from a module, use the syntax: <em>module_name.function_name</em>.
+            </p>
+          </div>
+          <hr>  <h2>Variables in Module</h2>  <p>
+            The module can contain functions, as already described, but also variables of  all types (arrays, dictionaries, objects etc):
+          </p>
+          <div class="w3-example">
+            <h3>Example</h3> <p>
+              Save this code in the file <code class="w3-codespan">mymodule.py</code>
+            </p>
+            <div class="w3-code notranslate pythonHigh">
+              person1 = {<br>&nbsp; &quot;name&quot;: &quot;John&quot;,<br>&nbsp; &quot;age&quot;: 36,<br>&nbsp;    &quot;country&quot;: &quot;Norway&quot;<br>}
+            </div>
+          </div>
+          <div class="w3-example">
+            <h3>Example</h3> <p>
+              Import the module named mymodule, and access the person1 dictionary:
+            </p>
+            <div class="w3-code notranslate pythonHigh">
+              import mymodule<br><br>a = mymodule.person1[&quot;age&quot;]<br>print(a)
+            </div>
+            
+          </div>
+          <hr> 
+          
+          <hr> 
+          <h2>Naming a Module</h2>  <p>
+            You can name the module file whatever you like, but it must have the file extension  <code class="w3-codespan">.py</code>
+          </p>
+          <h2>Re-naming a Module</h2>  <p>
+            You can create an alias when you import a module, by using the <code class="w3-codespan">as</code> keyword:
+          </p>
+          <div class="w3-example">
+            <h3>Example</h3> <p>
+              Create an alias for <code class="w3-codespan">mymodule</code> called <code class="w3-codespan">mx</code>:
+            </p>
+            <div class="w3-code notranslate pythonHigh">
+              import mymodule as mx<br><br>a = mx.person1[&quot;age&quot;]<br>print(a)
+            </div>
+            
+          </div>
+          <hr>  <h2>Built-in Modules</h2>  <p>
+            There are several built-in modules in Python, which you can import whenever you like.
+          </p>
+          <div class="w3-example">
+            <h3>Example</h3> <p>
+              Import and use the <code class="w3-codespan">platform</code> module:
+            </p>
+            <div class="w3-code notranslate pythonHigh">
+              import platform<br><br>x = platform.system()<br>print(x)
+            </div>
+          
+          </div>
+          <hr>  <h2>Using the dir() Function</h2>  <p>
+            There is a built-in function to list all the function names (or variable  names) in a module. The <code class="w3-codespan">dir()</code> function:
+          </p>
+          <div class="w3-example">
+            <h3>Example</h3> <p>
+              List all the defined names belonging to the platform module:
+            </p>
+            <div class="w3-code notranslate pythonHigh">
+              import platform<br><br>x = dir(platform)<br>print(x)
+            </div>
+            
+          </div>
+          <div class="w3-panel w3-note">
+            <p>
+              <strong>Note:</strong> The dir() function can be used on <em>all</em>    modules, also the ones you create yourself.
+            </p>
+          </div>
+          <hr>  <h2>Import From Module</h2>  <p>
+            You can choose to import only parts from a module, by using the <code class="w3-codespan">from</code> keyword.
+          </p>
+          <div class="w3-example">
+            <h3>Example</h3> <p>
+              The module named <code class="w3-codespan">mymodule</code> has one function  and one dictionary:
+            </p>
+            <div class="w3-code notranslate pythonHigh">
+              def greeting(name):<br>&nbsp; print(&quot;Hello, &quot; + name)<br><br>person1    = {<br>&nbsp; &quot;name&quot;: &quot;John&quot;,<br>&nbsp; &quot;age&quot;: 36,<br>&nbsp; &quot;country&quot;:    &quot;Norway&quot;<br>}<br>
+            </div>
+          </div>
+          <div class="w3-example">
+            <h3>Example</h3> <p>
+              Import only the person1 dictionary from the module:
+            </p>
+            <div class="w3-code notranslate pythonHigh">
+              from mymodule import person1<br><br>print (person1[&quot;age&quot;])<br>
+            </div>
+            
+          </div>
+          <div class="w3-panel w3-note">
+            <p>
+              <strong>Note:</strong> When importing using the <code class="w3-codespan">from</code>    keyword, do not use the module name when referring to elements in the module.    Example: <code class="w3-codespan">person1[&quot;age&quot;]</code>, <strong>not</strong>   <code class="w3-codespan"><strike>mymodule.person1[&quot;age&quot;]</strike></code>
+            </p>
+          </div>
+          <hr>  <h2>Where to Store a Module?</h2>  <p>
+            You can store the modules in the same directory as the rest of your python files, or you can choose a different location.
+          </p>
+          <p>
+            Python will start by searching the current directory, then it will search in every location described in the PYTHONPATH variable.
+          </p>
+          <p>
+            To see which locations that are described in the PYTHONPATH variable, check the sys.path property:
+          </p>
+          <div class="w3-example">
+            <h3>Example</h3> <p>
+              List all the locations described in the PYTHONPATH property:
+            </p>
+            <div class="w3-code notranslate pythonHigh">
+              import sys<br><br>print(sys.path)
+            </div>
+            
+          </div>
+          <p>
+            To <em>add</em> locations to the PYTHONPATH variable use the set PYTHONPATH statement:
+          </p>
+          <div class="w3-example">
+            <h3>Example</h3> <p>
+              Add a new location to the PYTHONPATH property:
+            </p>
+            <div class="w3-code notranslate pythonHigh">
+              C:\Users\Your Name&gt;set PYTHONPATH = C:\Users\Your Name\python_modules<br>
+            </div>
+          
+          </div>
+          <div class="w3-panel w3-note">
+            <p>
+              <strong>Note:</strong> The dir() function can be used on <em>all</em>    modules.
+            </p>
+          </div>
+
+          <!--end-->
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <ul class="pager navbar-fixed-bottom">
+    <li class="previous"><a href="pyscope.html">&laquo;Previous</a></li>
+    <li class="next"><a href="pydates.html">Next&raquo;</a></li>
+  </ul>
+
+
+  <footer class="mt-auto">
+    <div class="jumbotron text-center" style="margin-bottom:0">
+      copyright&copy; TeekaY-X maintained by <a href="https://TeekaY-X.github.io/AsahlumaTyika">Asahluma Tyika</a>
+    </div>
+  </footer>
+
+
+</body>
+</html>

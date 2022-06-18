@@ -1,0 +1,623 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <title>TeekaY-X | Python Sets</title>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="icon" href="/css/icon.png" />
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+  <link rel="stylesheet" href="/css/index.css" />
+</head>
+<body class="d-flex flex-column min-vh-100">
+
+<!--<div class="jumbotron text-center" style="margin-bottom:0">
+  <h1>My First Bootstrap Page</h1>
+  <p>Resize this responsive page to see the effect!</p> 
+</div>-->
+
+<nav class="navbar navbar-inverse navbar-fixed-top">
+  <div class="container-fluid">
+    <div class="navbar-header">
+      <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#myNavbar">
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>                        
+      </button>
+      <a class="navbar-brand" href="#">TeekaY-X | Python Sets</a>
+    </div>
+    <div class="collapse navbar-collapse" id="myNavbar">
+      <ul class="nav navbar-nav">
+        <li><a href="https://TeekaY-X.github.io">Home</a></li>
+          <li class="dropdown">
+        <a class="dropdown-toggle" data-toggle="dropdown" href="#">Python Course 
+        <span class="caret"></span></a>
+        <ul class="dropdown-menu">
+          <li><a href="pyintro.html">Python Introduction</a></li>
+          <li><a href="gtstt.html">Python Getting Started</a></li>
+          <li><a href="syntax.html">Python Syntax</a></li>
+          <li><a href="pycomments.html">Python Comments</a></li>
+          <li><a href="pyvariables.html">Python Variables</a></li>
+          <li><a href="pydatatypes.html">Python Data Types</a></li>
+          <li><a href="pynumbers.html">Python Numbers</a></li>
+          <li><a href="/python/pycasting.html">Python Casting</a></li>
+          <li><a href="/python/pystrings.html">Python Strings</a></li>
+          <li><a href="/python/pybooleans.html">Python Booleans</a></li>
+          <li><a href="/python/pyoperators.html">Python Operators</a></li>
+          <li><a href="/python/pylists.html">Python Lists</a></li>
+          <li><a href="/python/pytuples.html">Python Tuples</a></li>
+          <li class="active"><a href="/python/pysets.html">Python Sets</a></li>
+          <li><a href="/python/pydictionaries.html">Python Dictionaries</a></li>
+          <li><a href="/python/pyifelse.html">Python If...Else</a></li>
+          <li><a href="/python/pywhileloops.html">Python While Loops</a></li>
+          <li><a href="/python/pyforloops.html">Python For Loops</a></li>
+          <li><a href="/python/pyfunctions.html">Python Functions</a></li>
+          <li><a href="/python/pylambda.html">Python Lambda</a></li>
+          <li><a href="/python/pyarrays.html">Python Arrays</a></li>
+          <li><a href="/python/pyclasses.html">Python Classes/Objects</a></li>
+          <li><a href="/python/pyinheritance.html">Python Inheritance</a></li>
+          <li><a href="/python/pyiterators.html">Python Iterators</a></li>
+          <li><a href="/python/pyscope.html">Python Scope</a></li>
+          <li><a href="/python/pymodules.html">Python Modules</a></li>
+          <li><a href="/python/pydates.html">Python Dates</a></li>
+          <li><a href="/python/pymaths.html">Python Math</a></li>
+          <li><a href="/python/pyJSON.html">Python JSON</a></li>
+          <li><a href="/python/pyRegEx.html">Python RegEx</a></li>
+          <li><a href="/python/pypip.html">Python PIP</a></li>
+          <li><a href="/python/pytryexcept.html">Python Try...Except</a></li>
+          <li><a href="/python/pyusrinput.html">Python User Input</a></li>
+          <li><a href="/python/pyStringFormat.html">Python String Formatting</a></li>
+        </ul>
+      </li>
+      
+        <li class="dropdown">
+        <a class="dropdown-toggle" data-toggle="dropdown" href="#">Flask Course
+        <span class="caret"></span></a>
+        <ul class="dropdown-menu">
+          <li><a href="#">Coming Soon</a></li>
+          <li><a href="#">Coming Soon</a></li>
+          <li><a href="#">Coming Soon</a></li>
+        </ul>
+      </li>
+      <li><a href="https://TeekaY-X.github.io/about.html">About us</a></li>
+       <!-- <li><a href="#">Python</a></li>
+        <li><a href="#">Python-Flask</a></li>-->
+      </ul>
+    </div>
+  </div>
+</nav>
+<br>
+<br>
+<div class="container-fluid">
+  <div class="row">
+    <div class="col-sm-8">
+      <div class="jumbotron">
+<h1>Python - Sets</h1>
+<br />
+<div class="w3-codeline notranslate pythonHigh">
+myset = {"apple", "banana", "cherry"}
+</div>
+
+<hr>
+<h2>Set</h2>
+
+<p>Sets are used to store multiple items in a single variable.</p>
+
+<p>Set is one of 4 built-in data types in Python used to store collections of 
+data, the other 3 are <a href="pylists.html">List</a>, 
+<a href="pytuples.html">Tuple</a>, and <a href="pydictionaries.html">Dictionary</a>, all with different qualities and usage.</p>
+
+<p>A set is a collection which is <em>unordered</em>, <em>unchangeable*</em>, and <em>unindexed</em>.</p>
+
+<div class="w3-panel w3-note">
+  <p><strong>* Note:</strong> Set <em>items</em> are unchangeable, but you can remove 
+  items and add new items.</p>
+</div>
+
+
+<p>Sets are written with curly brackets.</p>
+
+<div class="w3-example">
+<h3>Example</h3>
+<p>Create a Set:</p>
+<div class="w3-code notranslate pythonHigh">
+thisset = {&quot;apple&quot;, &quot;banana&quot;, &quot;cherry&quot;}<br>print(thisset)</div>
+
+</div>
+
+<div class="w3-panel w3-note">
+  <p><strong>Note:</strong> Sets are unordered, so you cannot be sure in which 
+  order the items will appear.</p>
+</div>
+
+<hr>
+
+<h2>Set Items</h2>
+
+<p>Set items are unordered, unchangeable, and do not allow duplicate values.</p>
+
+<hr>
+
+<h2>Unordered</h2>
+
+<p>Unordered means that the items in a set do not have a defined order.</p>
+<p>Set items can appear in a different order every time you use them, 
+and cannot be referred to by index or key.</p>
+
+<hr>
+<h2>Unchangeable</h2>
+
+<p>Set items are unchangeable, meaning that we cannot change the items after the set has been created.</p>
+<div class="w3-panel w3-note">
+<p>Once a set is created, you cannot change its items, but you can remove items 
+and add new items.</p>
+</div>
+
+<hr>
+
+<h2>Duplicates Not Allowed</h2>
+<p>Sets cannot have two items with the same value.</p>
+
+<div class="w3-example">
+<h3>Example</h3>
+<p>Duplicate values will be ignored:</p>
+<div class="w3-code notranslate pythonHigh">
+  thisset = {&quot;apple&quot;, &quot;banana&quot;, &quot;cherry&quot;, &quot;apple&quot;}<br><br>
+  print(thisset)
+</div>
+
+</div>
+
+<hr>
+
+<hr>
+
+<h2>Get the Length of a Set</h2>
+
+<p>To determine how many items a set has, use the <code class="w3-codespan">len()</code> 
+function.</p>
+
+<div class="w3-example">
+<h3>Example</h3>
+<p>Get the number of items in a set:</p>
+<div class="w3-code notranslate pythonHigh">
+  thisset = {&quot;apple&quot;, &quot;banana&quot;, &quot;cherry&quot;}<br><br>
+  print(len(thisset))</div>
+
+</div>
+
+<hr>
+<h2>Set Items - Data Types</h2>
+
+<p>Set items can be of any data type:</p>
+
+<div class="w3-example">
+<h3>Example</h3>
+<p>String, int and boolean data types:</p>
+<div class="w3-code notranslate pythonHigh">
+  set1 = {&quot;apple&quot;, &quot;banana&quot;, &quot;cherry&quot;}<br>
+  set2 = {1, 5, 7, 9, 3}<br>
+  set3 = {True, False, False}</div>
+
+</div>
+
+<p>A set can contain different data types:</p>
+
+<div class="w3-example">
+<h3>Example</h3>
+<p>A set with strings, integers and boolean values:</p>
+<div class="w3-code notranslate pythonHigh">
+  set1 = {&quot;abc&quot;, 34, True, 40, &quot;male&quot;}</div>
+
+</div>
+
+<hr>
+<h2>type()</h2>
+
+<p>From Python's perspective, sets are defined as objects with the data type 'set':</p>
+
+<div class="w3-codeline notranslate">
+&lt;class 'set'&gt;
+</div>
+
+<div class="w3-example">
+<h3>Example</h3>
+<p>What is the data type of a set?</p>
+<div class="w3-code notranslate pythonHigh">
+myset = {&quot;apple&quot;, &quot;banana&quot;, &quot;cherry&quot;}<br>
+print(type(myset))
+</div>
+
+</div>
+
+<hr>
+
+<h2>The set() Constructor</h2>
+<p>It is also possible to use the <span class="w3-codespan">set()</span> 
+constructor to make a set.</p>
+
+<div class="w3-example">
+<h3>Example</h3>
+<p>Using the set() constructor to make a set:</p>
+<div class="w3-code notranslate pythonHigh">
+thisset = set(("apple", "banana", "cherry")) # note the double round-brackets<br>
+print(thisset)</div>
+
+</div>
+
+<hr>
+<h2>Python Collections (Arrays)</h2>
+<p>There are four collection data types in the Python programming language:</p>
+<ul>
+<li><strong><a href="pylists.html">List</a></strong> is a collection which is ordered and changeable. Allows duplicate members.</li>
+<li><strong><a href="pytuples.html">Tuple</a></strong> is a collection which is ordered and unchangeable. Allows duplicate members.</li>
+<li><strong>Set</strong> is a collection which is unordered, unchangeable*, and unindexed. No duplicate members.</li>
+<li><strong><a href="pydictionaries.html">Dictionary</a></strong> is a collection which is ordered** 
+and changeable. No duplicate members.</li>
+</ul>
+
+<div class="w3-panel w3-note">
+  <p>*Set <em>items</em> are unchangeable, but you can remove items and add new 
+  items.</p>
+  <p>**As of Python version 3.7, dictionaries are <em>ordered</em>. 
+  In Python 3.6 and earlier, dictionaries are <em>unordered</em>.</p>
+</div>
+
+<p>When choosing a collection type, it is useful to understand the properties of that type. Choosing the right type for a particular data set could mean retention of meaning, and, it could mean an increase in efficiency or security.</p>
+<hr />
+<h1>Python - Access Set Items</h1>
+<br />
+
+<h2>Access Items</h2>
+
+<p>You cannot access items in a set by referring to an index or a key.</p>
+<p>But you can loop through the set items using a <code class="w3-codespan">for</code> 
+loop, or ask if a specified value is present in a set, by using the
+<code class="w3-codespan">in</code> keyword.</p>
+
+<div class="w3-example">
+<h3>Example</h3>
+<p>Loop through the set, and print the values:</p>
+<div class="w3-code notranslate pythonHigh">
+  thisset = {&quot;apple&quot;, &quot;banana&quot;, &quot;cherry&quot;}<br><br>for x in thisset:<br>&nbsp; print(x)</div>
+
+</div>
+
+<div class="w3-example">
+<h3>Example</h3>
+<p>Check if &quot;banana&quot; is present in the set:</p>
+<div class="w3-code notranslate pythonHigh">
+  thisset = {&quot;apple&quot;, &quot;banana&quot;, &quot;cherry&quot;}<br><br>print(&quot;banana&quot; 
+  in thisset)</div>
+</div>
+
+<hr>
+<h2>Change Items</h2>
+
+<div class="w3-panel w3-note">
+<p>Once a set is created, you cannot change its items, but you can add new items.</p>
+</div>
+
+<hr />
+<h1>Python - Add Set Items</h1>
+<br />
+
+<h2>Add Items</h2>
+
+<div class="w3-panel w3-note">
+<p>Once a set is created, you cannot change its items, but you can add new items.</p>
+</div>
+
+<p>To add one item to a set use the <code class="w3-codespan">add()</code> 
+method.</p>
+
+<div class="w3-example">
+<h3>Example</h3>
+<p>Add an item to a set, using the <code class="w3-codespan">add()</code> 
+method:</p>
+<div class="w3-code notranslate pythonHigh">
+  thisset = {&quot;apple&quot;, &quot;banana&quot;, &quot;cherry&quot;}<br><br>
+  thisset.add(&quot;orange&quot;)<br><br>print(thisset)</div>
+</div>
+
+<hr>
+
+<h2>Add Sets</h2>
+
+<p>To add items from another set into the current set, use the <code class="w3-codespan">update()</code> 
+method.</p>
+
+<div class="w3-example">
+<h3>Example</h3>
+<p>Add elements from <code class="w3-codespan">tropical</code> into <code class="w3-codespan">
+thisset</code>:</p>
+<div class="w3-code notranslate pythonHigh">
+  thisset = {&quot;apple&quot;, &quot;banana&quot;, &quot;cherry&quot;}<br>tropical = {&quot;pineapple&quot;, &quot;mango&quot;, &quot;papaya&quot;}<br><br>
+  thisset.update(tropical)<br>
+  <br>print(thisset)</div>
+
+</div>
+
+<hr>
+
+<h2>Add Any Iterable</h2>
+
+<p>The object in the <code class="w3-codespan">update()</code> method does not have 
+to be a set, it can be any iterable object (tuples, lists, dictionaries etc.).</p>
+
+<div class="w3-example">
+<h3>Example</h3>
+<p>Add elements of a list to at set:</p>
+<div class="w3-code notranslate pythonHigh">
+  thisset = {&quot;apple&quot;, &quot;banana&quot;, &quot;cherry&quot;}<br>
+  mylist = [&quot;kiwi&quot;, &quot;orange&quot;]<br><br>
+  thisset.update(mylist)<br>
+  <br>print(thisset)</div>
+</div>
+<hr />
+<h1>Python - Remove Set Items</h1>
+<br />
+<h2>Remove Item</h2>
+
+<p>To remove an item in a set, use the <code class="w3-codespan">remove()</code>, or the <code class="w3-codespan">discard()</code> method.</p>
+
+<div class="w3-example">
+<h3>Example</h3>
+<p>Remove &quot;banana&quot; by using the <code class="w3-codespan">remove()</code> 
+method:</p>
+<div class="w3-code notranslate pythonHigh">
+  thisset = {&quot;apple&quot;, &quot;banana&quot;, &quot;cherry&quot;}<br><br>
+  thisset.remove(&quot;banana&quot;)<br><br>
+  print(thisset)</div>
+
+</div>
+
+<div class="w3-panel w3-note">
+  <p><strong>Note:</strong> If the item to remove does not exist, <code class="w3-codespan">remove()</code> will raise an error.</p>
+</div>
+
+<div class="w3-example">
+<h3>Example</h3>
+<p>Remove &quot;banana&quot; by using the <code class="w3-codespan">discard()</code> 
+method:</p>
+<div class="w3-code notranslate pythonHigh">
+  thisset = {&quot;apple&quot;, &quot;banana&quot;, &quot;cherry&quot;}<br><br>
+  thisset.discard(&quot;banana&quot;)<br><br>
+  print(thisset)</div>
+
+</div>
+
+<div class="w3-panel w3-note">
+<p><strong>Note:</strong> If the item to remove does not exist, <code class="w3-codespan">discard()</code> will 
+  <strong>NOT</strong> raise an error.</p>
+</div>
+
+<p>You can also use the <code class="w3-codespan">pop()</code> method to remove 
+an item, but this method will remove the <em>last</em> item. Remember that sets 
+are unordered, so you will not know what item that gets removed.</p>
+<p>The return value of the <code class="w3-codespan">pop()</code> method is the 
+removed item.</p>
+
+<div class="w3-example">
+<h3>Example</h3>
+<p>Remove the last item by using the <code class="w3-codespan">pop()</code> 
+method:</p>
+<div class="w3-code notranslate pythonHigh">
+  thisset = {&quot;apple&quot;, &quot;banana&quot;, &quot;cherry&quot;}<br><br>
+  x =
+  thisset.pop()<br><br>print(x)<br><br>
+  print(thisset)</div>
+</div>
+
+<div class="w3-panel w3-note">
+<p><strong>Note:</strong> Sets are <em>unordered</em>, so when using the <code class="w3-codespan">pop()</code> method, 
+you do not know which item that gets removed.</p>
+</div>
+
+
+<div class="w3-example">
+<h3>Example</h3>
+<p>The <code class="w3-codespan">clear()</code> 
+method empties the set:</p>
+<div class="w3-code notranslate pythonHigh">
+  thisset = {&quot;apple&quot;, &quot;banana&quot;, &quot;cherry&quot;}<br><br>
+  thisset.clear()<br><br>
+  print(thisset)</div>
+
+</div>
+
+<div class="w3-example">
+<h3>Example</h3>
+<p>The <code class="w3-codespan">del</code> keyword will delete the set 
+completely:</p>
+<div class="w3-code notranslate pythonHigh">
+  thisset = {&quot;apple&quot;, &qquot;banana&quot;, &quot;cherry&quot;}<br><br>
+  del
+  thisset<br><br>
+  print(thisset)</div>
+</div>
+<hr />
+<h1>Python - Sets Loop</h1>
+<br />
+<h2>Loop Items</h2>
+
+<p>You can loop through the set items by using a <code class="w3-codespan">for</code> 
+loop:</p>
+
+<div class="w3-example">
+<h3>Example</h3>
+<p>Loop through the set, and print the values:</p>
+<div class="w3-code notranslate pythonHigh">
+  thisset = {&quot;apple&quot;, &quot;banana&quot;, &quot;cherry&quot;}<br><br>for x in thisset:<br>&nbsp; print(x)</div>
+
+</div>
+<hr />
+<h1>Python - Join Sets</h1>
+<br />
+<h2>Join Two Sets</h2>
+<p>There are several ways to join two or more sets in Python.</p>
+<p>You can use the <code class="w3-codespan">union()</code> method that returns a new set containing all items from both sets,
+or the <code class="w3-codespan">update()</code> method that inserts all the items from one set into another:</p>
+
+<div class="w3-example">
+<h3>Example</h3>
+<p>The <code class="w3-codespan">union()</code> method returns a new set with all items from both sets:</p>
+<div class="w3-code notranslate pythonHigh">
+  set1 = {&quot;a&quot;, &quot;b&quot; , &quot;c&quot;}<br>set2 = {1, 2, 3}<br><br>
+  set3 = set1.union(set2)<br>print(set3)</div>
+
+</div>
+
+<div class="w3-example">
+<h3>Example</h3>
+<p>The <code class="w3-codespan">update()</code> method inserts the items in set2 into set1:</p>
+<div class="w3-code notranslate pythonHigh">
+  set1 = {&quot;a&quot;, &quot;b&quot; , &quot;c&quot;}<br>set2 = {1, 2, 3}<br><br>
+  set1.update(set2)<br>print(set1)</div>
+
+</div>
+
+<div class="w3-panel w3-note">
+<p><strong>Note:</strong> Both <code class="w3-codespan">union()</code> and <code class="w3-codespan">update()</code>
+will exclude any duplicate items.</p>
+</div>
+
+<hr>
+
+<hr>
+
+<h2>Keep ONLY the Duplicates</h2>
+
+<p>The <code class="w3-codespan">intersection_update()</code> method will keep only the items that are present in both sets.</p>
+
+<div class="w3-example">
+<h3>Example</h3>
+<p>Keep the items that exist in both set <code class="w3-codespan">x</code>, and set <code class="w3-codespan">y</code>:</p>
+<div class="w3-code notranslate pythonHigh">
+  x = {&quot;apple&quot;, &quot;banana&quot;, &quot;cherry&quot;}<br>y = {&quot;google&quot;, &quot;microsoft&quot;, &quot;apple&quot;}<br>
+  <br>x.intersection_update(y)<br><br>print(x)</div>
+
+</div>
+
+<p>The <code class="w3-codespan">intersection()</code> method will return a <em>new</em> set, that only contains the items that are present in both sets.</p>
+
+<div class="w3-example">
+<h3>Example</h3>
+<p>Return a set that contains the items that exist in both set <code class="w3-codespan">x</code>, and set <code class="w3-codespan">y</code>:</p>
+<div class="w3-code notranslate pythonHigh">
+  x = {&quot;apple&quot;, &quot;banana&quot;, &quot;cherry&quot;}<br>y = {&quot;google&quot;, &quot;microsoft&quot;, &quot;apple&quot;}<br>
+  <br>z = x.intersection(y)<br><br>print(z)</div>
+
+</div>
+
+<hr>
+<h2>Keep All, But NOT the Duplicates</h2>
+
+<p>The <code class="w3-codespan">symmetric_difference_update()</code> method will 
+keep only the elements that are NOT present in both sets.</p>
+
+
+<div class="w3-example">
+<h3>Example</h3>
+<p>Keep the items that are not present in both sets:</p>
+<div class="w3-code notranslate pythonHigh">
+  x = {&quot;apple&quot;, &quot;banana&quot;, &quot;cherry&quot;}<br>y = {&quot;google&quot;, &quot;microsoft&quot;, &quot;apple&quot;}<br>
+  <br>x.symmetric_difference_update(y)<br><br>print(x)</div>
+
+</div>
+<p>The <code class="w3-codespan">symmetric_difference()</code> method will return a new set,
+that contains only the elements that are NOT present in both sets.</p>
+
+
+<div class="w3-example">
+<h3>Example</h3>
+<p>Return a set that contains all items from both sets, except items that are 
+present in both:</p>
+<div class="w3-code notranslate pythonHigh">
+  x = {&quot;apple&quot;, &quot;banana&quot;, &quot;cherry&quot;}<br>y = {&quot;google&quot;, &quot;microsoft&quot;, &quot;apple&quot;}<br>
+  <br>z = x.symmetric_difference(y)<br><br>print(z)</div>
+
+</div>
+<hr />
+<h1>Python - Set Methods</h1>
+<br />
+<h2>Set Methods</h2>
+
+<p>Python has a set of built-in methods that you can use on sets.</p>
+
+<table class="ws-table-all notranslate">
+<tr>
+<th>Method</th>
+<th>Description</th>
+</tr>
+<tr><td>add()</td><td>Adds an element to the 
+  set</td></tr>
+<tr><td>clear()</td><td>Removes all the 
+  elements from the set</td></tr>
+<tr><td>copy()</td><td>Returns a copy of the set</td></tr>
+  <tr>
+    <td>difference()</td><td>Returns a set 
+    containing the difference between two or more sets</td>
+  </tr>
+  <tr>
+    <td>difference_update()</td><td>Removes the 
+    items in this set that are also included in another, specified set</td>
+  </tr>
+<tr><td>discard()</td><td>Remove the specified 
+  item</td></tr>
+  <tr>
+    <td>intersection()</td><td>Returns a set, 
+    that is the intersection of two other sets</td>
+  </tr>
+<tr><td>intersection_update()</td><td>
+  Removes the items in this set that are not present in other, specified set(s)</td></tr>
+  <tr>
+    <td>isdisjoint()</td><td>Returns whether 
+    two sets have a intersection or not</td>
+  </tr>
+  <tr>
+    <td>issubset()</td><td>Returns whether 
+    another set contains this set or not</td>
+  </tr>
+<tr><td>issuperset()</td><td>Returns whether 
+  this set contains another set or not</td></tr>
+<tr><td>pop()</td><td>Removes an element from the 
+  set</td></tr>
+<tr><td>remove()</td><td>Removes the specified element</td></tr>
+  <tr>
+    <td>symmetric_difference()</td><td>Returns 
+    a set with the symmetric differences of two sets</td>
+  </tr>
+<tr><td>symmetric_difference_update()</td><td>
+  inserts the symmetric differences from this set and another</td></tr>
+  <tr>
+    <td>union()</td><td>Return a set containing 
+    the union of sets</td>
+  </tr>
+<tr><td>update()</td><td>Update the set with the 
+  union of this set and others</td></tr>
+</table>
+
+
+<!--end-->
+</div>
+    </div>
+  </div>
+</div>
+
+<ul class="pager navbar-fixed-bottom">
+  <li class="previous"><a href="pytuples.html">&laquo;Previous</a></li>
+  <li class="next"><a href="pydictionaries.html">Next&raquo;</a></li>
+</ul>
+
+
+<footer class="mt-auto">
+<div class="jumbotron text-center" style="margin-bottom:0">
+copyright&copy; TeekaY-X maintained by <a href="https://TeekaY-X.github.io/AsahlumaTyika">Asahluma Tyika</a>
+</div>
+</footer>
+
+</body>
+</html>

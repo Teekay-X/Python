@@ -1,0 +1,1137 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <title>TeekaY-X | Python Lists</title>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="icon" href="/css/icon.png" />
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+  <link rel="stylesheet" href="/css/index.css" />
+</head>
+<body class="d-flex flex-column min-vh-100">
+
+<!--<div class="jumbotron text-center" style="margin-bottom:0">
+  <h1>My First Bootstrap Page</h1>
+  <p>Resize this responsive page to see the effect!</p> 
+</div>-->
+
+<nav class="navbar navbar-inverse navbar-fixed-top">
+  <div class="container-fluid">
+    <div class="navbar-header">
+      <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#myNavbar">
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>                        
+      </button>
+      <a class="navbar-brand" href="#">TeekaY-X | Python Lists</a>
+    </div>
+    <div class="collapse navbar-collapse" id="myNavbar">
+      <ul class="nav navbar-nav">
+        <li><a href="https://TeekaY-X.github.io">Home</a></li>
+          <li class="dropdown">
+        <a class="dropdown-toggle" data-toggle="dropdown" href="#">Python Course 
+        <span class="caret"></span></a>
+        <ul class="dropdown-menu">
+          <li><a href="pyintro.html">Python Introduction</a></li>
+          <li><a href="gtstt.html">Python Getting Started</a></li>
+          <li><a href="syntax.html">Python Syntax</a></li>
+          <li><a href="pycomments.html">Python Comments</a></li>
+          <li><a href="pyvariables.html">Python Variables</a></li>
+          <li><a href="pydatatypes.html">Python Data Types</a></li>
+          <li><a href="pynumbers.html">Python Numbers</a></li>
+          <li><a href="/python/pycasting.html">Python Casting</a></li>
+          <li><a href="/python/pystrings.html">Python Strings</a></li>
+          <li><a href="/python/pybooleans.html">Python Booleans</a></li>
+          <li><a href="/python/pyoperators.html">Python Operators</a></li>
+          <li class="active"><a href="/python/pylists.html">Python Lists</a></li>
+          <li><a href="/python/pytuples.html">Python Tuples</a></li>
+          <li><a href="/python/pysets.html">Python Sets</a></li>
+          <li><a href="/python/pydictionaries.html">Python Dictionaries</a></li>
+          <li><a href="/python/pyifelse.html">Python If...Else</a></li>
+          <li><a href="/python/pywhileloops.html">Python While Loops</a></li>
+          <li><a href="/python/pyforloops.html">Python For Loops</a></li>
+          <li><a href="/python/pyfunctions.html">Python Functions</a></li>
+          <li><a href="/python/pylambda.html">Python Lambda</a></li>
+          <li><a href="/python/pyarrays.html">Python Arrays</a></li>
+          <li><a href="/python/pyclasses.html">Python Classes/Objects</a></li>
+          <li><a href="/python/pyinheritance.html">Python Inheritance</a></li>
+          <li><a href="/python/pyiterators.html">Python Iterators</a></li>
+          <li><a href="/python/pyscope.html">Python Scope</a></li>
+          <li><a href="/python/pymodules.html">Python Modules</a></li>
+          <li><a href="/python/pydates.html">Python Dates</a></li>
+          <li><a href="/python/pymaths.html">Python Math</a></li>
+          <li><a href="/python/pyJSON.html">Python JSON</a></li>
+          <li><a href="/python/pyRegEx.html">Python RegEx</a></li>
+          <li><a href="/python/pypip.html">Python PIP</a></li>
+          <li><a href="/python/pytryexcept.html">Python Try...Except</a></li>
+          <li><a href="/python/pyusrinput.html">Python User Input</a></li>
+          <li><a href="/python/pyStringFormat.html">Python String Formatting</a></li>
+        </ul>
+      </li>
+      
+        <li class="dropdown">
+        <a class="dropdown-toggle" data-toggle="dropdown" href="#">Flask Course
+        <span class="caret"></span></a>
+        <ul class="dropdown-menu">
+          <li><a href="#">Coming Soon</a></li>
+          <li><a href="#">Coming Soon</a></li>
+          <li><a href="#">Coming Soon</a></li>
+        </ul>
+      </li>
+      <li><a href="https://TeekaY-X.github.io/about.html">About us</a></li>
+       <!-- <li><a href="#">Python</a></li>
+        <li><a href="#">Python-Flask</a></li>-->
+      </ul>
+    </div>
+  </div>
+</nav>
+<br>
+<br>
+<div class="container-fluid">
+  <div class="row">
+    <div class="col-sm-8">
+      <div class="jumbotron">
+        
+<hr>
+
+<div class="w3-codeline notranslate pythonHigh">
+mylist = ["apple", "banana", "cherry"]
+</div>
+
+<hr>
+
+<h2>List</h2>
+<p>Lists are used to store multiple items in a single variable.</p>
+<p>Lists are one of 4 built-in data types in Python used to store collections of 
+data, the other 3 are <a href="pytuples.html">Tuple</a>, 
+<a href="pysets.html">Set</a>, and <a href="pydictionaries.html">Dictionary</a>, all with different qualities and usage.</p>
+<p>Lists are created using square brackets:</p>
+
+<div class="w3-example">
+<h3>Example</h3>
+<p>Create a List:</p>
+<div class="w3-code notranslate pythonHigh">
+thislist = ["apple", "banana", "cherry"]<br>
+print(thislist)
+</div>
+
+</div>
+
+<hr>
+
+<h2>List Items</h2>
+<p>List items are ordered, changeable, and allow duplicate values.</p>
+<p>List items are indexed, the first item has index <code class="w3-codespan">[0]</code>,
+the second item has index <code class="w3-codespan">[1]</code> etc.</p>
+<hr>
+<h2>Ordered</h2>
+
+<p>When we say that lists are ordered, it means that the items have a defined order, and that order will not change.</p>
+
+<p>If you add new items to a list,
+the new items will be placed at the end of the list.</p>
+
+<div class="w3-panel w3-note">
+  <p><strong>Note:</strong> There are some list methods that will change the order, but in general: the order of the items will not change.</p>
+</div>
+
+<hr>
+
+<h2>Changeable</h2>
+
+<p>The list is changeable, meaning that we can change, add, and remove items in a list after it has been created.</p>
+
+<hr>
+
+<h2>Allow Duplicates</h2>
+
+<p>Since lists are indexed, lists can have items with the same value:</p>
+
+<div class="w3-example">
+<h3>Example</h3>
+<p>Lists allow duplicate values:</p>
+<div class="w3-code notranslate pythonHigh">
+thislist = ["apple", "banana", "cherry", "apple", "cherry"]<br>
+print(thislist)
+</div>
+
+</div>
+
+<hr>
+
+<hr>
+
+<h2>List Length</h2>
+
+<p>To determine how many items a list has, use the <code class="w3-codespan">
+len()</code> function:</p>
+
+<div class="w3-example">
+<h3>Example</h3>
+<p>Print the number of items in the list:</p>
+<div class="w3-code notranslate pythonHigh">
+thislist = [&quot;apple&quot;, &quot;banana&quot;, &quot;cherry&quot;]<br>
+print(len(thislist))
+</div>
+
+</div>
+
+<hr>
+
+<h2>List Items - Data Types</h2>
+
+<p>List items can be of any data type:</p>
+
+<div class="w3-example">
+<h3>Example</h3>
+<p>String, int and boolean data types:</p>
+<div class="w3-code notranslate pythonHigh">
+list1 = ["apple", "banana", "cherry"]<br>
+list2 = [1, 5, 7, 9, 3]<br>
+list3 = [True, False, False]
+</div>
+
+</div>
+
+<p>A list can contain different data types:</p>
+
+<div class="w3-example">
+<h3>Example</h3>
+<p>A list with strings, integers and boolean values:</p>
+<div class="w3-code notranslate pythonHigh">
+list1 = ["abc", 34, True, 40, "male"]
+</div>
+
+</div>
+
+<hr>
+<h2>type()</h2>
+
+<p>From Python's perspective, lists are defined as objects with the data type 'list':</p>
+
+<div class="w3-codeline notranslate">
+&lt;class 'list'&gt;
+</div>
+
+<div class="w3-example">
+<h3>Example</h3>
+<p>What is the data type of a list?</p>
+<div class="w3-code notranslate pythonHigh">
+mylist = ["apple", "banana", "cherry"]<br>
+print(type(mylist))
+</div>
+
+</div>
+
+<hr>
+
+<h2>The list() Constructor</h2>
+
+<p>It is also possible to use the <span class="w3-codespan">list()</span> constructor when creating a 
+new list.</p>
+
+<div class="w3-example">
+<h3>Example</h3>
+<p>Using the <code class="w3-codespan">list()</code> constructor to make a List:</p>
+<div class="w3-code notranslate pythonHigh">
+thislist = list(("apple", "banana", "cherry")) # note the double round-brackets<br>
+print(thislist)
+</div>
+
+</div>
+
+<hr>
+<h2>Python Collections (Arrays)</h2>
+<p>There are four collection data types in the Python programming language:</p>
+<ul>
+<li><strong>List</strong> is a collection which is ordered and changeable. Allows duplicate members.</li>
+<li><strong><a href="pytuples.html">Tuple</a></strong> is a collection which is ordered and unchangeable. Allows duplicate members.</li>
+<li><strong><a href="pysets.html">Set</a></strong> is a collection which is unordered, 
+unchangeable*, and unindexed. No duplicate members.</li>
+<li><strong><a href="pydictionaries.html">Dictionary</a></strong> is a collection which is ordered** 
+and changeable. No duplicate members.</li>
+</ul>
+
+<div class="w3-panel w3-note">
+  <p>*Set <em>items</em> are unchangeable, but you can remove and/or add items 
+  whenever you like.</p>
+  <p>**As of Python version 3.7, dictionaries are <em>ordered</em>. 
+  In Python 3.6 and earlier, dictionaries are <em>unordered</em>.</p>
+</div>
+
+<p>When choosing a collection type, it is useful to understand the properties of that type. Choosing the right type for a particular data set could mean retention of meaning, and, it could mean an increase in efficiency or security.</p>
+<hr />
+<h1>Python - Access List Items</h1>
+<br />
+
+
+<h2>Access Items</h2>
+
+<p>List items are indexed and you can access them by referring to the index number:</p>
+
+<div class="w3-example">
+<h3>Example</h3>
+<p>Print the second item of the list:</p>
+<div class="w3-code notranslate pythonHigh">
+thislist = [&quot;apple&quot;, &quot;banana&quot;, &quot;cherry&quot;]<br>
+print(thislist[1])
+</div>
+
+</div>
+
+<div class="w3-panel w3-note">
+  <p><strong>Note: </strong>The first item has index 0.</p>
+</div>
+
+<h3>Negative Indexing</h3>
+<p>Negative indexing means start from the end</p>
+<p><code class="w3-codespan">-1</code> refers to the last item, 
+<code class="w3-codespan">-2</code> refers to the second last item etc.</p>
+
+<div class="w3-example">
+<h3>Example</h3>
+<p>Print the last item of the list:</p>
+<div class="w3-code notranslate pythonHigh">
+thislist = [&quot;apple&quot;, &quot;banana&quot;, &quot;cherry&quot;]<br>
+print(thislist[-1])
+</div>
+
+</div>
+
+<h3>Range of Indexes</h3>
+<p>You can specify a range of indexes by specifying where to start and where to 
+end the range.</p>
+<p>When specifying a range, the return value will be a new list with the 
+specified items.</p>
+
+<div class="w3-example">
+<h3>Example</h3>
+<p>Return the third, fourth, and fifth item:</p>
+<div class="w3-code notranslate pythonHigh">
+thislist = [&quot;apple&quot;, &quot;banana&quot;, &quot;cherry&quot;, &quot;orange&quot;, 
+  &quot;kiwi&quot;, &quot;melon&quot;, &quot;mango&quot;]<br>
+print(thislist[2:5])
+</div>
+
+</div>
+
+<div class="w3-panel w3-note">
+  <p><strong>Note:</strong> The search will start at index 2 (included) and end at index 5 (not included).</p>
+</div>
+
+<div class="w3-panel w3-note">
+  <p>Remember that the first item has index 0.</p>
+</div>
+
+<p>By leaving out the start value, the range will start at the first item:</p>
+
+<div class="w3-example">
+<h3>Example</h3>
+<p>This example returns the items from the beginning to, but NOT including, &quot;kiwi&quot;:</p>
+<div class="w3-code notranslate pythonHigh">
+thislist = [&quot;apple&quot;, &quot;banana&quot;, &quot;cherry&quot;, &quot;orange&quot;, 
+  &quot;kiwi&quot;, &quot;melon&quot;, &quot;mango&quot;]<br>
+print(thislist[:4])
+</div>
+
+</div>
+
+<p>By leaving out the end value, the range will go on to the end of the list:</p>
+
+<div class="w3-example">
+<h3>Example</h3>
+<p>This example returns the items from &quot;cherry&quot; to the end:</p>
+<div class="w3-code notranslate pythonHigh">
+thislist = [&quot;apple&quot;, &quot;banana&quot;, &quot;cherry&quot;, &quot;orange&quot;, 
+  &quot;kiwi&quot;, &quot;melon&quot;, &quot;mango&quot;]<br>
+print(thislist[2:])
+</div>
+
+</div>
+<hr>
+<div id="midcontentadcontainer" style="overflow:auto;text-align:center">
+
+  
+</div>
+<hr>
+
+<h3>Range of Negative Indexes</h3>
+<p>Specify negative indexes if you want to start the search from the end of the 
+list:</p>
+
+<div class="w3-example">
+<h3>Example</h3>
+<p>This example returns the items from &quot;orange&quot; (-4) to, but NOT including 
+&quot;mango&quot; (-1):</p>
+<div class="w3-code notranslate pythonHigh">
+thislist = [&quot;apple&quot;, &quot;banana&quot;, &quot;cherry&quot;, &quot;orange&quot;, 
+  &quot;kiwi&quot;, &quot;melon&quot;, &quot;mango&quot;]<br>
+print(thislist[-4:-1])
+</div>
+
+</div>
+
+<hr>
+
+<h2>Check if Item Exists</h2>
+
+<p>To determine if a specified item is present in a list use the <code class="w3-codespan">in</code> keyword:</p>
+
+<div class="w3-example">
+<h3>Example</h3>
+<p>Check if "apple" is present in the list:</p>
+<div class="w3-code notranslate pythonHigh">
+thislist = [&quot;apple&quot;, &quot;banana&quot;, &quot;cherry&quot;]<br>
+  if &quot;apple&quot; in thislist:<br>&nbsp; print(&quot;Yes, 'apple' is in the fruits list&quot;)</div>
+</div>
+<hr />
+<h1>Python - Remove List Items</h1>
+<br />
+<h2>Change Item Value</h2>
+
+<p>To change the value of a specific item, 
+refer to the index number:</p>
+
+<div class="w3-example">
+<h3>Example</h3>
+<p>Change the second item:</p>
+<div class="w3-code notranslate pythonHigh">
+thislist = ["apple", "banana", "cherry"]<br>
+thislist[1] = "blackcurrant"<br>
+print(thislist)
+</div>
+
+</div>
+
+
+<hr>
+
+<h2>Change a Range of Item Values</h2>
+
+<p>To change the value of items within a specific range, define a list with the new values, and refer to the range of index numbers where you want to insert the new values:</p>
+
+<div class="w3-example">
+<h3>Example</h3>
+<p>Change the values "banana" and "cherry" with the values "blackcurrant" and "watermelon":</p>
+<div class="w3-code notranslate pythonHigh">
+thislist = ["apple", "banana", "cherry", &quot;orange&quot;, &quot;kiwi&quot;, &quot;mango&quot;]<br>
+thislist[1:3] = ["blackcurrant", &quot;watermelon&quot;]<br>
+print(thislist)
+</div>
+
+</div>
+
+<p>If you insert <em>more</em> items than you replace, the new items will be inserted 
+where you specified, and the remaining items will move accordingly:</p>
+
+<div class="w3-example">
+<h3>Example</h3>
+<p>Change the second value by replacing it with <em>two</em> new 
+values:</p>
+<div class="w3-code notranslate pythonHigh">
+  thislist = [&quot;apple&quot;, &quot;banana&quot;, &quot;cherry&quot;]<br>thislist[1:2] = [&quot;blackcurrant&quot;, 
+  &quot;watermelon&quot;]<br>print(thislist) </div>
+
+</div>
+
+<div class="w3-panel w3-note">
+  <p><strong>Note:</strong> The length of the list will change when the number of items inserted does not match the number of items replaced.</p>
+</div>
+
+<p>If you insert <em>less</em> items than you replace, the new items will be inserted 
+where you specified, and the remaining items will move accordingly:</p>
+
+<div class="w3-example">
+<h3>Example</h3>
+<p>Change the second and third value by replacing it with <em>one</em>  
+value:</p>
+<div class="w3-code notranslate pythonHigh">
+  thislist = [&quot;apple&quot;, &quot;banana&quot;, &quot;cherry&quot;]<br>thislist[1:3] = [&quot;watermelon&quot;]<br>print(thislist) </div>
+
+</div>
+
+<hr>
+
+<hr>
+
+<h2>Insert Items</h2>
+
+<p>To insert a new list item, without replacing any of the existing values, we can use the <code class="w3-codespan">insert()</code> method.</p>
+
+<p>The <code class="w3-codespan">insert()</code> method inserts an item at the specified index:</p>
+
+<div class="w3-example">
+<h3>Example</h3>
+<p>Insert &quot;watermelon&quot; as the third item:</p>
+<div class="w3-code notranslate pythonHigh">
+thislist = ["apple", "banana", "cherry"]<br>
+thislist.insert(2, &quot;watermelon&quot;)<br>
+print(thislist)
+</div>
+
+</div>
+
+<div class="w3-panel w3-note">
+  <p><strong>Note:</strong> As a result of the example above, the list will now contain 4 items.</p>
+</div>
+
+<hr />
+<h1>Python - Add List Items</h1>
+<br />
+<h2>Append Items</h2>
+
+<p>To add an item to the end of the list, use the <span class="w3-codespan">append()</span> 
+method:</p>
+
+<div class="w3-example">
+<h3>Example</h3>
+<p>Using the <code class="w3-codespan">append()</code> method to append an item:</p>
+<div class="w3-code notranslate pythonHigh">
+thislist = [&quot;apple&quot;, &quot;banana&quot;, &quot;cherry&quot;]<br>
+thislist.append("orange")<br>
+print(thislist)
+</div>
+
+</div>
+
+<hr>
+
+<h2>Insert Items</h2>
+
+<p>To insert a list item at a specified index, use the <code class="w3-codespan">insert()</code> method.</p>
+
+<p>The <code class="w3-codespan">insert()</code> method inserts an item at the specified index:</p>
+
+<div class="w3-example">
+<h3>Example</h3>
+<p>Insert an item as the second position:</p>
+<div class="w3-code notranslate pythonHigh">
+thislist = [&quot;apple&quot;, &quot;banana&quot;, &quot;cherry&quot;]<br>
+thislist.insert(1, "orange")<br>
+print(thislist)
+</div>
+
+</div>
+
+<div class="w3-panel w3-note">
+  <p><strong>Note:</strong> As a result of the examples above, the lists will now contain 4 items.</p>
+</div>
+
+<hr>
+
+<hr>
+
+<h2>Extend List</h2>
+
+<p>To append elements from <em>another list</em> to the current list, use the <code class="w3-codespan">extend()</code> method.</p>
+
+<div class="w3-example">
+<h3>Example</h3>
+<p>Add the elements of <code class="w3-codespan">tropical</code> to <code class="w3-codespan">thislist</code>:</p>
+<div class="w3-code notranslate pythonHigh">
+thislist = [&quot;apple&quot;, &quot;banana&quot;, &quot;cherry&quot;]<br>
+tropical = [&quot;mango&quot;, &quot;pineapple&quot;, &quot;papaya&quot;]<br>
+thislist.extend(tropical)<br>
+print(thislist)
+</div>
+
+</div>
+
+<p>The elements will be added to the <em>end</em> of the list.</p>
+<hr>
+
+<h2>Add Any Iterable</h2>
+
+<p>The <code class="w3-codespan">extend()</code> method does not have to append
+<em>lists</em>, you can add any iterable object (tuples, sets, dictionaries 
+etc.).</p>
+
+<div class="w3-example">
+<h3>Example</h3>
+<p>Add elements of a tuple to a list:</p>
+<div class="w3-code notranslate pythonHigh">
+thislist = [&quot;apple&quot;, &quot;banana&quot;, &quot;cherry&quot;]<br>
+  thistuple = (&quot;kiwi&quot;, &quot;orange&quot;)<br>
+thislist.extend(thistuple)<br>
+print(thislist)
+</div>
+
+</div>
+<hr />
+<h1>Python - Remove List Items</h1>
+<br />
+<h2>Remove Specified Item</h2>
+
+<p>The <code class="w3-codespan">remove()</code> method removes the specified item.</p>
+
+<div class="w3-example">
+<h3>Example</h3>
+<p>Remove "banana":</p>
+<div class="w3-code notranslate pythonHigh">
+thislist = [&quot;apple&quot;, &quot;banana&quot;, &quot;cherry&quot;]<br>
+thislist.remove("banana")<br>
+print(thislist)
+</div>
+
+</div>
+
+<hr>
+<h2>Remove Specified Index</h2>
+
+<p>The <code class="w3-codespan">pop()</code> method removes the specified 
+index.</p>
+
+<div class="w3-example">
+<h3>Example</h3>
+<p>Remove the second item:</p>
+<div class="w3-code notranslate pythonHigh">
+thislist = [&quot;apple&quot;, &quot;banana&quot;, &quot;cherry&quot;]<br>
+thislist.pop(1)<br>
+print(thislist)
+</div>
+
+</div>
+
+<p>If you do not specify the index, the <code class="w3-codespan">pop()</code> method removes the last item.</p>
+
+<div class="w3-example">
+<h3>Example</h3>
+<p>Remove the last item:</p>
+<div class="w3-code notranslate pythonHigh">
+thislist = [&quot;apple&quot;, &quot;banana&quot;, &quot;cherry&quot;]<br>
+thislist.pop()<br>
+print(thislist)
+</div>
+
+</div>
+
+
+<p>The <code class="w3-codespan">del</code> keyword also removes the specified 
+index:</p>
+
+<div class="w3-example">
+<h3>Example</h3>
+<p>Remove the first item:</p>
+<div class="w3-code notranslate pythonHigh">
+thislist = [&quot;apple&quot;, &quot;banana&quot;, &quot;cherry&quot;]<br>
+  del
+thislist[0]<br>print(thislist)
+</div>
+
+</div>
+
+<p>The <code class="w3-codespan">del</code> keyword can also delete the list completely.</p>
+
+
+<div class="w3-example">
+<h3>Example</h3>
+<p>Delete the entire list:</p>
+<div class="w3-code notranslate pythonHigh">
+thislist = [&quot;apple&quot;, &quot;banana&quot;, &quot;cherry&quot;]<br>
+  del
+thislist</div>
+
+</div>
+
+<hr>
+
+<h2>Clear the List</h2>
+
+<p>The <code class="w3-codespan">clear()</code> method empties the list.</p>
+
+<p>The list still remains, but it has no content.</p>
+
+<div class="w3-example">
+<h3>Example</h3>
+<p>Clear the list content:</p>
+<div class="w3-code notranslate pythonHigh">
+thislist = [&quot;apple&quot;, &quot;banana&quot;, &quot;cherry&quot;]<br>
+  thislist.clear()<br>print(thislist)
+</div>
+
+</div>
+<hr />
+<h1>Python - Loop Lists</h1>
+<br />
+<h2>Loop Through a List</h2>
+
+<p>You can loop through the list items by using a <code class="w3-codespan">for</code> 
+loop:</p>
+
+<div class="w3-example">
+<h3>Example</h3>
+<p>Print all items in the list, one by one:</p>
+<div class="w3-code notranslate pythonHigh">
+thislist = [&quot;apple&quot;, &quot;banana&quot;, &quot;cherry&quot;]<br>
+  for x in thislist:<br>&nbsp; print(x)</div>
+
+</div>
+
+<p>Learn more about <code class="w3-codespan">for</code> loops in our <a href="pyforloops.html">Python For Loops</a> Chapter.</p>
+
+<hr>
+
+<h2>Loop Through the Index Numbers</h2>
+<p>You can also loop through the list items by referring to their index number.</p>
+
+<p>Use the <code class="w3-codespan">range()</code> and
+<code class="w3-codespan">len()</code> functions to create a suitable iterable.</p>
+
+<div class="w3-example">
+<h3>Example</h3>
+  <p>Print all items by referring to their index number:</p>
+<div class="w3-code notranslate pythonHigh">
+thislist = [&quot;apple&quot;, &quot;banana&quot;, &quot;cherry&quot;]<br>for i 
+  in range(len(thislist)):<br>
+&nbsp;
+print(thislist[i])</div>
+
+</div>
+
+<p>The iterable created in the example above is <code class="w3-codespan">[0, 1, 2]</code>.</p>
+
+<hr>
+
+<hr>
+
+<h2>Using a While Loop</h2>
+
+<p>You can loop through the list items by using a <code class="w3-codespan">while</code> loop.</p>
+
+<p>Use the <code class="w3-codespan">len()</code> function to determine the length of the list,
+then start at 0 and loop your way through the list items by refering to their indexes.</p>
+
+<p>Remember to increase the index by 1 after each iteration.</p>
+
+<div class="w3-example">
+<h3>Example</h3>
+  <p>Print all items, using a <code class="w3-codespan">while</code> loop to go 
+  through all the index numbers</p>
+<div class="w3-code notranslate pythonHigh">
+thislist = [&quot;apple&quot;, &quot;banana&quot;, &quot;cherry&quot;]<br>i = 0<br>
+  while i &lt; len(thislist):<br>
+&nbsp;
+print(thislist[i])<br>&nbsp; i = i + 1</div>
+
+</div>
+
+<p>Learn more about <code class="w3-codespan">while</code> loops in our 
+<a href="pywhileloops.html">Python While Loops</a> Chapter.</p>
+
+<hr>
+
+<h2>Looping Using List Comprehension</h2>
+
+<p>List Comprehension offers the shortest syntax for looping through lists:</p>
+
+<div class="w3-example">
+<h3>Example</h3>
+  <p>A short hand <code class="w3-codespan">for</code> loop that will print all items in a list:</p>
+<div class="w3-code notranslate pythonHigh">
+thislist = [&quot;apple&quot;, &quot;banana&quot;, &quot;cherry&quot;]<br>[print(x) for x in thislist]</div>
+
+</div>
+
+<p>Learn more about list comprehension :
+<a href="#pythonlistcompr">List Comprehension</a>.</p>
+
+<hr />
+<a href="#pythonlistcompr"></a>
+<h1>Python - List Comprehension</h1>
+<br />
+
+<h2>List Comprehension</h2>
+
+<p>List comprehension offers a shorter syntax when you want to create a new list based on the values of an 
+existing list.</p>
+
+<p>Example:</p>
+<p>Based on a list of fruits, you want a new list, containing only the fruits 
+with the letter "a" in the name.</p>
+
+<p>Without list comprehension you will have to write a <code class="w3-codespan">for</code> statement 
+with a conditional test inside:</p>
+
+<div class="w3-example">
+<h3>Example</h3>
+<div class="w3-code notranslate pythonHigh">
+  fruits = [&quot;apple&quot;, &quot;banana&quot;, &quot;cherry&quot;, &quot;kiwi&quot;, &quot;mango&quot;]<br>newlist = []<br>
+  <br>for x in fruits:<br>&nbsp; if &quot;a&quot; in x:<br>&nbsp;&nbsp;&nbsp; 
+  newlist.append(x)<br><br>print(newlist)</div>
+
+</div>
+
+<p>With list comprehension you can do all that with only one line of code:</p>
+
+<div class="w3-example">
+<h3>Example</h3>
+<div class="w3-code notranslate pythonHigh">
+  fruits = [&quot;apple&quot;, &quot;banana&quot;, &quot;cherry&quot;, &quot;kiwi&quot;, &quot;mango&quot;]<br><br>newlist = [x 
+  for x in fruits if &quot;a&quot; in x]<br><br>print(newlist)</div>
+
+</div>
+
+<hr>
+
+<hr>
+
+<h2>The Syntax</h2>
+
+<div class="w3-codeline notranslate pythonHigh">
+newlist = [<em>expression</em> for <em>item</em> in <em>iterable</em> if <em>condition</em> == True]
+</div>
+
+<p>The return value is a new list, leaving the old list unchanged.</p>
+
+<hr>
+<h3>Condition</h3>
+
+<p>The <em>condition</em> is like a filter that only accepts the items that valuate to 
+<code class="w3-codespan">True</code>.</p>
+
+<div class="w3-example">
+<h3>Example</h3>
+  <p>Only accept items that are not "apple":</p>
+<div class="w3-code notranslate pythonHigh">
+  newlist = [x for x in fruits if x != "apple"]</div>
+
+</div>
+
+<p>The condition
+<span class="w3-codeline notranslate pythonHigh" style="padding:5px;">if x != "apple"</span>
+&nbsp;will return <code class="w3-codespan">True</code> for all elements other 
+than &quot;apple&quot;, making the new list contain all fruits except &quot;apple&quot;.</p>
+
+<p>The <em>condition</em> is optional and can be omitted:</p>
+
+<div class="w3-example">
+<h3>Example</h3>
+  <p>With no <code class="w3-codespan">if</code> statement:</p>
+<div class="w3-code notranslate pythonHigh">
+  newlist = [x for x in fruits]</div>
+
+</div>
+
+<hr>
+<h3>Iterable</h3>
+<p>The <em>iterable</em> can be any iterable object, like a list, tuple, set etc.</p>
+
+<div class="w3-example">
+<h3>Example</h3>
+  <p>You can use the <code class="w3-codespan">range()</code> function to create an iterable:</p>
+<div class="w3-code notranslate pythonHigh">
+  newlist = [x for x in range(10)]</div>
+
+</div>
+
+<p>Same example, but with a condition:</p>
+
+<div class="w3-example">
+<h3>Example</h3>
+<p>Accept only numbers lower than 5:</p>
+<div class="w3-code notranslate pythonHigh">
+  newlist = [x for x in range(10) if x &lt; 5]</div>
+
+</div>
+<hr>
+<h3>Expression</h3>
+<p>The <em>expression</em> is the current item in the iteration, but it is also the 
+outcome, which you can manipulate before it ends up like a list item in the new 
+list:</p>
+
+<div class="w3-example">
+<h3>Example</h3>
+  <p>Set the values in the new list to upper case:</p>
+<div class="w3-code notranslate pythonHigh">
+  newlist = [x.upper() 
+  for x in fruits]</div>
+
+</div>
+
+<p>You can set the outcome to whatever you like:</p>
+
+<div class="w3-example">
+<h3>Example</h3>
+  <p>Set all values in the new list to 'hello':</p>
+<div class="w3-code notranslate pythonHigh">
+newlist = ['hello' for x in fruits]</div>
+
+</div>
+
+
+<p>The <em>expression</em> can also contain conditions, not like a filter, but as a 
+way to manipulate the outcome:</p>
+
+
+<div class="w3-example">
+<h3>Example</h3>
+  <p>Return &quot;orange&quot; instead of &quot;banana&quot;:</p>
+<div class="w3-code notranslate pythonHigh">
+  newlist = [x if x != &quot;banana&quot; else &quot;orange&quot; 
+  for x in fruits]</div>
+
+</div>
+<p>The <em>expression</em> in the example above says:</p>
+
+<p><em>"Return the item if it is not banana, if it is banana return orange".</em></p>
+
+<hr />
+<h1>Python - Sort Lists</h1>
+<br />
+
+<h2>Sort List Alphanumerically</h2>
+
+<p>List objects have a <code class="w3-codespan">
+sort()</code> method that will sort the list alphanumerically, ascending, by default:</p>
+
+<div class="w3-example">
+<h3>Example</h3>
+<p>Sort the list alphabetically:</p>
+<div class="w3-code notranslate pythonHigh">
+thislist = [&quot;orange&quot;, &quot;mango&quot;, &quot;kiwi&quot;, 
+  &quot;pineapple&quot;, &quot;banana&quot;]<br>thislist.sort()<br>
+print(thislist)
+</div>
+
+</div>
+
+<div class="w3-example">
+<h3>Example</h3>
+<p>Sort the list numerically:</p>
+<div class="w3-code notranslate pythonHigh">
+thislist = [100, 50, 65, 82, 23]<br>thislist.sort()<br>
+print(thislist)
+</div>
+
+</div>
+
+<hr>
+<h2>Sort Descending</h2>
+
+<p>To sort descending, use the keyword argument <code class="w3-codespan">reverse = True</code>:</p>
+
+<div class="w3-example">
+<h3>Example</h3>
+<p>Sort the list descending:</p>
+<div class="w3-code notranslate pythonHigh">
+thislist = [&quot;orange&quot;, &quot;mango&quot;, &quot;kiwi&quot;, 
+  &quot;pineapple&quot;, &quot;banana&quot;]<br>thislist.sort(reverse = True)<br>
+print(thislist)
+</div>
+
+</div>
+
+<div class="w3-example">
+<h3>Example</h3>
+<p>Sort the list descending:</p>
+<div class="w3-code notranslate pythonHigh">
+thislist = [100, 50, 65, 82, 23]<br>thislist.sort(reverse = True)<br>
+print(thislist)
+</div>
+
+</div>
+
+<hr>
+
+<hr>
+
+<h2>Customize Sort Function</h2>
+
+<p>You can also customize your own function by using the keyword argument <code class="w3-codespan">key =<em> 
+function</em></code>.</p>
+<p>The function will return a number that will be used to sort the list (the 
+lowest number first):</p>
+
+<div class="w3-example">
+<h3>Example</h3>
+<p>Sort the list based on how close the number is to 50:</p>
+<div class="w3-code notranslate pythonHigh">
+  def myfunc(n):<br>&nbsp; return abs(n - 50)<br><br>thislist = [100, 50, 65, 82, 23]<br>thislist.sort(key = 
+  myfunc)<br>print(thislist)
+</div>
+
+</div>
+
+<hr>
+<h2>Case Insensitive Sort</h2>
+
+<p>By default the <code class="w3-codespan">sort()</code> method is case sensitive,
+resulting in all capital letters being sorted before lower case letters:</p>
+
+<div class="w3-example">
+<h3>Example</h3>
+<p>Case sensitive sorting can give an unexpected result:</p>
+<div class="w3-code notranslate pythonHigh">
+  thislist = [&quot;banana&quot;, &quot;Orange&quot;, &quot;Kiwi&quot;, &quot;cherry&quot;]<br>thislist.sort()<br>print(thislist)
+</div>
+
+</div>
+
+<p>Luckily we can use built-in functions as key functions when sorting a list.</p>
+
+<p>So if you want a case-insensitive sort function, use str.lower as a key function:</p>
+
+<div class="w3-example">
+<h3>Example</h3>
+<p>Perform a case-insensitive sort of the list:</p>
+<div class="w3-code notranslate pythonHigh">
+  thislist = [&quot;banana&quot;, &quot;Orange&quot;, &quot;Kiwi&quot;, &quot;cherry&quot;]<br>thislist.sort(key 
+  = str.lower)<br>print(thislist)
+</div>
+
+</div>
+
+<hr>
+<h2>Reverse Order</h2>
+
+<p>What if you want to reverse the order of a list, regardless of the alphabet?</p>
+
+<p>The <code class="w3-codespan">reverse()</code> method reverses the current sorting order of the elements.</p>
+
+<div class="w3-example">
+<h3>Example</h3>
+<p>Reverse the order of the list items:</p>
+<div class="w3-code notranslate pythonHigh">
+  thislist = [&quot;banana&quot;, &quot;Orange&quot;, &quot;Kiwi&quot;, &quot;cherry&quot;]<br>thislist.reverse()<br>print(thislist)
+</div>
+</div>
+
+<hr />
+<h1>Python - Copy Lists</h1>
+<br />
+<h2>Copy a List</h2>
+<p>You cannot copy a list simply by typing <code class="w3-codespan">list2 = 
+list1</code>, because: <code class="w3-codespan">list2</code> will only be a <em>
+reference</em> to <code class="w3-codespan">list1</code>, and changes made in
+<code class="w3-codespan">list1</code> will automatically also be made in
+<code class="w3-codespan">list2</code>.</p>
+
+<p>There are ways to make a copy, one way is to use the built-in List 
+method <code class="w3-codespan">
+copy()</code>.</p>
+
+<div class="w3-example">
+<h3>Example</h3>
+<p>Make a copy of a list with the <code class="w3-codespan">copy()</code> method:</p>
+<div class="w3-code notranslate pythonHigh">
+thislist = [&quot;apple&quot;, &quot;banana&quot;, &quot;cherry&quot;]<br>mylist 
+  = thislist.copy()<br>
+  print(mylist)
+</div>
+
+</div>
+
+<p>Another way to make a copy is to use the built-in method <code class="w3-codespan">list()</code>.</p>
+
+<div class="w3-example">
+<h3>Example</h3>
+<p>Make a copy of a list with the <code class="w3-codespan">list()</code> method:</p>
+<div class="w3-code notranslate pythonHigh">
+thislist = [&quot;apple&quot;, &quot;banana&quot;, &quot;cherry&quot;]<br>mylist 
+  = list(thislist)<br>
+  print(mylist)
+</div>
+</div>
+
+<hr />
+<h1>Python - Join Lists</h1>
+<br />
+
+<h2>Join Two Lists</h2>
+<p>There are several ways to join, or concatenate, two or more lists in Python.</p>
+<p>One of the easiest ways are by using the <code class="w3-codespan">+</code> 
+operator.</p>
+
+<div class="w3-example">
+<h3>Example</h3>
+<p>Join two list:</p>
+<div class="w3-code notranslate pythonHigh">
+  list1 = [&quot;a&quot;, &quot;b&quot;, &quot;c&quot;]<br>list2 = [1, 2, 3]<br><br>list3 = list1 + list2<br>
+  print(list3)</div>
+
+</div>
+
+<p>Another way to join two lists is by appending all the items from list2 into 
+list1, one by one:</p>
+
+<div class="w3-example">
+<h3>Example</h3>
+<p>Append list2 into list1:</p>
+<div class="w3-code notranslate pythonHigh">
+  list1 = [&quot;a&quot;, &quot;b&quot; , &quot;c&quot;]<br>list2 = [1, 2, 3]<br>
+  <br>for x in list2:<br>&nbsp; list1.append(x)<br><br>print(list1)</div>
+
+</div>
+
+<p>Or you can use the <code class="w3-codespan">extend()</code> 
+method, 
+which purpose is to add elements from one list to another 
+list:</p>
+
+<div class="w3-example">
+<h3>Example</h3>
+<p>Use the <code class="w3-codespan">extend()</code> method to add list2 at the end of list1:</p>
+<div class="w3-code notranslate pythonHigh">
+  list1 = [&quot;a&quot;, &quot;b&quot; , &quot;c&quot;]<br>list2 = [1, 2, 3]<br><br>list1.extend(list2)<br>
+  print(list1)</div>
+</div>
+
+<hr />
+<h1>Python - List Methods</h1>
+<br />
+<h2>List Methods</h2>
+<p>Python has a set of built-in methods that you can use on lists.</p>
+
+<table class="ws-table-all notranslate">
+<tr>
+<th>Method</th>
+<th>Description</th>
+</tr>
+<tr><td>append()</td><td>Adds an element at 
+  the end of the list</td></tr>
+<tr><td>clear()</td><td>Removes all the 
+  elements from the list</td></tr>
+<tr><td>copy()</td><td>Returns a copy of the 
+  list</td></tr>
+<tr><td>count()</td><td>Returns the number of 
+  elements with the specified value</td></tr>
+<tr><td>extend()</td><td>Add the elements of a 
+  list (or any iterable), to the end of the current list</td></tr>
+<tr><td>index()</td><td>Returns the index of 
+  the first element with the specified value</td></tr>
+<tr><td>insert()</td><td>Adds an element at 
+  the specified position</td></tr>
+<tr><td>pop()</td><td>Removes the element at the 
+  specified position</td></tr>
+<tr><td>remove()</a></td><td>Removes the  
+  item with the specified value</td></tr>
+<tr><td>reverse()</td><td>Reverses the order 
+  of the list</td></tr>
+<tr><td>sort()</td><td>Sorts the list</td></tr>
+</table>
+
+
+ <!--end -->       
+</div>
+    </div>
+  </div>
+</div>
+
+<ul class="pager navbar-fixed-bottom">
+  <li class="previous"><a href="pyoperators.html">&laquo;Previous</a></li>
+  <li class="next"><a href="pytuples.html">Next&raquo;</a></li>
+</ul>
+
+
+<footer class="mt-auto">
+<div class="jumbotron text-center" style="margin-bottom:0">
+copyright&copy; TeekaY-X maintained by <a href="https://TeekaY-X.github.io/AsahlumaTyika">Asahluma Tyika</a>
+</div>
+</footer>
+
+
+</body>
+</html>

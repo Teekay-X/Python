@@ -1,0 +1,201 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <title>TeekaY-X | Python Math</title>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="icon" href="/css/icon.png" />
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+  <link rel="stylesheet" href="/css/index.css" />
+</head>
+<body class="d-flex flex-column min-vh-100">
+
+<!--<div class="jumbotron text-center" style="margin-bottom:0">
+  <h1>My First Bootstrap Page</h1>
+  <p>Resize this responsive page to see the effect!</p> 
+</div>-->
+
+<nav class="navbar navbar-inverse navbar-fixed-top">
+  <div class="container-fluid">
+    <div class="navbar-header">
+      <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#myNavbar">
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>                        
+      </button>
+      <a class="navbar-brand" href="#">TeekaY-X | Python Math</a>
+    </div>
+    <div class="collapse navbar-collapse" id="myNavbar">
+      <ul class="nav navbar-nav">
+        <li><a href="https://TeekaY-X.github.io">Home</a></li>
+          <li class="dropdown">
+        <a class="dropdown-toggle" data-toggle="dropdown" href="#">Python Course 
+        <span class="caret"></span></a>
+        <ul class="dropdown-menu">
+          <li><a href="pyintro.html">Python Introduction</a></li>
+          <li><a href="gtstt.html">Python Getting Started</a></li>
+          <li><a href="syntax.html">Python Syntax</a></li>
+          <li><a href="pycomments.html">Python Comments</a></li>
+          <li><a href="pyvariables.html">Python Variables</a></li>
+          <li><a href="pydatatypes.html">Python Data Types</a></li>
+          <li><a href="pynumbers.html">Python Numbers</a></li>
+          <li><a href="/python/pycasting.html">Python Casting</a></li>
+          <li><a href="/python/pystrings.html">Python Strings</a></li>
+          <li><a href="/python/pybooleans.html">Python Booleans</a></li>
+          <li><a href="/python/pyoperators.html">Python Operators</a></li>
+          <li><a href="/python/pylists.html">Python Lists</a></li>
+          <li><a href="/python/pytuples.html">Python Tuples</a></li>
+          <li><a href="/python/pysets.html">Python Sets</a></li>
+          <li><a href="/python/pydictionaries.html">Python Dictionaries</a></li>
+          <li><a href="/python/pyifelse.html">Python If...Else</a></li>
+          <li><a href="/python/pywhileloops.html">Python While Loops</a></li>
+          <li><a href="/python/pyforloops.html">Python For Loops</a></li>
+          <li><a href="/python/pyfunctions.html">Python Functions</a></li>
+          <li><a href="/python/pylambda.html">Python Lambda</a></li>
+          <li><a href="/python/pyarrays.html">Python Arrays</a></li>
+          <li><a href="/python/pyclasses.html">Python Classes/Objects</a></li>
+          <li><a href="/python/pyinheritance.html">Python Inheritance</a></li>
+          <li><a href="/python/pyiterators.html">Python Iterators</a></li>
+          <li><a href="/python/pyscope.html">Python Scope</a></li>
+          <li><a href="/python/pymodules.html">Python Modules</a></li>
+          <li><a href="/python/pydates.html">Python Dates</a></li>
+          <li class="active"><a href="/python/pymaths.html">Python Math</a></li>
+          <li><a href="/python/pyJSON.html">Python JSON</a></li>
+          <li><a href="/python/pyRegEx.html">Python RegEx</a></li>
+          <li><a href="/python/pypip.html">Python PIP</a></li>
+          <li><a href="/python/pytryexcept.html">Python Try...Except</a></li>
+          <li><a href="/python/pyusrinput.html">Python User Input</a></li>
+          <li><a href="/python/pyStringFormat.html">Python String Formatting</a></li>
+        </ul>
+      </li>
+      
+        <li class="dropdown">
+        <a class="dropdown-toggle" data-toggle="dropdown" href="#">Flask Course
+        <span class="caret"></span></a>
+        <ul class="dropdown-menu">
+          <li><a href="#">Coming Soon</a></li>
+          <li><a href="#">Coming Soon</a></li>
+          <li><a href="#">Coming Soon</a></li>
+        </ul>
+      </li>
+      <li><a href="https://TeekaY-X.github.io/about.html">About us</a></li>
+       <!-- <li><a href="#">Python</a></li>
+        <li><a href="#">Python-Flask</a></li>-->
+      </ul>
+    </div>
+  </div>
+</nav>
+<br>
+<br>
+<div class="container-fluid">
+  <div class="row">
+    <div class="col-sm-8">
+      <div class="jumbotron">
+
+<h1>Python Math</h1>
+
+<p class="intro">Python has a set of built-in math functions, including an extensive math module, that allows you to perform mathematical tasks on numbers.</p>
+<hr>
+
+<h2>Built-in Math Functions</h2>
+
+<p>The <code class="w3-codespan">min()</code> and <code class="w3-codespan">max()</code> functions can be used to find the lowest or highest value in an iterable:</p>
+
+<div class="w3-example">
+  <h3>Example</h3>
+  <div class="w3-code notranslate pythonHigh">
+    x = min(5, 10, 25)<br>y = max(5, 10, 25)<br><br>print(x)<br>print(y)</div>
+  
+</div>
+
+<p>The <code class="w3-codespan">abs()</code> function returns the absolute (positive) value of the specified number:</p>
+
+<div class="w3-example">
+  <h3>Example</h3>
+  <div class="w3-code notranslate pythonHigh">
+    x = abs(-7.25)<br><br>print(x)</div>
+  
+</div>
+
+<p>The <code class="w3-codespan">pow(<em>x</em>, <em>y</em>)</code> function returns the value of x to the power of y (x<sup>y</sup>).</p>
+<div class="w3-example">
+  <h3>Example</h3>
+<p>Return the value of 4 to the power of 3 (same as 4 * 4 * 4):</p>
+  <div class="w3-code notranslate pythonHigh">
+    x = pow(4, 3)<br><br>print(x)</div>
+  
+</div>
+
+<hr>
+
+<hr>
+
+<h2>The Math Module</h2>
+<p>Python has also a built-in module called <code class="w3-codespan">math</code>, which extends the list of mathematical functions.</p>
+<p>To use it, you must import the <code class="w3-codespan">math</code> module:</p>
+
+<div class="w3-example">
+  <div class="w3-code notranslate pythonHigh">import math</div>
+</div>
+
+<p>When you have imported the <code class="w3-codespan">math</code> module, you 
+can start using methods and constants of the module.</p>
+
+<p>The <code class="w3-codespan">math.sqrt()</code> method for example, returns the square root of a number:</p>
+
+<div class="w3-example">
+  <h3>Example</h3>
+  <div class="w3-code notranslate pythonHigh">
+    import 
+    math<br><br>x = math.sqrt(64)<br><br>print(x)</div>
+  
+</div>
+
+<p>The <code class="w3-codespan">math.ceil()</code> method rounds a number upwards to 
+its nearest integer, and the <code class="w3-codespan">math.floor()</code> 
+method rounds a number downwards to its nearest integer, and returns the result:</p>
+
+<div class="w3-example">
+  <h3>Example</h3>
+  <div class="w3-code notranslate pythonHigh">
+    import 
+    math<br><br>x = math.ceil(1.4)<br>y = math.floor(1.4)<br><br>print(x) # 
+    returns 2<br>print(y) # returns 1</div>
+  
+</div>
+
+<p>The <code class="w3-codespan">math.pi</code> constant, returns the value of 
+PI (3.14...):</p>
+
+<div class="w3-example">
+  <h3>Example</h3>
+  <div class="w3-code notranslate pythonHigh">
+    import 
+    math<br><br>x = math.pi<br><br>print(x) </div>
+  
+</div>
+
+<!--end-->        
+</div>
+    </div>
+  </div>
+</div>
+
+<ul class="pager navbar-fixed-bottom">
+  <li class="previous"><a href="pydates.html">&laquo;Previous</a></li>
+  <li class="next"><a href="pyJSON.html">Next&raquo;</a></li>
+</ul>
+
+
+<footer class="mt-auto">
+<div class="jumbotron text-center" style="margin-bottom:0">
+copyright&copy; TeekaY-X maintained by <a href="https://TeekaY-X.github.io/AsahlumaTyika">Asahluma Tyika</a>
+</div>
+</footer>
+
+
+</body>
+</html>

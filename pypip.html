@@ -1,0 +1,242 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <title>TeekaY-X | Python PIP</title>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="icon" href="/css/icon.png" />
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+  <link rel="stylesheet" href="/css/index.css" />
+</head>
+<body class="d-flex flex-column min-vh-100">
+
+<!--<div class="jumbotron text-center" style="margin-bottom:0">
+  <h1>My First Bootstrap Page</h1>
+  <p>Resize this responsive page to see the effect!</p> 
+</div>-->
+
+<nav class="navbar navbar-inverse navbar-fixed-top">
+  <div class="container-fluid">
+    <div class="navbar-header">
+      <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#myNavbar">
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>                        
+      </button>
+      <a class="navbar-brand" href="#">TeekaY-X | Python PIP</a>
+    </div>
+    <div class="collapse navbar-collapse" id="myNavbar">
+      <ul class="nav navbar-nav">
+        <li><a href="https://TeekaY-X.github.io">Home</a></li>
+          <li class="dropdown">
+        <a class="dropdown-toggle" data-toggle="dropdown" href="#">Python Course 
+        <span class="caret"></span></a>
+        <ul class="dropdown-menu">
+          <li><a href="pyintro.html">Python Introduction</a></li>
+          <li><a href="gtstt.html">Python Getting Started</a></li>
+          <li><a href="syntax.html">Python Syntax</a></li>
+          <li><a href="pycomments.html">Python Comments</a></li>
+          <li><a href="pyvariables.html">Python Variables</a></li>
+          <li><a href="pydatatypes.html">Python Data Types</a></li>
+          <li><a href="pynumbers.html">Python Numbers</a></li>
+          <li><a href="/python/pycasting.html">Python Casting</a></li>
+          <li><a href="/python/pystrings.html">Python Strings</a></li>
+          <li><a href="/python/pybooleans.html">Python Booleans</a></li>
+          <li><a href="/python/pyoperators.html">Python Operators</a></li>
+          <li><a href="/python/pylists.html">Python Lists</a></li>
+          <li><a href="/python/pytuples.html">Python Tuples</a></li>
+          <li><a href="/python/pysets.html">Python Sets</a></li>
+          <li><a href="/python/pydictionaries.html">Python Dictionaries</a></li>
+          <li><a href="/python/pyifelse.html">Python If...Else</a></li>
+          <li><a href="/python/pywhileloops.html">Python While Loops</a></li>
+          <li><a href="/python/pyforloops.html">Python For Loops</a></li>
+          <li><a href="/python/pyfunctions.html">Python Functions</a></li>
+          <li><a href="/python/pylambda.html">Python Lambda</a></li>
+          <li><a href="/python/pyarrays.html">Python Arrays</a></li>
+          <li><a href="/python/pyclasses.html">Python Classes/Objects</a></li>
+          <li><a href="/python/pyinheritance.html">Python Inheritance</a></li>
+          <li><a href="/python/pyiterators.html">Python Iterators</a></li>
+          <li><a href="/python/pyscope.html">Python Scope</a></li>
+          <li><a href="/python/pymodules.html">Python Modules</a></li>
+          <li><a href="/python/pydates.html">Python Dates</a></li>
+          <li><a href="/python/pymaths.html">Python Math</a></li>
+          <li><a href="/python/pyJSON.html">Python JSON</a></li>
+          <li><a href="/python/pyRegEx.html">Python RegEx</a></li>
+          <li class="active"><a href="/python/pypip.html">Python PIP</a></li>
+          <li><a href="/python/pytryexcept.html">Python Try...Except</a></li>
+          <li><a href="/python/pyusrinput.html">Python User Input</a></li>
+          <li><a href="/python/pyStringFormat.html">Python String Formatting</a></li>
+        </ul>
+      </li>
+      
+        <li class="dropdown">
+        <a class="dropdown-toggle" data-toggle="dropdown" href="#">Flask Course
+        <span class="caret"></span></a>
+        <ul class="dropdown-menu">
+          <li><a href="#">Coming Soon</a></li>
+          <li><a href="#">Coming Soon</a></li>
+          <li><a href="#">Coming Soon</a></li>
+        </ul>
+      </li>
+      <li><a href="https://TeekaY-X.github.io/about.html">About us</a></li>
+       <!-- <li><a href="#">Python</a></li>
+        <li><a href="#">Python-Flask</a></li>-->
+      </ul>
+    </div>
+  </div>
+</nav>
+<br>
+<br>
+<div class="container-fluid">
+  <div class="row">
+    <div class="col-sm-8">
+      <div class="jumbotron">
+<h1>Python PIP</h1>
+
+<br />
+<h2>What is PIP?</h2>
+<p>PIP is a package manager for Python packages, or modules if you like.</p>
+<div class="w3-panel w3-note">
+  <p><strong>Note:</strong> If you have Python version 3.4 or later, PIP is included by default.</p>
+</div>
+
+<hr>
+
+<h2>What is a Package?</h2>
+<p>A package contains all the files you need for a module.</p>
+<p>Modules are Python code libraries you can include in your project.</p>
+
+<hr>
+
+<h2>Check if PIP is Installed</h2>
+
+<p>Navigate your command line to the location of Python's script directory, and type the following:</p>
+<div class="w3-example">
+  <h3>Example</h3>
+<p>Check PIP version:</p>
+<div class="w3-code notranslate w3-black">
+C:\Users\<em>Your Name</em>\AppData\Local\Programs\Python\Python36-32\Scripts&gt;pip --version
+</div>
+</div>
+
+<hr>
+<h2>Install PIP</h2>
+
+<p>If you do not have PIP installed, you can download and install it from this page:
+<a target="_blank" href="https://pypi.org/project/pip/">https://pypi.org/project/pip/</a>
+</p>
+<hr>
+
+<h2>Download a Package</h2>
+<p>Downloading a package is very easy.</p>
+<p>Open the command line interface and tell PIP to download the package you 
+want.</p>
+
+<p>Navigate your command line to the location of Python's script directory, and type the following:</p>
+
+<div class="w3-example">
+  <h3>Example</h3>
+<p>Download a package named &quot;camelcase&quot;:</p>
+<div class="w3-code notranslate w3-black">
+C:\Users\<em>Your Name</em>\AppData\Local\Programs\Python\Python36-32\Scripts&gt;pip 
+  install camelcase</div>
+</div>
+
+<p>Now you have downloaded and installed your first package!</p>
+
+<hr>
+
+<hr>
+
+<h2>Using a Package</h2>
+
+<p>Once the package is installed, it is ready to use.</p>
+<p>Import the &quot;camelcase&quot; package into your project.</p>
+
+<div class="w3-example">
+<h3>Example</h3>
+<p>Import and use &quot;camelcase&quot;:</p>
+<div class="w3-code notranslate pythonHigh">
+  import camelcase<br><br>c = camelcase.CamelCase()<br><br>txt = &quot;hello world&quot;<br>
+  <br>print(c.hump(txt))</div>
+
+</div>
+
+<hr>
+
+<h2>Find Packages</h2>
+
+<p>Find more packages at <a target="_blank" href="https://pypi.org/">https://pypi.org/</a>.</p>
+
+<hr>
+
+<h2>Remove a Package</h2>
+
+<p>Use the <code class="w3-codespan">uninstall</code> command to remove a package:</p>
+
+<div class="w3-example">
+  <h3>Example</h3>
+<p>Uninstall the package named &quot;camelcase&quot;:</p>
+<div class="w3-code notranslate w3-black">
+C:\Users\<em>Your Name</em>\AppData\Local\Programs\Python\Python36-32\Scripts&gt;pip 
+  uninstall camelcase</div>
+</div>
+
+<p>The PIP Package Manager will ask you to confirm that you want to remove the 
+camelcase package:</p>
+
+<div class="w3-example">
+<div class="w3-code notranslate w3-black">
+  Uninstalling camelcase-02.1:<br>&nbsp; Would remove:<br>&nbsp;&nbsp;&nbsp; c:\users\<em>Your Name</em>\appdata\local\programs\python\python36-32\lib\site-packages\camecase-0.2-py3.6.egg-info<br>&nbsp;&nbsp;&nbsp; 
+  c:\users\<em>Your Name</em>\appdata\local\programs\python\python36-32\lib\site-packages\camecase\*<br>
+  Proceed (y/n)?</div>
+</div>
+
+
+<p>Press <code class="w3-codespan">y</code> and the package will be removed.</p>
+
+<hr>
+
+<h2>List Packages</h2>
+
+<p>Use the <code class="w3-codespan">list</code> command to list all the packages installed on your system:</p>
+
+<div class="w3-example">
+  <h3>Example</h3>
+<p>List installed packages:</p>
+<div class="w3-code notranslate w3-black">
+C:\Users\<em>Your Name</em>\AppData\Local\Programs\Python\Python36-32\Scripts&gt;pip list</div>
+
+<p>Result:</p>
+
+<div class="w3-code notranslate w3-black">
+  Package&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; Version<br>
+  -----------------------<br>camelcase&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; 0.2<br>mysql-connector 2.1.6<br>
+  pip&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; 
+  18.1<br>pymongo&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; 3.6.1<br>
+  setuptools&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; 39.0.1</div>
+</div>
+ 
+ <!--end-->       
+</div>
+    </div>
+  </div>
+</div>
+
+<ul class="pager navbar-fixed-bottom">
+  <li class="previous"><a href="pyRegEx.html">&laquo;Previous</a></li>
+  <li class="next"><a href="pytryexcept.html">Next&raquo;</a></li>
+</ul>
+
+<footer class="mt-auto col-sm-8">
+<div class="jumbotron text-center" style="margin-bottom:0">
+copyright&copy; TeekaY-X maintained by <a href="https://TeekaY-X.github.io/AsahlumaTyika">Asahluma Tyika</a>
+</div>
+</footer>
+
+
+</body>
+</html>

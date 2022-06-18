@@ -1,0 +1,692 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <title>TeekaY-X | Python Tuples</title>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="icon" href="/css/icon.png" />
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+  <link rel="stylesheet" href="/css/index.css" />
+</head>
+<body class="d-flex flex-column min-vh-100">
+
+<!--<div class="jumbotron text-center" style="margin-bottom:0">
+  <h1>My First Bootstrap Page</h1>
+  <p>Resize this responsive page to see the effect!</p> 
+</div>-->
+
+<nav class="navbar navbar-inverse navbar-fixed-top">
+  <div class="container-fluid">
+    <div class="navbar-header">
+      <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#myNavbar">
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>                        
+      </button>
+      <a class="navbar-brand" href="#">TeekaY-X | Python Tuples</a>
+    </div>
+    <div class="collapse navbar-collapse" id="myNavbar">
+      <ul class="nav navbar-nav">
+        <li><a href="https://TeekaY-X.github.io">Home</a></li>
+          <li class="dropdown">
+        <a class="dropdown-toggle" data-toggle="dropdown" href="#">Python Course 
+        <span class="caret"></span></a>
+        <ul class="dropdown-menu">
+          <li><a href="pyintro.html">Python Introduction</a></li>
+          <li><a href="gtstt.html">Python Getting Started</a></li>
+          <li><a href="syntax.html">Python Syntax</a></li>
+          <li><a href="pycomments.html">Python Comments</a></li>
+          <li><a href="pyvariables.html">Python Variables</a></li>
+          <li><a href="pydatatypes.html">Python Data Types</a></li>
+          <li><a href="pynumbers.html">Python Numbers</a></li>
+          <li><a href="/python/pycasting.html">Python Casting</a></li>
+          <li><a href="/python/pystrings.html">Python Strings</a></li>
+          <li><a href="/python/pybooleans.html">Python Booleans</a></li>
+          <li><a href="/python/pyoperators.html">Python Operators</a></li>
+          <li><a href="/python/pylists.html">Python Lists</a></li>
+          <li class="active"><a href="/python/pytuples.html">Python Tuples</a></li>
+          <li><a href="/python/pysets.html">Python Sets</a></li>
+          <li><a href="/python/pydictionaries.html">Python Dictionaries</a></li>
+          <li><a href="/python/pyifelse.html">Python If...Else</a></li>
+          <li><a href="/python/pywhileloops.html">Python While Loops</a></li>
+          <li><a href="/python/pyforloops.html">Python For Loops</a></li>
+          <li><a href="/python/pyfunctions.html">Python Functions</a></li>
+          <li><a href="/python/pylambda.html">Python Lambda</a></li>
+          <li><a href="/python/pyarrays.html">Python Arrays</a></li>
+          <li><a href="/python/pyclasses.html">Python Classes/Objects</a></li>
+          <li><a href="/python/pyinheritance.html">Python Inheritance</a></li>
+          <li><a href="/python/pyiterators.html">Python Iterators</a></li>
+          <li><a href="/python/pyscope.html">Python Scope</a></li>
+          <li><a href="/python/pymodules.html">Python Modules</a></li>
+          <li><a href="/python/pydates.html">Python Dates</a></li>
+          <li><a href="/python/pymaths.html">Python Math</a></li>
+          <li><a href="/python/pyJSON.html">Python JSON</a></li>
+          <li><a href="/python/pyRegEx.html">Python RegEx</a></li>
+          <li><a href="/python/pypip.html">Python PIP</a></li>
+          <li><a href="/python/pytryexcept.html">Python Try...Except</a></li>
+          <li><a href="/python/pyusrinput.html">Python User Input</a></li>
+          <li><a href="/python/pyStringFormat.html">Python String Formatting</a></li>
+        </ul>
+      </li>
+      
+        <li class="dropdown">
+        <a class="dropdown-toggle" data-toggle="dropdown" href="#">Flask Course
+        <span class="caret"></span></a>
+        <ul class="dropdown-menu">
+          <li><a href="#">Coming Soon</a></li>
+          <li><a href="#">Coming Soon</a></li>
+          <li><a href="#">Coming Soon</a></li>
+        </ul>
+      </li>
+      <li><a href="https://TeekaY-X.github.io/about.html">About us</a></li>
+       <!-- <li><a href="#">Python</a></li>
+        <li><a href="#">Python-Flask</a></li>-->
+      </ul>
+    </div>
+  </div>
+</nav>
+<br>
+<br>
+<div class="container-fluid">
+  <div class="row">
+    <div class="col-sm-8">
+      <div class="jumbotron">
+<h1>Python - Tuples</h1>
+<br />
+<div class="w3-codeline notranslate pythonHigh">
+mytuple = ("apple", "banana", "cherry")
+</div>
+
+<hr>
+<h2>Tuple</h2>
+
+<p>Tuples are used to store multiple items in a single variable.</p>
+
+<p>Tuple is one of 4 built-in data types in Python used to store collections of 
+data, the other 3 are <a href="pylists.html">List</a>, 
+<a href="pysets.html">Set</a>, and <a href="pydictionaries.html">Dictionary</a>, all with different qualities and usage.</p>
+
+<p>A tuple is a collection which is ordered and <strong>unchangeable</strong>.</p>
+
+<p>Tuples are written with round brackets.</p>
+
+<div class="w3-example">
+<h3>Example</h3>
+<p>Create a Tuple:</p>
+<div class="w3-code notranslate pythonHigh">
+thistuple = ("apple", "banana", "cherry")<br>
+print(thistuple)
+</div>
+
+</div>
+
+<hr>
+<h2>Tuple Items</h2>
+
+<p>Tuple items are ordered, unchangeable, and allow duplicate values.</p>
+
+<p>Tuple items are indexed, the first item has index <code class="w3-codespan">[0]</code>, the second item has index <code class="w3-codespan">[1]</code> etc.</p>
+
+<hr>
+
+<h2>Ordered</h2>
+
+<p>When we say that tuples are ordered, it means that the items have a defined order, and that order will not change.</p>
+
+<hr>
+
+<h2>Unchangeable</h2>
+
+<p>Tuples are unchangeable, meaning that we cannot change, add or remove items after the tuple has been created.</p>
+
+<hr>
+
+<h2>Allow Duplicates</h2>
+<p>Since tuples are indexed, they can have items with the same value:</p>
+<div class="w3-example">
+<h3>Example</h3>
+<p>Tuples allow duplicate values:</p>
+<div class="w3-code notranslate pythonHigh">
+thistuple = ("apple", "banana", "cherry", &quot;apple&quot;, &quot;cherry&quot;)<br>
+print(thistuple)
+</div>
+
+</div>
+
+<hr>
+
+<hr>
+
+<h2>Tuple Length</h2>
+
+<p>To determine how many items a tuple has, use the <code class="w3-codespan">
+len()</code> function:</p>
+
+<div class="w3-example">
+<h3>Example</h3>
+<p>Print the number of items in the tuple:</p>
+<div class="w3-code notranslate pythonHigh">
+thistuple = (&quot;apple&quot;, &quot;banana&quot;, &quot;cherry&quot;)<br>
+print(len(thistuple))
+</div>
+
+</div>
+
+<hr>
+
+<h2>Create Tuple With One Item</h2>
+
+<p>To create a tuple with only one item, you have to add a comma after the item, 
+otherwise Python will not recognize it as a tuple.</p>
+<div class="w3-example">
+<h3>Example</h3>
+<p>One item tuple, remember the comma:</p>
+<div class="w3-code notranslate pythonHigh">
+thistuple = ("apple",)<br>
+  print(type(thistuple))<br><br>#NOT a tuple<br>thistuple = (&quot;apple&quot;)<br>
+  print(type(thistuple))</div>
+
+</div>
+
+<hr>
+
+<h2>Tuple Items - Data Types</h2>
+
+<p>Tuple items can be of any data type:</p>
+
+<div class="w3-example">
+<h3>Example</h3>
+<p>String, int and boolean data types:</p>
+<div class="w3-code notranslate pythonHigh">
+tuple1 = ("apple", "banana", "cherry")<br>
+tuple2 = (1, 5, 7, 9, 3)<br>
+tuple3 = (True, False, False)
+</div>
+
+</div>
+
+<p>A tuple can contain different data types:</p>
+
+<div class="w3-example">
+<h3>Example</h3>
+<p>A tuple with strings, integers and boolean values:</p>
+<div class="w3-code notranslate pythonHigh">
+tuple1 = ("abc", 34, True, 40, "male")
+</div>
+
+</div>
+
+<hr>
+<h2>type()</h2>
+
+<p>From Python's perspective, tuples are defined as objects with the data type 'tuple':</p>
+
+<div class="w3-codeline notranslate">
+&lt;class 'tuple'&gt;
+</div>
+
+<div class="w3-example">
+<h3>Example</h3>
+<p>What is the data type of a tuple?</p>
+<div class="w3-code notranslate pythonHigh">
+mytuple = ("apple", "banana", "cherry")<br>
+print(type(mytuple))
+</div>
+
+</div>
+
+<hr>
+<h2>The tuple() Constructor</h2>
+<p>It is also possible to use the <span class="w3-codespan">tuple()</span> constructor to make a tuple.</p>
+
+<div class="w3-example">
+<h3>Example</h3>
+<p>Using the tuple() method to make a tuple:</p>
+<div class="w3-code notranslate pythonHigh">
+thistuple = tuple(("apple", "banana", "cherry")) # note the double round-brackets<br>
+print(thistuple)
+</div>
+
+</div>
+
+<hr>
+<h2>Python Collections (Arrays)</h2>
+<p>There are four collection data types in the Python programming language:</p>
+<ul>
+<li><strong><a href="pylists.html">List</a></strong> is a collection which is ordered and changeable. Allows duplicate members.</li>
+<li><strong>Tuple</strong> is a collection which is ordered and unchangeable. Allows duplicate members.</li>
+<li><strong><a href="pysets.html">Set</a></strong> is a collection which is unordered, 
+unchangeable*, and unindexed. No duplicate members.</li>
+<li><strong><a href="pydictionaries.html">Dictionary</a></strong> is a collection which is ordered** 
+and changeable. No duplicate members.</li>
+</ul>
+
+<div class="w3-panel w3-note">
+  <p>*Set <em>items</em> are unchangeable, but you can remove and/or add items 
+  whenever you like.</p>
+  <p>**As of Python version 3.7, dictionaries are <em>ordered</em>. 
+  In Python 3.6 and earlier, dictionaries are <em>unordered</em>.</p>
+</div>
+
+<p>When choosing a collection type, it is useful to understand the properties of that type. Choosing the right type for a particular data set could mean retention of meaning, and, it could mean an increase in efficiency or security.</p>
+
+<hr />
+<h1>Python - Access Tuple Items</h1>
+<br />
+<h2>Access Tuple Items</h2>
+<p>You can access tuple items by referring to the index number, inside square 
+brackets:</p>
+<div class="w3-example">
+<h3>Example</h3>
+<p>Print the second item in the tuple:</p>
+<div class="w3-code notranslate pythonHigh">
+thistuple = ("apple", "banana", "cherry")<br>
+print(thistuple[1])
+</div>
+
+</div>
+
+<div class="w3-panel w3-note">
+  <p><strong>Note:</strong> The first item has index 0.</p>
+</div>
+
+<hr>
+
+<h2>Negative Indexing</h2>
+<p>Negative indexing means start from the end.</p>
+
+<p><code class="w3-codespan">-1</code> refers to the last item, 
+<code class="w3-codespan">-2</code> refers to the second last item etc.</p>
+
+<div class="w3-example">
+<h3>Example</h3>
+<p>Print the last item of the tuple:</p>
+<div class="w3-code notranslate pythonHigh">
+thistuple = (&quot;apple&quot;, &quot;banana&quot;, &quot;cherry&quot;)<br>
+print(thistuple[-1])
+</div>
+
+</div>
+
+<hr>
+<h2>Range of Indexes</h2>
+<p>You can specify a range of indexes by specifying where to start and where to 
+end the range.</p>
+<p>When specifying a range, the return value will be a new tuple with the 
+specified items.</p>
+
+<div class="w3-example">
+<h3>Example</h3>
+<p>Return the third, fourth, and fifth item:</p>
+<div class="w3-code notranslate pythonHigh">
+thistuple = (&quot;apple&quot;, &quot;banana&quot;, &quot;cherry&quot;, &quot;orange&quot;, &quot;kiwi&quot;, &quot;melon&quot;, &quot;mango&quot;)<br>
+print(thistuple[2:5])
+</div>
+
+</div>
+
+<div class="w3-panel w3-note">
+  <p><strong>Note:</strong> The search will start at index 2 (included) and end at index 5 (not included).</p>
+</div>
+
+<div class="w3-panel w3-note">
+  <p>Remember that the first item has index 0.</p>
+</div>
+
+<p>By leaving out the start value, the range will start at the first item:</p>
+
+<div class="w3-example">
+<h3>Example</h3>
+<p>This example returns the items from the beginning to, but NOT included, &quot;kiwi&quot;:</p>
+<div class="w3-code notranslate pythonHigh">
+thistuple = (&quot;apple&quot;, &quot;banana&quot;, &quot;cherry&quot;, &quot;orange&quot;, &quot;kiwi&quot;, &quot;melon&quot;, &quot;mango&quot;)<br>
+print(thistuple[:4])
+</div>
+
+</div>
+
+<p>By leaving out the end value, the range will go on to the end of the list:</p>
+
+<div class="w3-example">
+<h3>Example</h3>
+<p>This example returns the items from &quot;cherry&quot; and to the end:</p>
+<div class="w3-code notranslate pythonHigh">
+thistuple = (&quot;apple&quot;, &quot;banana&quot;, &quot;cherry&quot;, &quot;orange&quot;, &quot;kiwi&quot;, &quot;melon&quot;, &quot;mango&quot;)<br>
+print(thistuple[2:])
+</div>
+
+</div>
+<hr>
+
+<hr>
+
+
+<h2>Range of Negative Indexes</h2>
+<p>Specify negative indexes if you want to start the search from the end of the 
+tuple:</p>
+
+<div class="w3-example">
+<h3>Example</h3>
+<p>This example returns the items from index -4 (included) to index -1 (excluded)</p>
+<div class="w3-code notranslate pythonHigh">
+thistuple = (&quot;apple&quot;, &quot;banana&quot;, &quot;cherry&quot;, &quot;orange&quot;, &quot;kiwi&quot;, &quot;melon&quot;, &quot;mango&quot;)<br>
+print(thistuple[-4:-1])
+</div>
+
+</div>
+<hr>
+
+<h2>Check if Item Exists</h2>
+
+<p>To determine if a specified item is present in a tuple use the <code class="w3-codespan">in</code> keyword:</p>
+
+<div class="w3-example">
+<h3>Example</h3>
+<p>Check if "apple" is present in the tuple:</p>
+<div class="w3-code notranslate pythonHigh">
+thistuple = (&quot;apple&quot;, &quot;banana&quot;, &quot;cherry&quot;)<br>
+  if &quot;apple&quot; in thistuple:<br>&nbsp; print(&quot;Yes, 'apple' is in the fruits 
+  tuple&quot;)</div>
+</div>
+
+<hr />
+<h1>Python - Update Tuples</h1>
+<br />
+<p>Tuples are unchangeable, meaning that you cannot change, add, or remove items once the tuple is created.</p>
+<p>But there are some workarounds.</p>
+
+<hr>
+
+<h2>Change Tuple Values</h2>
+
+<p>Once a tuple is created, you cannot change its values. Tuples are <strong>unchangeable</strong>, 
+or <strong>immutable</strong> as it also is called.</p>
+<p>But there is a workaround. You can convert the tuple into a list, change the 
+list, and convert the list back into a tuple.</p>
+<div class="w3-example">
+<h3>Example</h3>
+<p>Convert the tuple into a list to be able to change it:</p>
+<div class="w3-code notranslate pythonHigh">
+  x = ("apple", "banana", "cherry")<br>y = list(x)<br>y[1] = &quot;kiwi&quot;<br>x = 
+  tuple(y)<br><br>print(x)</div>
+
+</div>
+
+<hr>
+
+<h2>Add Items</h2>
+
+<p>Since tuples are immutable, they do not have a build-in 
+<code class="w3-codespan">append()</code> method, but 
+there are other ways to add items to a tuple.</p>
+<p>1. <strong>Convert into a list</strong>: Just like the workaround for<em> changing </em>a tuple, you can convert it into a list, add your item(s), and convert it back into a tuple.</p>
+
+<div class="w3-example">
+<h3>Example</h3>
+<p>Convert the tuple into a list, add "orange", and convert it back into a tuple:</p>
+<div class="w3-code notranslate pythonHigh">
+  thistuple = ("apple", "banana", "cherry")<br>y = list(thistuple)<br>y.append(&quot;orange&quot;)<br>
+  thistuple = 
+  tuple(y)<br></div>
+
+</div>
+
+<p>2. <strong>Add tuple to a tuple</strong>. You are allowed to add tuples to 
+tuples, so if you want to add one item, (or many), create a new tuple with the 
+item(s), and add it to the existing tuple:</p>
+
+<div class="w3-example">
+<h3>Example</h3>
+<p>Create a new tuple with the value &quot;orange&quot;, and add that tuple:</p>
+<div class="w3-code notranslate pythonHigh">
+  thistuple = ("apple", "banana", "cherry")<br>y = (&quot;orange&quot;,)<br>thistuple += y<br>
+  <br>print(thistuple)<br></div>
+
+</div>
+
+<div class="w3-panel w3-note">
+  <p><strong>Note:</strong> When creating a tuple with only one item, remember to include a comma 
+  after the item, otherwise it will not be identified as a tuple.</p>
+</div>
+
+<hr>
+
+<hr>
+
+<h2>Remove Items</h2>
+
+<div class="w3-panel w3-note">
+  <p><strong>Note:</strong> You cannot remove items in a tuple.</p>
+</div>
+
+<p>Tuples are <strong>unchangeable</strong>, so you cannot remove items 
+from it, but you can use the same workaround as we used for changing and adding tuple items:</p>
+<div class="w3-example">
+<h3>Example</h3>
+<p>Convert the tuple into a list, remove &quot;apple&quot;, and convert it back into a tuple:</p>
+<div class="w3-code notranslate pythonHigh">
+  thistuple = ("apple", "banana", "cherry")<br>y = list(thistuple)<br>y.remove(&quot;apple&quot;)<br>
+  thistuple = 
+  tuple(y)<br></div>
+
+</div>
+
+<p>Or you can delete the tuple completely:</p>
+<div class="w3-example">
+<h3>Example</h3>
+<p>The <code class="w3-codespan">del</code> keyword can delete the tuple 
+completely:</p>
+<div class="w3-code notranslate pythonHigh">
+thistuple = ("apple", "banana", "cherry")<br>
+  del
+thistuple<br>print(thistuple)
+  #this will raise an error because the tuple no longer exists</div>
+</div>
+
+<hr />
+<h1>Python - Unpacking Tuples</h1>
+<br />
+<h2>Unpacking a Tuple</h2>
+
+<p>When we create a tuple, we normally assign values to it. This is called "packing" a tuple:</p>
+
+<div class="w3-example">
+<h3>Example</h3>
+<p>Packing a tuple:</p>
+<div class="w3-code notranslate pythonHigh">
+fruits = ("apple", "banana", "cherry")<br>
+</div>
+
+</div>
+
+<p>But, in Python, we are also allowed to extract the values back into variables. This is called "unpacking":</p>
+
+<div class="w3-example">
+<h3>Example</h3>
+<p>Unpacking a tuple:</p>
+<div class="w3-code notranslate pythonHigh">
+fruits = ("apple", "banana", "cherry")<br>
+<br>
+(green, yellow, red) = fruits<br>
+<br>
+print(green)<br>
+print(yellow)<br>
+print(red)
+</div>
+
+</div>
+
+<div class="w3-panel w3-note">
+  <p><strong>Note:</strong> The number of variables must match the number of values in the tuple, 
+  if not, you must use an asterisk to collect the remaining values as a list.</p>
+</div>
+
+<hr>
+
+<hr>
+<h2>Using Asterisk<code class="w3-codespan">*</code></h2>
+
+<p>If the number of variables is less than the number of values, you can add an <code class="w3-codespan">*</code> to the variable name and the
+values will be assigned to the variable as a list:</p>
+<div class="w3-example">
+<h3>Example</h3>
+<p>Assign the rest of the values as a list called "red":</p>
+<div class="w3-code notranslate pythonHigh">
+fruits = ("apple", "banana", "cherry", "strawberry", "raspberry")<br>
+<br>
+(green, yellow, *red) = fruits<br>
+<br>
+print(green)<br>
+print(yellow)<br>
+print(red)
+</div>
+</div>
+
+<p>If the asterisk is added to another variable name than the last,
+Python will assign values to the variable until the number of values left matches the number of variables left.</p>
+<div class="w3-example">
+<h3>Example</h3>
+<p>Add a list of values the "tropic" variable:</p>
+<div class="w3-code notranslate pythonHigh">
+fruits = ("apple", "mango", "papaya", "pineapple", "cherry")<br>
+<br>
+(green, *tropic, red) = fruits<br>
+<br>
+print(green)<br>
+print(tropic)<br>
+print(red)
+</div>
+</div>
+<hr />
+<h1>Python - Loop Tuples</h1>
+<br />
+<h2>Loop Through a Tuple</h2>
+
+<p>You can loop through the tuple items by using a <code class="w3-codespan">for</code> loop.</p>
+<div class="w3-example">
+<h3>Example</h3>
+<p>Iterate through the items and print the values:</p>
+<div class="w3-code notranslate pythonHigh">
+thistuple = ("apple", "banana", "cherry")<br>
+  for x in thistuple:<br>&nbsp; print(x)</div>
+
+</div>
+
+<p>Learn more about <code class="w3-codespan">for</code> loops in our <a href="pyforloops.html">Python For Loops</a> Chapter.</p>
+
+<hr>
+<h2>Loop Through the Index Numbers</h2>
+
+<p>You can also loop through the tuple items by referring to their index number.</p>
+
+<p>Use the <code class="w3-codespan">range()</code> and <code class="w3-codespan">len()</code> functions to create a suitable iterable.</p>
+
+<div class="w3-example">
+<h3>Example</h3>
+<p>Print all items by referring to their index number:</p>
+<div class="w3-code notranslate pythonHigh">
+thistuple = ("apple", "banana", "cherry")<br>
+for i in range(len(thistuple)):<br>
+&nbsp; print(thistuple[i])</div>
+
+</div>
+
+<hr>
+
+<hr>
+<h2>Using a While Loop</h2>
+
+<p>You can loop through the list items by using a <code class="w3-codespan">while</code> loop.</p>
+
+<p>Use the <code class="w3-codespan">len()</code> function to determine the length of the tuple,
+then start at 0 and loop your way through the tuple items by refering to their indexes.</p>
+
+<p>Remember to increase the index by 1 after each iteration.</p>
+
+<div class="w3-example">
+<h3>Example</h3>
+<p>Print all items, using a <code class="w3-codespan">while</code> loop to go through all the index numbers:</p>
+<div class="w3-code notranslate pythonHigh">
+thistuple = ("apple", "banana", "cherry")<br>
+i = 0<br>
+while i &lt; len(thistuple):<br>
+&nbsp; print(thistuple[i])<br>
+&nbsp; i = i + 1
+</div>
+
+</div>
+<p>Learn more about <code class="w3-codespan">while</code> loops in our 
+<a href="pywhileloops.html">Python While Loops</a> Chapter.</p>
+
+<hr />
+<h1>Python - Join Tuples</h1>
+<br />
+<h2>Join Two Tuples</h2>
+<p>To join two or more tuples you can use the <code class="w3-codespan">+</code> 
+operator:</p>
+
+<div class="w3-example">
+<h3>Example</h3>
+<p>Join two tuples:</p>
+<div class="w3-code notranslate pythonHigh">
+  tuple1 = (&quot;a&quot;, &quot;b&quot; , &quot;c&quot;)<br>tuple2 = (1, 2, 3)<br><br>
+  tuple3 = tuple1 + tuple2<br>
+  print(tuple3)</div>
+
+</div>
+
+<hr>
+
+<h2>Multiply Tuples</h2>
+
+<p>If you want to multiply the content of a tuple a given number of times, you can use the <code class="w3-codespan">*</code> 
+operator:</p>
+
+<div class="w3-example">
+<h3>Example</h3>
+<p>Multiply the fruits tuple by 2:</p>
+<div class="w3-code notranslate pythonHigh">
+  fruits = (&quot;apple&quot;, &quot;banana&quot;, &quot;cherry&quot;)<br>mytuple = fruits * 2<br><br>
+  print(mytuple)</div>
+</div>
+<hr />
+<h1>Python - Tuple Methods</h1>
+<br />
+<h2>Tuple Methods</h2>
+
+<p>Python has two built-in methods that you can use on tuples.</p>
+
+<table class="ws-table-all notranslate">
+<tr>
+<th style="width:20%">Method</th>
+<th>Description</th>
+</tr>
+<tr><td>count()</td><td>Returns the number of times a specified value occurs in a tuple</td></tr>
+<tr><td>index()</td><td>Searches the tuple for a specified value and returns the position of where it was found</td></tr>
+</table>
+
+
+<!--end-->
+</div>
+    </div>
+  </div>
+</div>
+
+<ul class="pager navbar-fixed-bottom">
+  <li class="previous"><a href="pylists.html">&laquo;Previous</a></li>
+  <li class="next"><a href="pysets.html">Next&raquo;</a></li>
+</ul>
+
+
+<footer class="mt-auto">
+<div class="jumbotron text-center" style="margin-bottom:0">
+copyright&copy; TeekaY-X maintained by <a href="https://TeekaY-X.github.io/AsahlumaTyika">Asahluma Tyika</a>
+</div>
+</footer>
+
+
+</body>
+</html>

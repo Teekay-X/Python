@@ -1,0 +1,480 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <title>TeekaY-X | Python Operators</title>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="icon" href="/css/icon.png" />
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+  <link rel="stylesheet" href="/css/index.css" />
+</head>
+<body class="d-flex flex-column min-vh-100">
+
+<!--<div class="jumbotron text-center" style="margin-bottom:0">
+  <h1>My First Bootstrap Page</h1>
+  <p>Resize this responsive page to see the effect!</p> 
+</div>-->
+
+<nav class="navbar navbar-inverse navbar-fixed-top">
+  <div class="container-fluid">
+    <div class="navbar-header">
+      <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#myNavbar">
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>                        
+      </button>
+      <a class="navbar-brand" href="#">TeekaY-X | Python Operators</a>
+    </div>
+    <div class="collapse navbar-collapse" id="myNavbar">
+      <ul class="nav navbar-nav">
+        <li><a href="https://TeekaY-X.github.io">Home</a></li>
+          <li class="dropdown">
+        <a class="dropdown-toggle" data-toggle="dropdown" href="#">Python Course 
+        <span class="caret"></span></a>
+        <ul class="dropdown-menu">
+          <li><a href="pyintro.html">Python Introduction</a></li>
+          <li><a href="gtstt.html">Python Getting Started</a></li>
+          <li><a href="syntax.html">Python Syntax</a></li>
+          <li><a href="pycomments.html">Python Comments</a></li>
+          <li><a href="pyvariables.html">Python Variables</a></li>
+          <li><a href="pydatatypes.html">Python Data Types</a></li>
+          <li><a href="pynumbers.html">Python Numbers</a></li>
+          <li><a href="/python/pycasting.html">Python Casting</a></li>
+          <li><a href="/python/pystrings.html">Python Strings</a></li>
+          <li><a href="/python/pybooleans.html">Python Booleans</a></li>
+          <li class="active"><a href="/python/pyoperators.html">Python Operators</a></li>
+          <li><a href="/python/pylists.html">Python Lists</a></li>
+          <li><a href="/python/pytuples.html">Python Tuples</a></li>
+          <li><a href="/python/pysets.html">Python Sets</a></li>
+          <li><a href="/python/pydictionaries.html">Python Dictionaries</a></li>
+          <li><a href="/python/pyifelse.html">Python If...Else</a></li>
+          <li><a href="/python/pywhileloops.html">Python While Loops</a></li>
+          <li><a href="/python/pyforloops.html">Python For Loops</a></li>
+          <li><a href="/python/pyfunctions.html">Python Functions</a></li>
+          <li><a href="/python/pylambda.html">Python Lambda</a></li>
+          <li><a href="/python/pyarrays.html">Python Arrays</a></li>
+          <li><a href="/python/pyclasses.html">Python Classes/Objects</a></li>
+          <li><a href="/python/pyinheritance.html">Python Inheritance</a></li>
+          <li><a href="/python/pyiterators.html">Python Iterators</a></li>
+          <li><a href="/python/pyscope.html">Python Scope</a></li>
+          <li><a href="/python/pymodules.html">Python Modules</a></li>
+          <li><a href="/python/pydates.html">Python Dates</a></li>
+          <li><a href="/python/pymaths.html">Python Math</a></li>
+          <li><a href="/python/pyJSON.html">Python JSON</a></li>
+          <li><a href="/python/pyRegEx.html">Python RegEx</a></li>
+          <li><a href="/python/pypip.html">Python PIP</a></li>
+          <li><a href="/python/pytryexcept.html">Python Try...Except</a></li>
+          <li><a href="/python/pyusrinput.html">Python User Input</a></li>
+          <li><a href="/python/pyStringFormat.html">Python String Formatting</a></li>
+        </ul>
+      </li>
+      
+        <li class="dropdown">
+        <a class="dropdown-toggle" data-toggle="dropdown" href="#">Flask Course
+        <span class="caret"></span></a>
+        <ul class="dropdown-menu">
+          <li><a href="#">Coming Soon</a></li>
+          <li><a href="#">Coming Soon</a></li>
+          <li><a href="#">Coming Soon</a></li>
+        </ul>
+      </li>
+      <li><a href="https://TeekaY-X.github.io/about.html">About us</a></li>
+       <!-- <li><a href="#">Python</a></li>
+        <li><a href="#">Python-Flask</a></li>-->
+      </ul>
+    </div>
+  </div>
+</nav>
+<br>
+<br>
+<div class="container-fluid">
+  <div class="row">
+    <div class="col-sm-8">
+      <div class="jumbotron">
+        <h1>Python - Operators</h1>
+        <br />
+        
+<h2>Python Operators</h2>
+
+<p>Operators are used to perform operations on variables and values.</p>
+
+<p>In the example below, we use the <code class="w3-codespan">+</code> operator to add together two values:</p>
+<div class="w3-example">
+<h3>Example</h3>
+<div class="w3-code notranslate pythonHigh">
+  print(10 + 5)</div>
+
+</div>
+
+
+<p>Python divides the operators in the following groups:</p>
+<ul>
+	<li>Arithmetic operators</li>
+	<li>Assignment operators</li>
+	<li>Comparison operators</li>
+	<li>Logical operators</li>
+	<li>Identity operators</li>
+	<li>Membership operators</li>
+	<li>Bitwise operators</li>
+</ul>
+
+<hr>
+
+<h2>Python Arithmetic Operators</h2>
+<p>Arithmetic operators are used with numeric values to perform common mathematical operations:</p>
+
+<table class="ws-table-all notranslate">
+<tr>
+<th style="width:25%">Operator</th>
+<th style="width:35%">Name</th>
+<th style="width:30%">Example</th>
+
+</tr>
+<tr>
+<td>+</td>
+<td>Addition</td>
+<td>x + y</td>
+
+</tr>
+<tr>
+<td>-</td>
+<td>Subtraction</td>
+<td>x - y</td>
+
+</tr>
+<tr>
+<td>*</td>
+<td>Multiplication</td>
+<td>x * y</td>
+
+</tr>
+<tr>
+<td>/</td>
+<td>Division</td>
+<td>x / y</td>
+
+</tr>
+<tr>
+<td>%</td>
+<td>Modulus</td>
+<td>x % y</td>
+
+</tr>
+  <tr>
+<td>**</td>
+<td>Exponentiation</td>
+<td>x ** y</td>
+
+  </tr>
+<tr>
+<td>//</td>
+<td>Floor division</td>
+<td>x // y</td>
+
+</tr>
+</table>
+
+<hr>
+
+<h2>Python Assignment Operators</h2>
+
+<p>Assignment operators are used to assign values to variables:</p>
+
+<table class="ws-table-all notranslate">
+<tr>
+<th style="width:25%">Operator</th>
+<th style="width:20%">Example</th>
+<th style="width:20%">Same As</th>
+
+</tr>
+<tr>
+<td>=</td>
+<td>x = 5</td>
+<td>x = 5</td>
+
+</tr>
+  <tr>
+<td>+=</td>
+<td>x += 3</td>
+<td>x = x + 3</td>
+
+  </tr>
+  <tr>
+<td>-=</td>
+<td>x -= 3</td>
+<td>x = x - 3</td>
+
+  </tr>
+  <tr>
+<td>*=</td>
+<td>x *= 3</td>
+<td>x = x * 3</td>
+
+  </tr>
+  <tr>
+<td>/=</td>
+<td>x /= 3</td>
+<td>x = x / 3</td>
+
+  </tr>
+  <tr>
+<td>%=</td>
+<td>x %= 3</td>
+<td>x = x % 3</td>
+
+  </tr>
+  <tr>
+<td>//=</td>
+<td>x //= 3</td>
+<td>x = x // 3</td>
+
+  </tr>
+  <tr>
+<td>**=</td>
+<td>x **= 3</td>
+<td>x = x ** 3</td>
+
+  </tr>
+  <tr>
+<td>&amp;=</td>
+<td>x &amp;= 3</td>
+<td>x = x &amp; 3</td>
+<td><a 
+  </tr>
+  <tr>
+<td>|=</td>
+<td>x |= 3</td>
+<td>x = x | 3</td>
+
+  </tr>
+<tr>
+<td>^=</td>
+<td>x ^= 3</td>
+<td>x = x ^ 3</td>
+
+</tr>
+<tr>
+<td>&gt;&gt;=</td>
+<td>x &gt;&gt;= 3</td>
+<td>x = x &gt;&gt; 3</td>
+
+</tr>
+<tr>
+<td>&lt;&lt;=</td>
+<td>x &lt;&lt;= 3</td>
+<td>x = x &lt;&lt; 3</td>
+
+</table>
+
+<hr>
+<div id="midcontentadcontainer" style="overflow:auto;text-align:center">
+
+  
+</div>
+<hr>
+
+<h2>Python Comparison Operators</h2>
+
+<p>Comparison operators are used to compare two values:</p>
+
+<table class="ws-table-all notranslate">
+<tr>
+<th style="width:25%">Operator</th>
+<th style="width:35%">Name</th>
+<th style="width:30%">Example</th>
+</tr>
+<tr>
+<td>==</td>
+<td>Equal</td>
+<td>x == y</td>
+
+</tr>
+<tr>
+<td>!=</td>
+<td>Not equal</td>
+<td>x != y</td>
+
+</tr>
+<tr>
+<td>&gt;</td>
+<td>Greater than</td>
+<td>x &gt; y</td>
+
+</tr>
+<tr>
+<td>&lt;</td>
+<td>Less than</td>
+<td>x &lt; y</td>
+
+</tr>
+  <tr>
+<td>&gt;=</td>
+<td>Greater than or equal to</td>
+<td>x &gt;= y</td>
+
+  </tr>
+<tr>
+<td>&lt;=</td>
+<td>Less than or equal to</td>
+<td>x &lt;= y</td>
+
+</tr>
+</table>
+
+<hr>
+
+<h2>Python Logical Operators</h2>
+
+<p>Logical operators are used to combine conditional statements:</p>
+
+<table class="ws-table-all notranslate">
+<tr>
+<th style="width:25%">Operator</th>
+<th style="width:35%">Description</th>
+<th style="width:30%">Example</th>
+
+</tr>
+<tr>
+<td>and&nbsp;</td>
+<td>Returns True if both statements are true</td>
+<td>x &lt; 5 and&nbsp; x &lt; 10</td>
+
+</tr>
+<tr>
+<td>or</td>
+<td>Returns True if one of the statements is true</td>
+<td>x &lt; 5 or x &lt; 4</td>
+
+</tr>
+<tr>
+<td>not</td>
+<td>Reverse the result, returns False if the result is true</td>
+<td>not(x &lt; 5 and x &lt; 10)</td>
+
+</tr>
+</table>
+
+<hr>
+
+<h2>Python Identity Operators</h2>
+
+<p>Identity operators are used to compare the objects, not if they are equal, but if they are actually the same object, with the same memory location:</p>
+
+<table class="ws-table-all notranslate">
+<tr>
+<th style="width:25%">Operator</th>
+<th style="width:35%">Description</th>
+<th style="width:30%">Example</th>
+
+</tr>
+<tr>
+<td>is&nbsp;</td>
+<td>Returns True if both variables are the same object</td>
+<td>x is y</td>
+
+</tr>
+<tr>
+<td>is not</td>
+<td>Returns True if both variables are not the same object</td>
+<td>x is not y</td>
+
+</tr>
+</table>
+
+<hr>
+
+<h2>Python Membership Operators</h2>
+
+<p>Membership operators are used to test if a sequence is presented in an object:</p>
+
+<table class="ws-table-all notranslate">
+<tr>
+<th style="width:25%">Operator</th>
+<th style="width:35%">Description</th>
+<th style="width:30%">Example</th>
+</tr>
+<tr>
+<td>in&nbsp;</td>
+<td>Returns True if a sequence with the specified value is present in the object</td>
+<td>x in y</td>
+
+</tr>
+<tr>
+<td>not in</td>
+<td>Returns True if a sequence with the specified value is not present in the 
+object</td>
+<td>x not in y</td>
+
+</tr>
+</table>
+
+<hr>
+
+<h2>Python Bitwise Operators</h2>
+
+<p>Bitwise operators are used to compare (binary) numbers:</p>
+
+<table class="ws-table-all notranslate">
+<tr>
+<th style="width:10%">Operator</th>
+<th style="width:15%">Name</th>
+<th style="width:75%">Description</th>
+</tr>
+  <tr>
+<td>&amp;&nbsp;</td>
+<td>AND</td>
+<td>Sets each bit to 1 if both bits are 1</td>
+  </tr>
+  <tr>
+<td>|</td>
+<td>OR</td>
+<td>Sets each bit to 1 if one of two bits is 1</td>
+  </tr>
+  <tr>
+<td>&nbsp;^</td>
+<td>XOR</td>
+<td>Sets each bit to 1 if only one of two bits is 1</td>
+  </tr>
+<tr>
+<td>~&nbsp;</td>
+<td>NOT</td>
+<td>Inverts all the bits</td>
+</tr>
+<tr>
+<td>&lt;&lt;</td>
+<td>Zero fill left shift</td>
+<td>Shift left by pushing zeros in from the right and let the leftmost bits fall 
+off</td>
+</tr>
+<tr>
+<td>&gt;&gt;</td>
+<td>Signed right shift</td>
+<td>Shift right by pushing copies of the leftmost bit in from the left, and let 
+the rightmost bits fall off</td>
+</tr>
+</table>
+
+<!-- end -->
+</div>
+    </div>
+  </div>
+</div>
+
+<ul class="pager navbar-fixed-bottom">
+  <li class="previous"><a href="pybooleans.html">&laquo;Previous</a></li>
+  <li class="next"><a href="pylists.html">Next&raquo;</a></li>
+</ul>
+
+
+<footer class="mt-auto">
+<div class="jumbotron text-center" style="margin-bottom:0">
+copyright&copy; TeekaY-X maintained by <a href="https://TeekaY-X.github.io/AsahlumaTyika">Asahluma Tyika</a>
+</div>
+</footer>
+
+
+</body>
+</html>
